@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway";
+  font-size: 16px;
+}
+.header{
+  background-image: url(header_background.jpg);
+  background-size: 100%;
+  height: 1000px;
+
+}
+ul{
+  margin: 0px;
+  padding-top: 20%;
+  padding-left: 25%;
+}
+
+ul.ul_menu li{
+  float:left;
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: #dfdfdf;
+  cursor: pointer;
+  list-style-type: none;
+}
+.form-main-button button{
+  margin-top: 30%;
+  border: 0px;
+  padding: 0px;
+  cursor:  pointer;
+  height: 80px;
+  width: 30%;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 34%;
+  color: #fff;
+  text-transform: uppercase;
+  background: #8aeccc;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.form-main-button button:focus {
+  background: #b0fde4;
+}
+
+.main_content{
+  text-align: center;
+  background-color: #e1dfdf;
+
+}
+.local_menu{
+  display: inline-block;
+  width: 20%;
+  padding: 5%;
+  text-align: center;
+}
+.local_menu i{
+  color:  white;
+  font-size: 72px;
+  padding: 20px;
+  margin-top: 20px;
+  border-width: 5px;
+
+  border-color: #00eea0;
+}
+.local_menu h4{
+  font-size: 22px;
+}
+.local_menu hr{
+  width: 70%;
+  background-color: #c7c7c7;
+
+}
+.local_menu p{
+  font-size: 16px;
+  color:  #6E6E6E;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  width: 70%;
+  padding-left: 25px;
+  margin-left: 20px;
+}
+.second_block{
+  background-color: #f2f2f2;
+}
+.local2_menu{
+  display: inline-block;
+  width: 30%;
+  padding: 5%;
+  text-align: left;
+}
+.local2_menu h4{
+  font-size: 20px;
+}
+.local2_menu p{
+  padding-top: 20px;
+  font-size: 16px;
+  width: 70%;
+}
+.second_block-picture{
+  width: 100%;
+}
+.form-second_block-button button{
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 20px;;
+  border: 0px;
+  padding: 0px;
+  cursor:  pointer;
+  height: 40px;
+  width: 30%;
+  font-size: 15px;
+  color: #fff;
+  background: #3ae1aa;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.third_block{
+  margin-left: 15%;
+  width: 70%;
+}
+.local3_menu i, .local3_menu h4{
+  padding-top: 5%;
+  margin-top: 20px;
+  display: inline-block;
+}
+.local3_menu i{
+  font-size: 24px;
+  color: #a7a7a7;
+  padding: 20px;
+}
+.local3_menu h4{
+  font-size: 20px;
+}
+.local3_menu p{
+  font-size: 17px;
+  color: #656565;
+}
+.local3_menu{
+text-align: left;
+}
+.form-third_block-button button{
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 20px;;
+  border: 0px;
+  padding: 0px;
+  cursor:  pointer;
+  height: 40px;
+  width: 15%;
+  font-size: 15px;
+  color: #fff;
+  background: #a7a7a7;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
