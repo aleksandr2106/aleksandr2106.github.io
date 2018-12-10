@@ -86,7 +86,7 @@ ul.ul_menu li{
   padding-left: 25px;
   margin-left: 20px;
 }
-.second_block{
+.second_block, .four_block , .sixth_block{
   background-color: #f2f2f2;
 }
 .local2_menu{
@@ -142,6 +142,11 @@ ul.ul_menu li{
   font-size: 17px;
   color: #656565;
 }
+.local3_menu hr{
+  width: 70%;
+  padding: 0px;
+  margin: 0px;
+}
 .local3_menu{
 text-align: left;
 }
@@ -154,6 +159,81 @@ text-align: left;
   cursor:  pointer;
   height: 40px;
   width: 15%;
+  font-size: 15px;
+  color: #fff;
+  background: #a7a7a7;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.local4_menu{
+  display: inline-block;
+  width: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.local4_menu h4{
+  font-size: 20px;
+  padding-top: 20px;
+}
+.local4_menu p{
+  padding-top: 20px;
+  font-size: 16px;
+  width: 70%;
+}
+.Check_this_out{
+  margin-bottom: 10%;
+  color: #3ae1aa;
+}
+.fourth_block-picture{
+  width: 100%;
+}
+
+.local5_menu{
+  display: inline-block;
+  width: 30%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.local5_menu h4{
+  font-size: 22px;
+  padding-top: 20px;
+}
+.local5_menu p{
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.local6_menu{
+  display: inline-block;
+  width: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.sixth_block-picture{
+  width: 100%;
+}
+
+.form-sixth_block-button button{
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 20px;;
+  border: 0px;
+  padding: 0px;
+  cursor:  pointer;
+  height: 40px;
+  width: 50%;
   font-size: 15px;
   color: #fff;
   background: #a7a7a7;
