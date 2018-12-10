@@ -8,8 +8,11 @@ body{
 .header{
   background-image: url(header_background.jpg);
   background-size: 100%;
-  height: 1000px;
+  height: auto;
 
+}
+hr{
+  height: 2px;
 }
 ul{
   margin: 0px;
@@ -40,9 +43,10 @@ ul.ul_menu li{
   margin-left: 34%;
   color: #fff;
   text-transform: uppercase;
-  background: #8aeccc;
+  background: #52C9B3;
   border-radius: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 10%;
+
 }
 
 .form-main-button button:focus {
@@ -51,7 +55,7 @@ ul.ul_menu li{
 
 .main_content{
   text-align: center;
-  background-color: #e1dfdf;
+  background-color: #EEEEEF;
 
 }
 .local_menu{
@@ -72,11 +76,7 @@ ul.ul_menu li{
 .local_menu h4{
   font-size: 22px;
 }
-.local_menu hr{
-  width: 70%;
-  background-color: #c7c7c7;
 
-}
 .local_menu p{
   font-size: 16px;
   color:  #6E6E6E;
@@ -87,8 +87,9 @@ ul.ul_menu li{
   margin-left: 20px;
 }
 .second_block, .four_block , .sixth_block{
-  background-color: #f2f2f2;
+  background-color: #F5F5F5;
 }
+
 .local2_menu{
   display: inline-block;
   width: 30%;
@@ -117,7 +118,7 @@ ul.ul_menu li{
   width: 30%;
   font-size: 15px;
   color: #fff;
-  background: #3ae1aa;
+  background: #50C3AF;
   border-radius: 20px;
   margin-bottom: 15px;
 }
@@ -125,10 +126,19 @@ ul.ul_menu li{
   margin-left: 15%;
   width: 70%;
 }
-.local3_menu i, .local3_menu h4{
+
+
+.local3_menu img{
+  float: left;
   padding-top: 5%;
-  margin-top: 20px;
-  display: inline-block;
+  margin-top: 0px;
+
+}
+.local3_menu h4{
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  padding-top: 5%;
 }
 .local3_menu i{
   font-size: 24px;
@@ -136,7 +146,7 @@ ul.ul_menu li{
   padding: 20px;
 }
 .local3_menu h4{
-  font-size: 20px;
+  font-size: 24px;
 }
 .local3_menu p{
   font-size: 17px;
@@ -163,7 +173,7 @@ text-align: left;
   color: #fff;
   background: #a7a7a7;
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 5%;
 }
 
 .local4_menu{
@@ -186,7 +196,7 @@ text-align: left;
 }
 .Check_this_out{
   margin-bottom: 10%;
-  color: #3ae1aa;
+  color: #82CFC1;
 }
 .fourth_block-picture{
   width: 100%;
@@ -201,26 +211,52 @@ text-align: left;
   padding-left: 5%;
   padding-right: 5%;
 }
-.local5_menu h4{
-  font-size: 22px;
-  padding-top: 20px;
-}
+
 .local5_menu p{
   padding-top: 20px;
   font-size: 18px;
 }
-
-.local6_menu{
-  display: inline-block;
-  width: 30%;
+.local5_menu img{
+  float: left;
   padding-top: 5%;
-  padding-bottom: 5%;
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-top: 0px;
 
 }
+.local5_menu h4{
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  padding-top: 5%;
+  font-size: 20px;
+}
+.pancil_img{
+  margin-top: 20px;
+}
+.pancil_block-picture{
+  margin-top: 5px;
+}
+.sixth_block{
+  display: flex;
+}
+.sixth_block img{
+  float: left;
+  width: 20%;
+  height: 15%;
+  padding-top: 5%;
+  padding-left: 18%;
+  padding-bottom: 5%;
+}
 
+.local6_menu{
+  float: left;
+  width: 40%;
+  height: 20%;
+  padding-top: 5%;
+  padding-left: 20px;
+  margin-left: 20px;
+  padding-bottom: 5%;
+  text-align: left;
+}
 .sixth_block-picture{
   width: 100%;
 }
@@ -228,15 +264,23 @@ text-align: left;
 .form-sixth_block-button button{
   margin-left: 0px;
   padding-left: 0px;
-  margin-top: 20px;;
+  margin-top: 20px;
+  padding-top: 20px;
   border: 0px;
   padding: 0px;
   cursor:  pointer;
-  height: 40px;
-  width: 50%;
-  font-size: 15px;
+  height: 60px;
+  width: 30%;
+  font-size: 16px;
   color: #fff;
   background: #a7a7a7;
   border-radius: 20px;
   margin-bottom: 15px;
+}
+.local6_menu h4{
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  padding-top: 5%;
+  font-size: 24px;
 }
