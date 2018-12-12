@@ -6,33 +6,72 @@ body{
   font-size: 16px;
 }
 .header{
-  background-image: url(header_background.jpg);
+  background-image: url(header.png);
   background-size: 100%;
   height: auto;
 
 }
+
 hr{
   height: 2px;
 }
+.header-picture{
+  margin-left: 45%;
+  margin-top: 7%;
+  width: 10%;
+  height: auto;
+}
 ul{
   margin: 0px;
-  padding-top: 20%;
-  padding-left: 25%;
+  padding-top: 5%;
+  padding-left: 30%;
 }
 
 ul.ul_menu li{
   float:left;
-  margin-left: 20px;
+  margin-left: 10px;
   padding-left: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
   padding-right: 20px;
   font-size: 20px;
   color: #dfdfdf;
   cursor: pointer;
   list-style-type: none;
 }
+.header h1{
+  font-size: 82px;
+  color: white;
+  padding-left: 25%;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.header_text{
+  display: inline-flex;
+  width: 100%;
+  padding-top: 1%;
+
+}
+.header_text p{
+  font-size: 25px;
+  color: white;
+  margin-top: -11px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.header_text hr{
+  width: 8%;
+  float: right;
+  margin: 0px;
+  margin-left: 40px;
+}
+.header_text hr:first-child{
+  float: left;
+  margin-left: 25%;
+  padding-left: 0px;
+}
 .form-main-button button{
-  margin-top: 30%;
+  margin-top: 8%;
   border: 0px;
   padding: 0px;
   cursor:  pointer;
@@ -40,7 +79,7 @@ ul.ul_menu li{
   width: 30%;
   font-weight: bold;
   font-size: 24px;
-  margin-left: 34%;
+  margin-left: 35%;
   color: #fff;
   text-transform: uppercase;
   background: #52C9B3;
@@ -283,4 +322,15 @@ text-align: left;
   margin: 10px;
   padding-top: 5%;
   font-size: 24px;
+}
+
+.footer{
+  background-color: #50C3AF;
+}
+
+.footer_logo img{
+  display: inline-block;
+  width: 5%;
+  height: auto;
+  padding-left: 5%;
 }
