@@ -330,7 +330,34 @@ text-align: left;
 
 .footer_logo img{
   display: inline-block;
-  width: 5%;
+  width: 10%;
   height: auto;
   padding-left: 5%;
+  padding-bottom: 5%;
+}
+.top_footer{
+  padding-top: 2%;
+  color: white;
+}
+.top_footer h5{
+  font-size: 20px;
+}
+
+.footer4_logo-picture{
+padding-top: 5%;
+}
+
+.bottom_footer{
+  background-color: #F5F5F5;
+}
+.bottom_footer h6{
+  margin: 0;
+  float: left;
+  display: block;
+}
+.bottom_footer p{
+  display: block;
+}
+.left_bootom_footer{
+  display: inline-block;
 }

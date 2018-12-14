@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://mate-academy.github.io/fe-program/resources/lesson_5/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .block {
+      margin-bottom: 10px;
+    }
+
+    .block > div:not(.clearfix) {
+      background: #00BCD4;
+      border: 1px solid #fff;
+      height: 150px;
+      color: #fff;
+      display: block;
+      width: 100%;
+    }
+
+    .clearfix {
+      width: 100%;
+      float: none;
+      position: relative;
+    }
+
+    .clearfix:after {
+      height: 1px;
+      width: 100%;
+      display: block;
+      clear: both;
+      content: "";
+    }
+
+    .inside {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .text {
+      position: absolute;
+
+      transform: translate(-50% ,-50%);
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+    }
+
+    @media (min-width: 1800px){
+      .clearfix{
+        display: none;
+      }
+      .first {
+        display: flex;
+        width: 100%;
+      }
+      .second{
+        display: flex;
+        width: 100%;
+
+      }
+      .fourth{
+        width: 100%;
+        display: flex;
+      }
+      .fourth.block > div:not(.clearfix) {
+        width: 25%;
+      }
+      .fourth.block .colored:nth-child(3) {
+        width: 50%;
+      }
+      .third{
+        width: 100%;
+        display: flex;
+      }
+      .third.block > div:not(.clearfix) {
+        width: 25%;
+      }
+
+      .fifth {
+        display: flex;
+      }
+
+    }
+
+    @media (min-width: 1200px) and (max-width: 1800px){
+      * {box-sizing: border-box;}
+
+      .block{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .block.first .colored  {
+        width: 50%;
+      }
+      .block.second .colored {
+        width: 50%;
+      }
+
+      .block.third .colored{
+        width: 50%;
+      }
+      .block.third .colored:nth-child(3){
+        width: 100%;
+      }
+      .block.fourth .colored{
+        width: 35%;
+      }
+      .block.fourth .colored:nth-child(2){
+        width: 30%;
+      }
+      .block.fifth {
+
+        justify-content: center;
+      }
+      .block.fifth .colored{
+        width: 33.33333%;
+      }
+     }
+  @media (min-width: 960px) and (max-width: 1200px){
+    * {box-sizing: border-box;}
+
+    .block{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .block.first .colored  {
+      width: 50%;
+    }
+    .block.second .colored  {
+      width: 50%;
+    }
+    .block.third .colored  {
+      width: 33.33333%;
+    }
+    .block.fourth .colored{
+      width: 35%;
+    }
+    .block.fourth .colored:nth-child(2){
+      width: 30%;
+    }
+    .block.fifth .colored{
+      width: 50%;
+    }
+    .block.fifth .colored:nth-child(5){
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 960px){
+    * {box-sizing: border-box;}
+    .block{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .block.first .colored  {
+      width: 50%;
+    }
+    .block.second .colored  {
+      width: 50%;
+    }
+    .block.third .colored  {
+      width: 100%;
+    }
+    .block.fourth .colored  {
+      width: 50%;
+    }
+    .block.fourth .colored:nth-child(3) {
+      width: 100%;
+    }
+
+    .block.fifth .colored  {
+      width: 50%;
+    }
+    .block.fifth .colored:nth-child(5) {
+      width: 100%;
+    }
+
+  }
+  @media (min-width: 320px) and (max-width: 768px){
+    * {box-sizing: border-box;}
+    .block{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .block.first .colored  {
+      width: 50%;
+    }
+    .block.second .colored  {
+      width: 50%;
+    }
+    .block.fifth .colored  {
+      width: 20%;
+    }
+  }
+
+
+  </style>
+</head>
+<body>
+<main>
+  <h2>1 block</h2>
+  <div class="first block">
+    <div class="plain colored">
+      <div class="inside">
+        <div class="text">1</div>
+      </div>
+    </div>
+    <div class="plain colored">
+      <div class="inside">
+        <div class="text">2</div>
+      </div>
+    </div>
+    <div class="plain colored">
+      <div class="inside">
+        <div class="text">3</div>
+      </div>
+    </div>
+    <div class="plain colored">
+      <div class="inside">
+        <div class="text">4</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <h2>2 block</h2>
+  <div class="second block">
+    <div class="colored">
+      <div class="inside">
+        <div class="text">1</div>
+      </div>
+    </div>
+    <div class="colored">
+      <div class="inside">
+        <div class="text">2</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <h2>3 block</h2>
+  <div class="third block">
+    <div class="colored">
+      <div class="inside">
+        <div class="text">1</div>
+      </div>
+    </div>
+    <div class="colored">
+      <div class="inside">
+        <div class="text">2</div>
+      </div>
+    </div>
+    <div class="colored">
+      <div class="inside">
+        <div class="text">3</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <h2>4 block</h2>
+  <div class="fourth block">
+    <div class="colored">
+      <div class="inside">
+        <div class="text">1</div>
+      </div>
+    </div>
+    <div class="colored">
+      <div class="inside">
+        <div class="text">2</div>
+      </div>
+    </div>
+    <div class="colored">
+      <div class="inside">
+        <div class="text">3</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <h2>5 block</h2>
+  <div class="fifth block">
+    <div class="colored">
+      <div class="inside">
+        <div class="text">1</div>
+      </div>
+    </div>
+    <div class="colored">
+      <div class="inside">
+        <div class="text">2</div>
+      </div>
+    </div>
+    <div class="colored">
+      <div class="inside">
+        <div class="text">3</div>
+      </div>
+    </div>
+    <div class="colored">
+      <div class="inside">
+        <div class="text">4</div>
+      </div>
+    </div>
+    <div class="colored">
+      <div class="inside">
+        <div class="text">5</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</main>
+
+
+
+</body></html>
