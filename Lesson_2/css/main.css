@@ -349,15 +349,32 @@ padding-top: 5%;
 
 .bottom_footer{
   background-color: #F5F5F5;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: space-around;
 }
 .bottom_footer h6{
   margin: 0;
-  float: left;
-  display: block;
+
+  font-size: 16px;
+  padding-right: 10px;
 }
 .bottom_footer p{
   display: block;
+
 }
 .left_bootom_footer{
-  display: inline-block;
+  display: flex;
+
+}
+
+.footer_icons{
+  display: flex;
+}
+
+.footer_icons img{
+
+  margin-right: 20px;
+
 }
