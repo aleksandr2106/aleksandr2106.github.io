@@ -40,6 +40,9 @@ ul.ul_menu li{
   cursor: pointer;
   list-style-type: none;
 }
+ul.ul_menu li a:hover{
+  color: black;
+}
 ul.ul_menu li:first-child{
   margin-left: 0px;
   padding-left: 0px;
@@ -100,10 +103,9 @@ ul.ul_menu li:last-child{
   margin-bottom: 10%;
   padding: 2% 10% 2% 10%;
 }
-
-.form-main-button button:focus {
-  background: #b0fde4;
-}
+.form-main-button button:hover{
+  background: #0db697;
+  }
 
 .main_content{
   text-align: center;
@@ -120,15 +122,9 @@ ul.ul_menu li:last-child{
   padding: 5% 4% 5% 4%;
   text-align: center;
 }
-
-.local_menu i{
-  color:  white;
-  font-size: 72px;
-  padding: 20px;
-  margin-top: 20px;
-  border-width: 5px;
-
-  border-color: #00eea0;
+.local_menu img:hover{
+  width: 30%;
+  height: 30%;
 }
 .local_menu h4{
   font-size: 22px;
@@ -184,7 +180,11 @@ ul.ul_menu li:last-child{
   margin-bottom: 15px;
   padding: 2.5% 12%;
 }
+.form-second_block-button button:hover{
 
+  background: #0db697;
+
+}
 .third_block{
   margin-left: 15%;
   width: 70%;
@@ -239,6 +239,9 @@ text-align: left;
   margin-bottom: 5%;
   padding: 1.5% 7%;
 }
+.form-third_block-button button:hover{
+  background: #8d8d8d;
+}
 .four_block{
   display: flex;
   justify-content: center;
@@ -265,6 +268,10 @@ text-align: left;
 .Check_this_out{
   margin-bottom: 10%;
   color: #82CFC1;
+}
+.local4_menu a:hover{
+  color:#0db697;
+  font-size: 22px;
 }
 .fourth_block-picture{
   width: 100%;
@@ -348,6 +355,11 @@ text-align: left;
   margin-bottom: 15px;
   padding: 2.5% 12%;
 }
+.form-sixth_block-button button:hover{
+
+  background: #0db697;
+
+}
 .local6_menu h4{
   float: center;
   padding: 10px;
@@ -426,5 +438,12 @@ text-align: left;
   width: 75%;
   height: 75%;
   margin-right: 20px;
+
+}
+.footer_icons img:hover{
+  width: 80%;
+  height: 80%;
+  margin-right: 20px;
+  background-color: #0db697;
 
 }
