@@ -138,12 +138,12 @@ p{
   background-color: #23B7A4;
   }
 
-.content_first{
+.content_first, .content_second{
   display: flex;
   justify-content: center;
 
 }
-.center_first{
+.center_first, .center_second{
   width: 1200px;
 }
 .main_headline{
@@ -225,4 +225,81 @@ p{
 hr{
   padding: 0;
   margin: 0;
+}
+
+.photos_box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.people_photo img{
+  width: 263px;
+  height: 300px;
+
+}
+.horisontal_grey_box{
+  height: auto;
+  background-color: #E1E6EA;
+  margin-top: -5px;
+}
+.horisontal_grey_box h6{
+  padding-top: 20px;
+  margin-left: 20px;
+  font-family: "Quattrocento Sans";
+  font-size: 16px;
+  font-weight: bold;
+}
+.horisontal_grey_box p{
+  padding-bottom: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #8D8F92;
+
+  cursor: pointer;
+}
+
+.people_photo:hover .horisontal_grey_box{
+  background-color: #3A454D;
+
+}
+.people_photo img:hover{
+  opacity: 0.6;
+
+}
+.people_photo .social_icons_2{
+  display: none;
+}
+
+.people_photo:hover .social_icons_2{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: -175px;
+  margin-left: 55px;
+}
+
+
+.social_icons_2 a{
+  padding-top: 0px;
+  width: 50px;
+  height: 50px;
+  margin-left: 1px;
+  background: #3A454D;
+  color: #FFFFFF;
+  font-size: 18px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social_icons_2 a:hover{
+  background: #4E5A62;
+  opacity: 0.8;
+
+}
+
+.content_third{
+  background-color: #3A454D;
 }
