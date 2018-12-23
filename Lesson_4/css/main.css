@@ -98,6 +98,7 @@ h3{
   font-size: 32px;
   color: #292F36;
   margin-left: 15px;
+  font-weight: bolder;
   font-family: "Quattrocento Sans";
 }
 
@@ -388,8 +389,8 @@ hr{
 .lovely_photo:hover .lovely_photo_hover{
   display:block;
 
-
 }
+
 .center_third .grey_box{
   background-color: #4E5A62;
 }
@@ -467,4 +468,87 @@ hr{
 
 .content_fifth h3{
   color: #FFF;
+}
+
+.map{
+  width: 100%;
+  height: auto;
+}
+.grid_6{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding-bottom: 5em;
+}
+
+.text_to_sixth_block h5{
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.text_to_sixth_block p{
+  font-size: 16px;
+  color: #8D8F92;
+}
+.form_bottom{
+  background-color: #FFF;
+
+  margin-top: -130px;
+}
+.block{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.block input{
+  background-color: #EAEEF1;
+  border: none;
+  width: 15em;
+  height: 100%;
+  border-radius: 4px;
+}
+.block p{
+  font-size: 14px;
+  font-family: "Quattrocento Sans";
+  color: #8D8F92;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.message p{
+  font-size: 14px;
+  font-family: "Quattrocento Sans";
+  color: #8D8F92;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.message{
+  display: grid;
+  grid-template-rows: repeat(1fr, 3fr, 1fr);
+  padding: 30px;
+  padding-top: 10px;
+}
+
+textarea{
+  background-color: #EAEEF1;
+  border: none;
+  height: 10em;
+  border-radius: 4px;
+  padding-bottom: 10em;
+}
+
+.form_bottom button{
+  margin-top: 30px;
+  cursor:  pointer;
+  height: auto;
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #23B7A4;
+  border-radius: 4px;
+  border: 2px solid #23B7A4;
+  padding: 15px 28px 15px 20px;
+  margin-right: 10px;
 }
