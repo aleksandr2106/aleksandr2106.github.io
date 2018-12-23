@@ -552,3 +552,38 @@ textarea{
   padding: 15px 28px 15px 20px;
   margin-right: 10px;
 }
+
+.footer{
+    background-color: #3A454D;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
+.flex p{
+  font-size: 14px;
+  color: #FFF;
+}
+
+.icons_footer a{
+  font-size: 18px;
+  color: #FFF;
+  margin-right: 1em;
+}
+
+.icons_footer a:last-child{
+  margin-right: 0;
+}
+
+.icons_footer a:hover{
+  color: #23B7A4;
+
+}
+
+button:hover{
+  opacity: 0.5;
+}
