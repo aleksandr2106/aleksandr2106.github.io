@@ -151,7 +151,7 @@ p{
   padding-bottom: 46px;
 }
 .banner_content{
-  padding: 18% 0 24%;
+  padding: 14% 0 15%;
 	width: 65%;
 	margin: 0 0;
 
@@ -635,7 +635,7 @@ button:hover{
   }
 
   .banner_content{
-    padding: 10% 3% 10%;
+    padding: 6% 3% 8%;
     width: 65%;
     margin: 0 0;
 
@@ -643,6 +643,61 @@ button:hover{
 
   .banner h3{
     font-size: 30px;
+  }
+
+  .content_first, .content_second, .center_third, .center_fifth, .content_fourth ,.content_sixth{
+    margin-left: 3%;
+
+  }
+
+  .main_headline{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+
+  .photos_box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 20%;
+    padding-right: 30px;
+  }
+
+  .content_third{
+    padding-right: 30px;
+
+  }
+
+  .photos_box_2{
+    padding-bottom: 50px;
+
+  }
+
+  .flex{
+    padding-left: 3%;
+    padding-right: 30px;
+  }
+
+  .block input{
+    width: 12em;
+
+  }
+
+  .center_fifth, .content_sixth{
+    margin-right: 30px;
+  }
+
+  .lovely_photo_hover{
+    margin-top: -140px;
+  }
+
+  .lovely_photo i{
+    margin-bottom: 50px;
+  }
+  .content_fourth{
+    margin-right: 30px;
   }
 }
 
@@ -653,7 +708,7 @@ button:hover{
     margin-left: 3%;
   }
   .banner_content{
-    padding: 6% 3% 2%;
+    padding: 6% 3% 30px;
     width: 65%;
     margin: 0 0;
 
@@ -702,7 +757,220 @@ button:hover{
     margin-right: 24px;
   }
 
+  .content_first, .content_second, .center_third, .center_fifth, .content_fourth ,.content_sixth{
+    margin-left: 3%;
 
+  }
+
+  .main_headline{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+
+  .photos_box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 20%;
+    padding-right: 30px;
+  }
+
+  .content_third{
+    padding-right: 30px;
+
+  }
+
+  .photos_box_2{
+    padding-bottom: 50px;
+
+  }
+
+  .flex{
+    padding-left: 3%;
+    padding-right: 30px;
+  }
+
+  .block input{
+    width: 12em;
+
+  }
+
+  .center_fifth, .content_sixth{
+    margin-right: 30px;
+  }
+
+  .lovely_photo_hover{
+    margin-top: -140px;
+  }
+
+  .lovely_photo i{
+    margin-bottom: 50px;
+  }
+
+  h3{
+    font-size: 26px;
+  }
+
+  .grey_box{
+    height: 30px;
+    width: 10px;
+    background-color: #E1E6EA;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+
+
+
+
+
+  .main_headline{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+
+
+  .right_text_box{
+
+    margin-bottom: 30px;
+  }
+
+  .square_block{
+    width: 45px;
+    height: 45px;
+
+  }
+  .square_block p{
+    width: 45px;
+    height: 45px;
+
+  }
+
+  .content_right_text_block p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .content_right_text_block h5{
+    font-size: 16px;
+
+  }
+  .social_icons{
+    margin-top: 40px;
+  }
+  .social_icons a{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .horisontal_grey_box h6{
+    font-size: 15px;
+
+  }
+  .horisontal_grey_box p{
+    font-size: 13px;
+  }
+
+
+  .social_icons_2 a{
+    width: 45px;
+    height: 45px;
+    font-size: 17px;
+
+  }
+
+  .content_third .main_headline{
+      padding-top: 50px;
+
+  }
+  .content_fourth{
+    margin-right: 30px;
+  }
+
+  .content_third form{
+    margin-bottom: 50px;
+  }
+
+  .lovely_photo_hover{
+    margin-top: -120px;
+  }
+
+  .lovely_photo i{
+    margin-bottom: 30px;
+  }
+
+
+
+  .content i{
+    font-size: 32px;
+
+  }
+  .content h5{
+    font-size: 16px;
+
+  }
+  .content p{
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .row {
+    padding-bottom: 80px;
+  }
+
+
+
+  .text_to_nature_photo h6{
+    font-size: 16px;
+  }
+  .text_to_nature_photo p{
+    font-size: 14px;
+    padding-bottom: 80px;
+  }
+
+
+  .grid_6{
+    padding-bottom: 2em;
+  }
+
+  .text_to_sixth_block h5{
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .text_to_sixth_block p{
+    font-size: 15px;
+
+  }
+  .form_bottom{
+    margin-top: -100px;
+  }
+
+  .block input{
+    width: 10em;
+  }
+
+  textarea{
+    background-color: #EAEEF1;
+    border: none;
+    height: 8em;
+    border-radius: 4px;
+    padding-bottom: 10em;
+  }
+
+
+
+  .flex{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
 
 
 
@@ -753,7 +1021,7 @@ button:hover{
   }
 
   .banner_content{
-    padding: 2% 2% 2%;
+    padding: 2% 2% 20px;
     width: 85%;
     margin: 0 0;
 
@@ -826,7 +1094,7 @@ button:hover{
   }
 
   .banner_content{
-    padding: 2% 2% 2%;
+    padding: 2% 2% 10px;
     width: 95%;
 
 
