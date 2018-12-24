@@ -6,7 +6,7 @@ body{
   font-size: 16px;
 }
 .wrapper_b{
-    width: 80%;
+    width: 100%;
 	  max-width: 1200px;
 	  margin: 0 auto;
 }
@@ -23,6 +23,28 @@ body{
     display: flex;
     justify-content: center;
   }
+
+  .icon-close {
+    display: none;
+
+  }
+  .icon-close i{
+    display:none;
+  }
+
+  .second_menu ul {
+  display:none;
+  }
+
+  .second_menu a {
+  display: none;
+  }
+  .mobmenu {
+    display: none;
+  }
+
+
+
 
   .top_header{
     display: flex;
@@ -180,10 +202,10 @@ p{
   display: flex;
 }
 .left_text_box{
-  width: 650px;
+  width: 54.17%;
 }
 .right_text_box{
-  width: 458px;
+  width: 38.17%;
   margin-left: 30px;
   margin-bottom: 60px;
 }
@@ -210,7 +232,7 @@ p{
 
 }
 .content_right_text_block{
-  width: 390px;
+  width: 85.15%;
 }
 .content_right_text_block p{
   margin-top: 15px;
@@ -252,6 +274,7 @@ hr{
 }
 .people_photo{
   position: relative;
+
 }
 .people_photo img{
   width: 100%;
@@ -600,4 +623,233 @@ textarea{
 
 button:hover{
   opacity: 0.5;
+}
+
+
+
+@media (min-width:1025px) and (max-width:1550px) {
+
+  .top_header img {
+
+    margin-left: 3%;
+  }
+
+  .banner_content{
+    padding: 10% 3% 10%;
+    width: 65%;
+    margin: 0 0;
+
+  }
+
+  .banner h3{
+    font-size: 30px;
+  }
+}
+
+
+
+@media (min-width:790px) and (max-width:1024px) {
+  .top_header img {
+    margin-left: 3%;
+  }
+  .banner_content{
+    padding: 6% 3% 2%;
+    width: 65%;
+    margin: 0 0;
+
+  }
+
+  .banner h3{
+    font-size: 28px;
+  }
+
+  .banner p{
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+
+
+  .form-main-button button{
+    font-size: 13px;
+    padding: 13px 20px 13px 16px;
+    margin-right: 10px;
+  }
+
+
+  ul{
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-right: 5px;
+  }
+
+  .ul_menu li{
+    padding: 7px 9px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 12px;
+    border: 2px solid transparent;
+  }
+
+  .ul_menu a{
+    color: #B2BBBA;
+    text-decoration: none;
+  }
+
+
+  ul.ul_menu li:first-child{
+    margin-right: 24px;
+  }
+
+
+
+
+
+}
+
+@media (min-width:501px) and  (max-width:789px) {
+  ul.ul_menu li{
+  display: none;
+  }
+
+  .main_content{
+
+    margin-left: 7%;
+
+  }
+  .icon-close {
+    display: block;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+
+  }
+  .icon-close i{
+    display: block;
+    font-size: 30px;
+  }
+
+  .mobmenu {
+      background-color: #1D2126;
+      color: #FFF;
+      cursor: pointer;
+      width: auto;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      float: right;
+      display: block;
+      font-size: 30px;
+      padding-right: 20px;
+      margin-right: 20px;
+      margin-bottom: 5px;
+      margin-top: 0.6em;
+  }
+
+  .top_header img {
+    margin-left: 2%;
+  }
+
+  .banner_content{
+    padding: 2% 2% 2%;
+    width: 85%;
+    margin: 0 0;
+
+  }
+
+  .banner h3{
+    font-size: 22px;
+  }
+
+  .banner p{
+    padding-top: 18px;
+    padding-bottom: 22px;
+    font-size: 12px;
+  }
+
+
+  .form-main-button button{
+    font-size: 12px;
+    padding: 10px 17px 10px 13px;
+    margin-right: 8px;
+  }
+
+
+
+
+
+
+}
+
+
+@media (max-width:500px) {
+
+  .top_header img {
+    height: 14px;
+    width: 80px;
+    margin-top: 32px;
+    cursor:  pointer;
+  }
+
+  ul.ul_menu li{
+  display: none;
+  height: 20px;
+  }
+
+  .main_content{
+
+    margin-left: 7%;
+
+  }
+
+
+  .mobmenu {
+      background-color: #1D2126;
+      color: #FFF;
+      cursor: pointer;
+      width: auto;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      float: right;
+      display: block;
+      font-size: 26px;
+      padding-right: 20px;
+      margin-right: 20px;
+      margin-top: 0.6em;
+      height: 40px;
+  }
+  .top_header img {
+    margin-left: 2%;
+  }
+
+  .banner_content{
+    padding: 2% 2% 2%;
+    width: 95%;
+
+
+  }
+
+  .banner h3{
+    font-size: 13px;
+  }
+
+  .banner p{
+    padding-top: 10px;
+    padding-bottom: 14px;
+    font-size: 9px;
+  }
+
+
+  .form-main-button button{
+    font-size: 10px;
+    padding: 7px 10px 7px 9px;
+    margin-right: 6px;
+  }
+
+
+
+
 }
