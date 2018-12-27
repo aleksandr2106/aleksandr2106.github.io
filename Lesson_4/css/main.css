@@ -698,14 +698,14 @@ button:hover{
 }
 
 
-@media (min-width:1025px) and (max-width:1200px) {
+@media (min-width:1025px) and (max-width:1199px) {
 
   .top_header img {
     margin-left: 30px;
   }
 
   .banner_content{
-    padding: 6% 3% 8%;
+    padding: 100px 30px 120px;
     width: 65%;
     margin: 0 0;
   }
@@ -715,7 +715,13 @@ button:hover{
   }
 
   .content_first, .content_second, .center_third, .center_fifth, .content_fourth ,.content_sixth{
-    margin-left: 3%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .content_second{
+
+    padding-right: 0px;
   }
 
   .main_headline{
@@ -724,11 +730,23 @@ button:hover{
     padding-bottom: 50px;
   }
 
+.content_right_text_block{
+  padding-left: 15px;
+}
+
+.left_text_box{
+  max-width: 57.28%;
+}
+
+.right_text_box{
+  margin-bottom: 60px;
+}
+
   .photos_box{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 30px;
-    grid-column-gap: 20%;
+    grid-column-gap: 30px;
     padding-right: 30px;
   }
 
@@ -743,10 +761,6 @@ button:hover{
   .flex{
     padding-left: 3%;
     padding-right: 30px;
-  }
-
-  .block input{
-    width: 12em;
   }
 
   .center_fifth, .content_sixth{
@@ -770,12 +784,12 @@ button:hover{
 @media (min-width:793px) and (max-width:1024px) {
 
   .top_header img {
-    margin-left: 3%;
+    margin-left: 30px;
   }
 
   .banner_content{
-    padding: 6% 3% 30px;
-    width: 65%;
+    padding: 80px 30px 80px;
+    width: 70%;
     margin: 0 0;
   }
 
@@ -820,7 +834,7 @@ button:hover{
   }
 
   .content_first, .content_second, .center_third, .center_fifth, .content_fourth ,.content_sixth{
-    margin-left: 3%;
+    margin-left: 30px;
   }
 
   .main_headline{
@@ -829,11 +843,32 @@ button:hover{
     padding-bottom: 50px;
   }
 
+  .main_headline h3{
+    font-size: 26px;
+  }
+
+  .content_fifth .main_headline h3 {
+    font-size: 26px;
+}
+
+  .content_right_text_block{
+    padding-left: 15px;
+  }
+
+  .left_text_box{
+    max-width: 57.28%;
+  }
+
+  .right_text_box{
+    margin-bottom: 60px;
+    padding-right: 30px;
+  }
+
   .photos_box{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 30px;
-    grid-column-gap: 20%;
+    grid-column-gap: 30px;
     padding-right: 30px;
   }
 
@@ -846,12 +881,8 @@ button:hover{
   }
 
   .flex{
-    padding-left: 3%;
+    padding-left: 30px;
     padding-right: 30px;
-  }
-
-  .block input{
-    width: 12em;
   }
 
   .center_fifth, .content_sixth{
@@ -953,8 +984,8 @@ button:hover{
   .content i{
     font-size: 32px;
   }
-  .con
-  tent h5{
+
+  .content h5{
     font-size: 16px;
   }
 
@@ -977,7 +1008,7 @@ button:hover{
   }
 
   .grid_6{
-    padding-bottom: 2em;
+    padding-bottom: 30px;
   }
 
   .text_to_sixth_block h5{
@@ -1018,9 +1049,7 @@ button:hover{
   display: none;
   }
 
-  .main_content{
-    margin-left: 7%;
-  }
+
 
   .icon-close {
     display: block;
@@ -1053,11 +1082,11 @@ button:hover{
   }
 
   .top_header img {
-    margin-left: 2%;
+    margin-left: 20px;
   }
 
   .banner_content{
-    padding: 2% 2% 20px;
+    padding: 40px 20px 40px;
     width: 85%;
     margin: 0 0;
   }
@@ -1096,20 +1125,20 @@ button:hover{
 }
 
 .square_block{
-  margin-right: 3%;
-  margin-left: 3%;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .square_block:first-child{
-  margin-left: 0%;
+  margin-left: 0px;
 }
 
   .content_first{
-    margin-right: 3%;
+    margin-right: 20px;
   }
 
   .content_first, .content_second, .center_third, .center_fifth, .content_fourth ,.content_sixth{
-    margin-left: 3%;
+    margin-left: 20px;
   }
 
   .main_headline{
@@ -1122,8 +1151,8 @@ button:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
-    grid-column-gap: 20%;
-    padding-right: 30px;
+    grid-column-gap: 30px;
+    padding-right: 20px;
   }
 
   .content_third{
@@ -1155,7 +1184,7 @@ button:hover{
     display: none;
   }
 
-  h3{
+  .main_headline h3{
     font-size: 22px;
   }
 
@@ -1257,6 +1286,15 @@ button:hover{
     margin-top: 20px;
   }
 
+  .content_fifth .main_headline {
+      padding-top: 50px;
+      padding-bottom: 45px;
+  }
+
+  .content_fifth .main_headline h3 {
+      font-size: 22px;
+  }
+
   .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1285,7 +1323,7 @@ button:hover{
 
   .grid_6{
     display: block;
-    padding-bottom: 2em;
+    padding-bottom: 40px;
   }
 
   .text_to_sixth_block{
@@ -1308,13 +1346,10 @@ button:hover{
     border: 2px solid #EAEEF1;
   }
 
-  .block input{
-    width: 12.5em;
-  }
 
   .flex{
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .flex p{
@@ -1325,7 +1360,7 @@ button:hover{
   .icons_footer a{
     font-size: 14px;
     color: #FFF;
-    margin-right: 1em;
+    margin-right: 10px;
   }
 }
 
@@ -1335,10 +1370,11 @@ button:hover{
   ul.ul_menu li{
   display: none;
   }
-
-  .main_content{
-    margin-left: 7%;
+  .content_fifth .main_headline {
+      padding-top: 45px;
+      padding-bottom: 30px;
   }
+
 
   .icon-close {
     display: block;
@@ -1371,13 +1407,18 @@ button:hover{
   }
 
   .top_header img {
-    margin-left: 2%;
+    margin-left: 15px;
   }
 
   .banner_content{
-    padding: 2% 2% 10px;
+    padding: 30px 15px 30px;
     width: 100%;
     margin: 0 0;
+  }
+
+  .main_headline h3{
+    font-size: 20px;
+    padding-top: 1px;
   }
 
   .banner h3{
@@ -1406,7 +1447,7 @@ button:hover{
   }
 
 .right_text_box{
-  margin-top: 5%;
+  margin-top: 30px;;
   margin-left: 0px;
   width: 100%;
   display: grid;
@@ -1414,20 +1455,17 @@ button:hover{
 }
 
 .square_block{
-  margin-right: 3%;
-  margin-left: 3%;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .square_block:first-child{
-  margin-left: 0%;
+  margin-left: 0px;
 }
 
-  .content_first{
-    margin-right: 3%;
-  }
-
   .content_first, .content_second, .center_third, .center_fifth, .content_fourth ,.content_sixth{
-    margin-left: 3%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .main_headline{
@@ -1445,12 +1483,8 @@ button:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
-    grid-column-gap: 20%;
-    padding-right: 30px;
-  }
-
-  .content_third{
-    padding-right: 3%;
+    grid-column-gap: 20px;;
+    padding-right: 15px;
   }
 
 .content_second{
@@ -1465,12 +1499,8 @@ button:hover{
 }
 
   .flex{
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-
-  .center_fifth, .content_sixth{
-    margin-right: 3%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .lovely_photo_hover{
@@ -1551,10 +1581,6 @@ button:hover{
       padding-top: 30px;
   }
 
-  .content_fourth{
-    margin-right: 3%;
-  }
-
   .content_third form{
     margin-bottom: 50px;
   }
@@ -1611,7 +1637,7 @@ button:hover{
 
   .grid_6{
     display: block;
-    padding-bottom: 2em;
+    padding-bottom: 20px;
   }
 
   .text_to_sixth_block{
@@ -1640,18 +1666,13 @@ button:hover{
     padding: 30px;
   }
 
-  .block input{
-    height: 2.5em;
-    width: 10em;
-  }
-
   .block p{
     padding-top: 10px;
   }
 
   .flex{
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .flex p{
@@ -1662,10 +1683,14 @@ button:hover{
   .icons_footer a{
     font-size: 14px;
     color: #FFF;
-    margin-right: 1em;
+    margin-right: 15px;
+  }
+
+  .content_fifth .main_headline h3 {
+      font-size: 20px;
   }
 
   .icons_footer {
-  margin-left: 1em;
+  margin-left: 15px;
   }
 }
