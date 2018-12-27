@@ -412,6 +412,10 @@ hr{
   position: relative;
 }
 
+.lovely_photo:hover img{
+  opacity: 0.35;
+}
+
 .photos_box_2{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
