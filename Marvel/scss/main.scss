@@ -1,5 +1,7 @@
 $font-article: Montserrat, sans-serif;
 $font-basic: Muli, sans-serif;
+$font-lato: Lato, sans-serif;
+$font-poppins: Poppins, sans-serif;
 $max-width: 1140px;
 $color_for_h1: #444444;
 $color_for_main_text: #878787;
@@ -10,7 +12,9 @@ $color_for_black: #212121;
 $color_for_dark_grey: #757575;
 
       /*  General Style   */
-*{box-sizing: border-box;}
+*{box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 h2{
   color: $color_for_grey_h2;
@@ -23,7 +27,7 @@ h2{
 h3{
   font: 44px $font-article;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 700;
   color: #FFF;
   padding-top: 265px;
 }
@@ -32,8 +36,7 @@ h4{
   color: $color_for_h1;
   font: 28px $font-basic;
   text-transform: uppercase;
-  font-weight: bolder;
-  margin-top: -50px;
+  margin-top: -52px;
   margin-bottom: 20px
 }
 
@@ -62,16 +65,17 @@ p{
 }
 
 .top_header h1{
-  padding-top: 500px;
+  padding-top: 580px;
   font: 60px $font-article;
   text-transform: uppercase;
-  font-weight: 950;
+  padding-left: 50px;
+  font-weight: 800;
   color: $color_for_h1;
 }
 
 .top_header p{
   padding-top: 85px;
-  font: 13px $font-basic;
+  font: 13px $font-lato;
   color: $color_for_main_text;
   max-width: 765px;
 }
@@ -82,18 +86,29 @@ p{
 
 .form-main-button button{
   font: 16px $font-article;
+  font-weight: 600;
   padding: 20px 30px;
   color: $color_for_h1;
   border: 1px solid $color_for_h1;
   margin-top: 20px;
-  background-color: #FCFCFC;
+  background-color: #FFFFFF;
+}
+
+.form-main-button button:hover{
+  background-color: $color_for_yellow;
 }
 
 .header_menu_background{
     background-color: $color_for_menu_block;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header_menu{
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   max-width: $max-width;
@@ -126,7 +141,7 @@ p{
   text-decoration: none;
 }
 
-ul.ul_menu li:first-child a{
+.ul_menu a:hover{
   color: $color_for_yellow;
 }
 
@@ -146,10 +161,21 @@ ul.ul_menu li:last-child{
   text-align: center;
 }
 
+.page_about h2{
+  font-weight: 900;
+}
+
+.page_about h4{
+  font-weight: 900;
+}
+
 .page_about p{
+  font: 16px $font-lato;
+  font-weight: 400;
   max-width: 945px;
   margin: 0 auto;
   padding-bottom: 70px;
+  color: $color_for_dark_grey;
 }
 
 .page_about .form-main-button button{
@@ -157,19 +183,22 @@ ul.ul_menu li:last-child{
   padding: 20px 0px;
   width: 220px;
   border: 1px solid $color_for_h1;
-  font-weight: bolder;
-}
-
-.page_about .form-main-button button:first-child{
-  margin-right: 15px;
+  font-weight: 500;
+  text-transform: none;
   color: $color_for_yellow;
   background-color: #000;
+  margin-right: 15px;
 }
 
 .page_about .form-main-button button:last-child{
-  margin-left: 15px;
+  margin-right: 0px;
+}
+
+.page_about .form-main-button button:hover{
   color: #000;
   background-color: $color_for_yellow;
+  border: 1px solid $color_for_yellow;
+
 }
 
 .first_content_text_block{
@@ -186,26 +215,33 @@ ul.ul_menu li:last-child{
   font-size: 100px;
 }
 
-
-.first_c_text_block:nth-child(odd){
+.first_c_text_block{
   background-color: $color_for_black;
   color: #FFF;
   text-align: center;
-
 }
 
-.first_c_text_block:nth-child(odd) i{
+.first_c_text_block i{
     padding-top: 90px;
     padding-bottom: 55px;
     color: $color_for_yellow;
 }
 
-.first_c_text_block:nth-child(odd) h6{
+.first_c_text_block h6{
     font: 24px $font-article;
     padding-bottom: 130px;
+    font-weight: 700;
 }
 
-.first_c_text_block:nth-child(even){
+.first_c_text_block p{
+  display: none;
+}
+
+.first_c_text_block:hover p{
+  display: block;
+}
+
+.first_c_text_block:hover{
   background: url(../img/hover-about.png);
   background-size:cover;
   background-repeat: no-repeat;
@@ -213,14 +249,16 @@ ul.ul_menu li:last-child{
   text-align: center;
 }
 
-.first_c_text_block:nth-child(even) i{
+.first_c_text_block:hover i{
     padding-top: 50px;
     padding-bottom: 45px;
+    color: #FFF;
 }
 
-.first_c_text_block:nth-child(even) h6{
+.first_c_text_block:hover h6{
     font: 24px $font-article;
     padding-bottom: 33px;
+    font-weight: 700;
 }
 
 .first_block_statistics{
@@ -232,7 +270,7 @@ ul.ul_menu li:last-child{
   font: 30px $font-article;
   color: $color_for_h1;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 120px;
 }
@@ -254,11 +292,11 @@ ul.ul_menu li:last-child{
   font: 36px $font-article;
   color: $color_for_h1;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .first_statistics p:last-child{
-  font: 13px $font-article;
+  font: 12px $font-article;
   color: $color_for_main_text;
   padding-bottom: 145px;
 }
@@ -279,10 +317,16 @@ ul.ul_menu li:last-child{
 .responsive_page h2{
   padding-top: 175px;
   margin-left: -8px;
+  color: $color_for_yellow;
+}
+
+.responsive_page h4{
+font-weight: 800;
 }
 
 .responsive_page p{
   max-width: 555px;
+  color: $color_for_dark_grey;
 }
 
 .ul_second_block_list{
@@ -306,6 +350,11 @@ ul.ul_menu li:last-child{
   border: 0px solid $color_for_yellow;
   font-weight: bolder;
   text-transform: uppercase;
+}
+
+.responsive_page .form-block-button button:hover{
+  color: $color_for_yellow;
+  background-color: #000;
 }
 
 .responsive_page .form-block-button{
@@ -338,12 +387,10 @@ ul.ul_menu li:last-child{
   font: 18px $font-article;
   padding: 20px 0px;
   width: 225px;
-  font-weight: bolder;
+  font-weight: 500;
   margin-top: 0px;
   margin-bottom: 125px;
-}
-
-.marvel_who_we_are .form-main-button button:first-child{
+  text-transform: none;
   margin-right: 15px;
   color: #FFF;
   background-color: inherit;
@@ -351,24 +398,13 @@ ul.ul_menu li:last-child{
 }
 
 .marvel_who_we_are .form-main-button button:last-child{
-  margin-left: 15px;
+  margin-right: 0px;
+}
+
+.marvel_who_we_are .form-main-button button:hover{
   color: #000;
   background-color: $color_for_yellow;
   border: 1px solid $color_for_h1;
-}
-
-.marvel_who_we_are .form-main-button button:first-child:hover{
-  margin-right: 15px;
-  color: #000;
-  background-color: $color_for_yellow;
-  border: 1px solid $color_for_h1;
-}
-
-.marvel_who_we_are .form-main-button button:last-child:hover{
-  margin-left: 15px;
-  color: #FFF;
-  background-color: inherit;
-  border: 1px solid #FFF;
 }
 
 
@@ -380,9 +416,6 @@ ul.ul_menu li:last-child{
   text-align: center;
   padding-bottom: 170px;
 }
-
-
-
 
 .fourth_content_blocks{
   padding-top: 50px;
@@ -409,6 +442,10 @@ ul.ul_menu li:last-child{
   padding-bottom: 15px;
 }
 
+.fourth_similar_block_text p{
+  color: $color_for_dark_grey;
+}
+
 .fourth_similar_block_circle{
   max-width: 65px;
   max-height: 65px;
@@ -420,9 +457,19 @@ ul.ul_menu li:last-child{
   color: $color_for_black;
 }
 
+.fourth_similar_block:nth-child(2n+1):hover .fourth_similar_block_circle{
+  background-color: $color_for_black;
+  color: $color_for_yellow;
+}
+
 .fourth_similar_block:nth-child(2n) .fourth_similar_block_circle{
   background-color: $color_for_black;
   color: $color_for_yellow;
+}
+
+.fourth_similar_block:nth-child(2n):hover .fourth_similar_block_circle{
+  background-color: $color_for_yellow;
+  color: $color_for_black;
 }
 
 .fourth_similar_block_circle i{
@@ -452,8 +499,15 @@ ul.ul_menu li:last-child{
   background-color: inherit;
   border: 1px solid #000;
   width: 95px;
+  font-weight: 700;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.work_page_buttons .form-block-button button:hover{
+  color: $color_for_yellow;
+  background-color: #000;
+  border: 1px solid #000;
 }
 
 .work_page_buttons .form-block-button button:last-child{
@@ -468,11 +522,100 @@ ul.ul_menu li:last-child{
   padding: 11px;
 }
 
-.fouth_photos_block{
+.work_page_buttons .form-block-button i:hover{
+  color: $color_for_yellow;
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+.fifth_photos_block{
   background-color: #FFF;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0px;
+}
+
+.container_to_photos_block{
+  position: relative;
+  z-index: 1;
+}
+
+.text_hover_to_photos_block{
+  position: relative;
+  z-index: 2;
+}
+
+
+.text_hover_to_photos_block .icons_to_photo_block{
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  max-width: 25%;
+  border-radius: 25px;
+  background-color: $color_for_grey_h2;
+  margin-top: -95px;
+  z-index: 5;
+}
+
+.icon_circle{
+  height: 25px;
+  width: 25px;
+  border-radius: 13px;
+  border: 1px solid #000;
+  background-color: #FFF;
+  margin-right: 11px;
+  z-index: 5;
+}
+
+.container_to_photos_block:hover .fifth_photos_block{
+  background-color: $color_for_grey_h2;
+}
+
+.icon_circle i{
+  color: #000;
+  font-size: 13px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.icon_circle:hover {
+  border: 1px solid $color_for_yellow;
+  background-color: $color_for_yellow;
+}
+
+.text_to_photo_block{
+  display: flex;
+  background-color: $color_for_grey_h2;
+  z-index: 4;
+  margin-top: -27px;
+}
+
+.text_to_photo_block h6{
+  font: 14px $font-article;
+  font-weight: bolder;
+  text-transform:uppercase;
+  color: $color_for_h1;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-top: 25px;
+}
+
+.text_to_photo_block p{
+  padding-top: 30px;
+  color: $color_for_dark_grey;
+  font: 9px $font-basic;
+  text-transform: uppercase;
+}
+
+.text_hover_to_photos_block{
+  display: none;
+}
+
+.container_to_photos_block:hover .text_hover_to_photos_block{
+  display: block;
 }
 
 /*   Sixth content   */
@@ -486,13 +629,14 @@ ul.ul_menu li:last-child{
 .six_content{
   max-width: $max-width;
   margin: 0 auto;
-  padding-bottom: 65px;
 }
 
 .service_page{
   max-width: 555px;
   margin-left: auto;
   margin-right: 0;
+  padding-bottom: 65px;
+  background-color: #FFF;
 }
 
 .service_page h2{
@@ -510,15 +654,19 @@ ul.ul_menu li:last-child{
   text-align: center;
 }
 
+.service_page_content_block:hover{
+  background-color: $color_for_grey_h2;
+}
+
 .service_page_content_block i{
   padding-top: 45px;
   font-size: 32px;
-  color: $color_for_dark_grey;
+  color: $color_for_h1;
 }
 
 .service_page_content_block h6{
   font: 18px $font-article;
-  color: $color_for_dark_grey;
+  color: $color_for_h1;
   font-weight: bolder;
   text-transform: uppercase;
   padding-top: 35px;
@@ -528,6 +676,7 @@ ul.ul_menu li:last-child{
   padding-top: 35px;
   padding-bottom: 60px;
   text-align: center;
+  color: $color_for_dark_grey;
 }
 
 /*  Seven Content  */
@@ -555,6 +704,7 @@ ul.ul_menu li:last-child{
   grid-column-gap: 30px;
 }
 
+
 .price_block:nth-child(1) .top_content_price_block{
   background: url(../img/services-first.png);
   background-size:cover;
@@ -566,9 +716,10 @@ ul.ul_menu li:last-child{
 }
 
 .grey_top_price_block p{
-  font-size: 15px;
+  font: 15px $font-basic;
   padding-top: 10px;
   padding-bottom: 12px;
+  color: $color_for_h1;
 }
 
 .price_block:nth-child(2){
@@ -594,8 +745,8 @@ ul.ul_menu li:last-child{
 .top_content_price_block h6{
   padding-top: 25px;
   padding-bottom: 25px;
-  font-size: 18px;
-  font-family: "Poppins";
+  font: 18px $font-poppins;
+  font-weight: 500;
 }
 
 .top_content_price_block p:last-child{
@@ -608,15 +759,19 @@ ul.ul_menu li:last-child{
 }
 
 .price_per_month p:nth-child(1){
-  padding-top: 10px;
+  padding-top: 8px;
+  font: 26px $font-poppins;
 }
 
 .price_per_month p:nth-child(2){
-  font-size: 48px;
+  font: 48px $font-poppins;
+  font-weight: 700;
 }
 
 .price_per_month p:nth-child(3){
-  padding-top: 30px;
+  padding-top: 35px;
+  padding-left: 5px;
+  font: 14px $font-poppins;
 }
 
 .main_content_price_block{
@@ -638,6 +793,8 @@ padding-bottom: 105px;
 }
 
 .form-price_bottom-button button{
+  font: 14px $font-article;
+  font-weight: 600;
   color: $color_for_h1;
   background-color: #FFF;
   padding-top: 16px;
@@ -646,63 +803,111 @@ padding-bottom: 105px;
   border: 0px;
 }
 
+.form-price_bottom-button button:hover{
+  color: $color_for_yellow;
+  background-color: #000;
+}
+
 
 /*   Eigth Content      */
 
-.expert_page{
-  max-width: $max-width;
+.expert_page {
+  max-width: 1140px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 450px;
 }
 
-.expert_page h2{
+.expert_page h2 {
   padding-top: 250px;
 }
 
-.expert_content_blocks{
+.expert_content_blocks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
   padding-top: 110px;
 }
 
-.expert_block:nth-child(2){
-  background-color: $color_for_yellow;
+.expert_block:hover {
+  background-color: #FFE400;
 }
 
-.expert_block:nth-child(2) h5{
+.expert_block:hover img {
+  display: none;
+}
+
+.expert_block:hover .text_about_expert {
+  background-color: #FFE400;
+}
+
+.expert_block:hover h5 {
   padding-top: 90px;
   font: 24px $font-article;
   font-weight: bolder;
   text-transform: uppercase;
+  color: #000;
 }
 
-.expert_block:nth-child(2) h6{
+.expert_block:hover h6 {
   padding-top: 15px;
   font: 16px $font-article;
   font-weight: bolder;
   text-transform: uppercase;
+  color: #000;
 }
 
-.expert_block:nth-child(2) p{
+.social_icons a:hover i{
+  color: #000;
+}
+
+.expert_block:hover p {
+  font: 12px $font-basic;
   padding-top: 70px;
   padding-left: 40px;
   padding-right: 40px;
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 120px;
+  color: #000;
 }
 
-.expert_block:nth-child(2) hr{
+.expert_block:hover hr {
   border-top: 1px dashed #6B6000;
   width: 80%;
   margin: 0 auto;
 }
 
+.expert_block:hover hr:first-of-type {
+  display: none;
+}
+
+.expert_block .social_icons{
+  display: none;
+}
+
+.expert_block:hover .social_icons{
+  display: block;
+}
+
+.expert_block p{
+  display: none;
+}
+
+.expert_block:hover p{
+  display: block;
+}
+
+.expert_block hr:last-of-type{
+  display: none;
+}
+
+.expert_block:hover hr:last-of-type{
+  display: block;
+}
 
 .expert_block .social_icons i{
   color: #6B6000;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .expert_block .social_icons{
@@ -720,11 +925,20 @@ padding-bottom: 105px;
   background-color: $color_for_grey_h2;
 }
 
-.text_about_expert h6{
+.expert_block h5{
   padding-top: 20px;
   padding-bottom: 20px;
   font: 16px $font-article;
-  color: $color_for_dark_grey;
+  color: $color_for_h1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text_about_expert h6{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font: 11px $font-article;
+  color: $color_for_h1;
   font-weight: bolder;
   text-transform: uppercase;
 }
@@ -739,7 +953,7 @@ padding-bottom: 105px;
   padding-top: 20px;
   padding-bottom: 20px;
   font: 11px $font-article;
-  color: $color_for_dark_grey;
+  color: $color_for_h1;
   font-weight: bolder;
   text-transform: uppercase;
 }
@@ -760,7 +974,7 @@ padding-bottom: 105px;
 
 .impressed_by_our_work h3{
   padding-top: 110px;
-  font: 30px $font-basic;
+  font: 30px $font-lato;
   color: #FFF;
   font-weight: bolder;
   text-transform: uppercase;
@@ -776,14 +990,20 @@ padding-bottom: 105px;
 .form-main-button button{
   text-transform: uppercase;
   color: #000;
+  font: 13px $font-lato;
+  font-weight: 700;
   margin-bottom: 105px;
+
  /*  width: 170px;*/
 }
-
+/*
 .form-main-button button:first-child{
   background-color: $color_for_yellow;
   margin-right: 15px;
 }
+*/
+
+
 
 /*  Ten Content    */
 
@@ -797,6 +1017,43 @@ padding-bottom: 105px;
   padding-top: 120px;
 }
 
+.left_hover_photo-news, .right_hover_photo-news{
+  width: 25px;
+  height: 25px;
+  border-radius: 13px;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.left_hover_photo-news:hover, .right_hover_photo-news:hover{
+  border: 1px solid #000;
+  color: #FFF;
+  background-color: #000;
+}
+
+.hover_photo-news{
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+
+.similar_news_photo_block img{
+  position: relative;
+  z-index: 1;
+}
+
+.similar_news_photo_block:hover .hover_photo-news{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.similar_news_photo_block:hover .grey_block_under_news_photo{
+  margin-top: 2px;
+}
+
 .news_photo_block{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -804,14 +1061,45 @@ padding-bottom: 105px;
   padding-top: 100px;
 }
 
+.hover_news_video{
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+
+.similar_news_photo_block:hover .hover_news_video{
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #FFF;
+  margin: 0 auto;
+  margin-top: -120px;
+  margin-bottom: 47px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #000;
+}
+
+.similar_news_photo_block .hover_news_video:hover{
+  color: $color_for_yellow;
+}
+
+.hover_news_video p{
+  font-size: 28px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
 .grey_block_under_news_photo p{
-  font: 13px $font-article;
+  font: 12px $font-article;
   text-transform: uppercase;
   font-weight: bolder;
   padding: 10px 25px;
 }
 
 .grey_block_under_news_photo {
+  position: relative;
   background-color: #F9F9F9;
   color: $color_for_h1;
   border-radius: 20px;
@@ -819,6 +1107,7 @@ padding-bottom: 105px;
   margin: 0 auto;
   margin-top: -23px;
   margin-bottom: 20px;
+  z-index: 2;
 }
 
 .similar_news_photo_block h6{
@@ -838,7 +1127,6 @@ padding-bottom: 105px;
 .text_to_ten_block p:last-child{
   padding-top: 30px;
   font: 16px $font-basic;
-  font-weight: bolder;
   color: $color_for_dark_grey;
 }
 
@@ -856,6 +1144,12 @@ padding-bottom: 105px;
   padding: 10px 20px;
   border-radius: 15px;
   border: 2px solid  #F9F9F9;
+}
+
+.link_ten_block a:hover{
+  color: $color_for_h1;
+  background-color: $color_for_yellow;
+  border: 2px solid   $color_for_h1;
 }
 
 
@@ -891,6 +1185,7 @@ padding-bottom: 105px;
     width: 100%;
     height: 60px;
     padding-left: 20px;
+    border: 1px solid $color_for_grey_h2;
 }
 
 textarea{
@@ -902,6 +1197,7 @@ textarea{
   height: 510px;
   padding-bottom: 25px;
   resize: none;
+  border: 1px solid $color_for_grey_h2;
 }
 
 .message .form-main-button{
@@ -912,7 +1208,13 @@ textarea{
   width: 145px;
   font: 17px $font-article;
   font-weight: bolder;
-    margin-bottom: 135px;
+  margin-bottom: 135px;
+  background-color: $color_for_yellow;
+}
+
+.message .form-main-button button:hover{
+  background-color: $color_for_h1;
+  color: $color_for_yellow;
 }
 
 
@@ -962,6 +1264,10 @@ textarea{
   font-size: 20px;
 }
 
+.footer_social_icons i:hover{
+  color: $color_for_yellow;
+}
+
 .footer_social_icons a{
   margin-right: 35px;
 }
@@ -979,11 +1285,19 @@ textarea{
   margin-top: 60px;
 }
 
+.footer_circle:hover{
+  border: 1px solid $color_for_yellow;
+}
+
 .footer_circle i{
   font-size: 22px;
   padding-left: 0px;
   padding-top: 12px;
   color: #FFF;
+}
+
+.footer_circle:hover i{
+  color: $color_for_yellow;
 }
 
 .flang_content_footer p{
@@ -992,10 +1306,6 @@ textarea{
   padding-top: 15px;
   padding-bottom: 75px;
 }
-
-
-
-
 
 .bottom_footer_bacground{
   background-color: #2E2D2D;
@@ -1012,4 +1322,119 @@ textarea{
 
 .bottom_footer p{
   font: 12px $font-basic;
+}
+
+@media (min-width:1025px) and (max-width:1199px) {
+  /* Header */
+
+
+.top_header h1{
+  padding-top: 250px;
+  font: 50px $font-article;
+  font-weight: 800;
+}
+
+.top_header form{
+  padding-bottom: 150px;
+}
+
+.top_header p{
+  padding-left: 50px;
+}
+
+.top_header form{
+  padding-left: 50px;
+}
+
+.header_menu img{
+  padding-left: 20px;
+}
+
+.header_menu ul{
+  margin-right: 20px;
+}
+
+.ul_menu li{
+  padding-right: 50px;
+}
+
+/* First */
+
+.first_content_text_block{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Second  */
+
+.responsive_page{
+  padding-left: 20px;
+}
+
+/* Third */
+.marvel_who_we_are h3{
+  padding-top: 180px;
+}
+
+/* Seven  */
+
+.seven_price_blocks{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+
+.form-price_bottom-button button{
+  width: 100%;
+}
+
+/* Eight Content*/
+.expert_page h2 {
+  padding-top: 150px;
+}
+
+.expert_page{
+  padding-bottom: 250px;
+}
+
+.expert_content_blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.expert_content_blocks:first-child {
+  padding-top: 110px;
+}
+
+.expert_block:hover h5 {
+  padding-top: 60px;
+}
+
+.expert_block:hover p {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+/* Ten   */
+.news_photo_block{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+}
+
+
+/* Eleven  */
+
+.form_bottom{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 }
