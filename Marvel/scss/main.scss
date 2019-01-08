@@ -2164,6 +2164,13 @@ font: 15px $font-basic;
     padding: 10px;
   }
 
+  .fifth_photos_block{
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+  }
+
   /*   Sixth content   */
 
   .sixth_background{
