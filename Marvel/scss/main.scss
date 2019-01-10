@@ -21,7 +21,7 @@ h2{
   font: 91px $font-article;
   text-transform: uppercase;
   font-weight: bolder;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 h3{
@@ -29,7 +29,7 @@ h3{
   text-transform: uppercase;
   font-weight: 700;
   color: #FFF;
-  padding-top: 265px;
+  padding-top: 255px;
 }
 
 h4{
@@ -64,32 +64,40 @@ p{
 }
 
 .top_header h1{
-  padding-top: 580px;
+  padding-top: 490px;
   font: 60px $font-article;
   text-transform: uppercase;
-  padding-left: 50px;
+  padding-left: 0px;
   font-weight: 800;
   color: $color_for_h1;
 }
 
 .top_header p{
-  padding-top: 85px;
+  padding-top: 65px;
   font: 13px $font-lato;
   color: $color_for_main_text;
   max-width: 765px;
+  line-height: 1.8;
 }
 
 .top_header form{
-  padding-bottom: 310px;
+  padding-bottom: 229px;
 }
+
+.top_header .form-main-button button{
+  font: 16px $font-article;
+  font-weight: 700;
+  padding: 19px 33px 15px 33px;
+}
+
 
 .form-main-button button{
   font: 16px $font-article;
-  font-weight: 600;
-  padding: 20px 30px;
+  font-weight: 900;
+  padding: 19px 33px;
   color: $color_for_h1;
   border: 1px solid $color_for_h1;
-  margin-top: 20px;
+  margin-top: 18px;
   background-color: #FFFFFF;
 }
 
@@ -117,21 +125,22 @@ p{
 .header_menu img{
   width: 186px;
   height: 33px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 24px;
+  margin-bottom: 22px;
+  margin-left: 4px;
 }
 
 .header_menu ul{
   display: flex;
   justify-content: space-between;
-  margin-right: 50px;
+  margin-right: 45px;
 }
 
 .ul_menu li{
   font: 14px $font-article;
   cursor: pointer;
   padding-right: 65px;
-  margin-top: 28px;
+  margin-top: 30px;
   margin-bottom: 28px;
 }
 
@@ -173,20 +182,23 @@ ul.ul_menu li:last-child{
   font-weight: 400;
   max-width: 945px;
   margin: 0 auto;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   color: $color_for_dark_grey;
+  line-height: 1.8;
 }
 
 .page_about .form-main-button button{
   font: 18px $font-article;
-  padding: 20px 0px;
-  width: 220px;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  min-width: 220px;
   border: 1px solid $color_for_h1;
   font-weight: 500;
   text-transform: none;
   color: $color_for_yellow;
   background-color: #000;
   margin-right: 15px;
+  margin-bottom: 82px;
 }
 
 .page_about .form-main-button button:last-child{
@@ -200,8 +212,8 @@ ul.ul_menu li:last-child{
 }
 
 .first_content_text_block{
-  padding-top: 85px;
-  padding-bottom: 185px;
+  padding-top: 0px;
+  padding-bottom: 175px;
   max-width: $max-width;
   margin: 0 auto;
   display: grid;
@@ -227,7 +239,7 @@ ul.ul_menu li:last-child{
 
 .first_c_text_block h6{
     font: 24px $font-article;
-    padding-bottom: 130px;
+    padding-bottom: 125px;
     font-weight: 700;
 }
 
@@ -270,7 +282,7 @@ ul.ul_menu li:last-child{
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: 108px;
 }
 
 .container_to_first_statistics{
@@ -287,7 +299,7 @@ ul.ul_menu li:last-child{
 }
 
 .first_statistics p:first-child{
-  font: 36px $font-article;
+  font: 42px $font-article;
   color: $color_for_h1;
   text-transform: uppercase;
   font-weight: 700;
@@ -296,7 +308,7 @@ ul.ul_menu li:last-child{
 .first_statistics p:last-child{
   font: 12px $font-article;
   color: $color_for_main_text;
-  padding-bottom: 145px;
+  padding-bottom: 148px;
 }
 
       /* Second Block   */
@@ -313,27 +325,31 @@ ul.ul_menu li:last-child{
 }
 
 .responsive_page h2{
-  padding-top: 175px;
+  padding-top: 155px;
   margin-left: -8px;
   color: $color_for_yellow;
+  font-size: 70px;
 }
 
 .responsive_page h4{
 font-weight: 800;
+margin-top: -46px;
 }
 
 .responsive_page p{
   max-width: 555px;
   color: $color_for_dark_grey;
+  padding-top: 25px;
+  line-height: 1.8;
 }
 
 .ul_second_block_list{
-  margin-top: 50px;
+  margin-top: 28px;
   color: $color_for_dark_grey;
 }
 
 .ul_second_block_list li{
-  padding-top: 18px;
+  padding-top: 17.5px;
 }
 
 .ul_second_block_list li:last-child{
@@ -344,7 +360,7 @@ font-weight: 800;
   font: 13px $font-article;
   color: #000;
   background-color: $color_for_yellow;
-  padding: 16px 25px;
+  padding: 13px 26px;
   border: 0px solid $color_for_yellow;
   font-weight: bolder;
   text-transform: uppercase;
@@ -356,7 +372,7 @@ font-weight: 800;
 }
 
 .responsive_page .form-block-button{
-  padding-bottom: 115px;
+  padding-bottom: 116px;
 }
 
     /* Third Block   */
@@ -377,17 +393,19 @@ font-weight: 800;
   color: #F3F3F3;
   max-width: 750px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 70px;
+  padding-top: 25px;
+  line-height: 1.8;
+  padding-bottom: 63px;
 }
 
 .marvel_who_we_are .form-main-button button{
   font: 18px $font-article;
   padding: 20px 0px;
+  padding-bottom: 19px;
   width: 225px;
   font-weight: 500;
   margin-top: 0px;
-  margin-bottom: 125px;
+  margin-bottom: 136px;
   text-transform: none;
   margin-right: 15px;
   color: #FFF;
@@ -411,15 +429,20 @@ font-weight: 800;
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 170px;
+  padding-bottom: 165px;
 }
 
+.features_page h2{
+  padding-top: 105px;
+}
+
+
 .fourth_content_blocks{
-  padding-top: 50px;
+  padding-top: 110px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
-  grid-row-gap: 50px;
+  grid-row-gap: 65px;
   text-align: left;
 }
 
@@ -441,6 +464,7 @@ font-weight: 800;
 
 .fourth_similar_block_text p{
   color: $color_for_dark_grey;
+  line-height: 1.8;
 }
 
 .fourth_similar_block_circle{
@@ -488,6 +512,16 @@ font-weight: 800;
 
 .work_page h2{
   color: #E8D100;
+  padding-top: 85px;
+}
+
+.work_page h4{
+  font-weight: 800;
+  color: #000;
+}
+
+.work_page_buttons{
+  padding-top: 40px;
 }
 
 .work_page_buttons .form-block-button button{
@@ -495,10 +529,13 @@ font-weight: 800;
   color: #000;
   background-color: inherit;
   border: 1px solid #000;
-  width: 95px;
+  margin-right: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-weight: 700;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
 }
 
 .work_page_buttons .form-block-button button:hover{
@@ -508,7 +545,7 @@ font-weight: 800;
 }
 
 .work_page_buttons .form-block-button button:last-child{
-  width: 105px;
+  margin-right: 0px;
 }
 
 .work_page_buttons .form-block-button i{
@@ -516,7 +553,8 @@ font-weight: 800;
   color: #fff;
   background-color: #000;
   border: 1px solid #000;
-  padding: 11px;
+  padding: 10px;
+  margin-right: 5px;
 }
 
 .work_page_buttons .form-block-button i:hover{
@@ -636,11 +674,11 @@ font-weight: 800;
 }
 
 .service_page h2{
-  padding-top: 140px;
+  padding-top: 135px;
 }
 
 .service_page_content{
-  padding-top: 75px;
+  padding-top: 77px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
@@ -656,7 +694,7 @@ font-weight: 800;
 
 .service_page_content_block i{
   padding-top: 45px;
-  font-size: 32px;
+  font-size: 40px;
   color: $color_for_h1;
 }
 
@@ -669,9 +707,10 @@ font-weight: 800;
 }
 
 .service_page_content_block p{
-  padding-top: 35px;
-  padding-bottom: 60px;
+  padding-top: 25px;
+  padding-bottom: 55px;
   text-align: center;
+  line-height: 1.8;
   color: $color_for_dark_grey;
 }
 
@@ -691,10 +730,11 @@ font-weight: 800;
 
 .pricing_page h2{
   color: #E8D100;
+  padding-top: 85px;
 }
 
 .seven_price_blocks{
-  padding-top: 150px;
+  padding-top: 152px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
@@ -739,13 +779,16 @@ font-weight: 800;
 
 .top_content_price_block h6{
   padding-top: 25px;
-  padding-bottom: 25px;
-  font: 18px $font-poppins;
+  padding-bottom: 15px;
+  font: 15px $font-poppins;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   font-weight: 500;
 }
 
 .top_content_price_block p:last-child{
-  padding-bottom: 40px;
+  padding-bottom: 38px;
+  font-size: 13px;
 }
 
 .price_per_month{
@@ -755,18 +798,19 @@ font-weight: 800;
 
 .price_per_month p:nth-child(1){
   padding-top: 8px;
-  font: 26px $font-poppins;
+  font: 30px $font-poppins;
 }
 
 .price_per_month p:nth-child(2){
-  font: 48px $font-poppins;
+  font: 60px $font-poppins;
   font-weight: 700;
 }
 
 .price_per_month p:nth-child(3){
-  padding-top: 35px;
+  padding-top: 50px;
   padding-left: 5px;
-  font: 14px $font-poppins;
+  padding-bottom: 28px;
+  font: 12px $font-poppins;
 }
 
 .main_content_price_block{
@@ -776,24 +820,24 @@ font-weight: 800;
 
 .main_content_price_block p{
   color: #808080;
-  font: 13px $font-basic;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  font: 12px $font-basic;
+  padding-top: 22px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $color_for_grey_h2;
 }
 
 .form-price_bottom-button{
-margin-top: 5px;
-padding-bottom: 105px;
+margin-top: 4px;
+padding-bottom: 107px;
 }
 
 .form-price_bottom-button button{
   font: 14px $font-article;
-  font-weight: 600;
+  font-weight: 500;
   color: $color_for_h1;
   background-color: #FFF;
-  padding-top: 16px;
-  padding-bottom: 14px;
+  padding-top: 14px;
+  padding-bottom: 13px;
   width: 360px;
   border: 0px;
 }
@@ -810,18 +854,18 @@ padding-bottom: 105px;
   max-width: 1140px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 450px;
+  padding-bottom: 358px;
 }
 
 .expert_page h2 {
-  padding-top: 250px;
+  padding-top: 230px;
 }
 
 .expert_content_blocks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
-  padding-top: 110px;
+  padding-top: 106px;
 }
 
 .expert_block:hover {
@@ -930,8 +974,8 @@ padding-bottom: 105px;
 }
 
 .text_about_expert h6{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 23px;
   font: 11px $font-article;
   color: $color_for_h1;
   font-weight: bolder;
@@ -953,6 +997,12 @@ padding-bottom: 105px;
   text-transform: uppercase;
 }
 
+.text_about_expert {
+  margin-top: 6px;
+
+}
+
+
 /* Nine Block   */
 
 .ninth_content{
@@ -968,7 +1018,7 @@ padding-bottom: 105px;
 }
 
 .impressed_by_our_work h3{
-  padding-top: 110px;
+  padding-top: 100px;
   font: 30px $font-lato;
   color: #FFF;
   font-weight: bolder;
@@ -979,7 +1029,7 @@ padding-bottom: 105px;
   padding-top: 5px;
   font: 13px $font-basic;
   color: #FFF;
-  padding-bottom: 80px;
+  padding-bottom: 86px;
 }
 
 .form-main-button button{
@@ -988,15 +1038,16 @@ padding-bottom: 105px;
   font: 13px $font-lato;
   font-weight: 700;
   margin-bottom: 105px;
-
+  padding: 16px 25px;
+  margin-left: 10px;
  /*  width: 170px;*/
 }
-/*
+
 .form-main-button button:first-child{
   background-color: $color_for_yellow;
-  margin-right: 15px;
+  margin-left: 0px;
 }
-*/
+
 
 
 
@@ -1009,7 +1060,11 @@ padding-bottom: 105px;
 }
 
 .news_page h2{
-  padding-top: 120px;
+  padding-top: 115px;
+}
+
+.news_page h4{
+  font-weight: 700;
 }
 
 .left_hover_photo-news, .right_hover_photo-news{
@@ -1053,7 +1108,7 @@ padding-bottom: 105px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 30px;
-  padding-top: 100px;
+  padding-top: 94px;
 }
 
 .hover_news_video{
@@ -1101,7 +1156,7 @@ padding-bottom: 105px;
   width: 60%;
   margin: 0 auto;
   margin-top: -23px;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   z-index: 2;
 }
 
@@ -1120,24 +1175,26 @@ padding-bottom: 105px;
 }
 
 .text_to_ten_block p:last-child{
-  padding-top: 30px;
+  padding-top: 28px;
   font: 16px $font-basic;
   color: $color_for_dark_grey;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .link_ten_block{
-  margin-top: 45px;
+  margin-top: 36px;
 }
 
 .link_ten_block a{
   text-decoration: none;
   text-transform: uppercase;
-  font: 10px $font-article;
+  font: 9px $font-article;
   font-weight: bolder;
   color: $color_for_h1;
   background-color: #F9F9F9;
-  padding: 10px 20px;
-  border-radius: 15px;
+  padding: 6px 16px;
+  border-radius: 13px;
   border: 2px solid  #F9F9F9;
 }
 
@@ -1154,7 +1211,7 @@ padding-bottom: 105px;
   background: url(../img/eleven_backgorund.png);
   background-size:cover;
   background-repeat: no-repeat;
-  margin-top: 175px;
+  margin-top: 166px;
 }
 
 .contact_page{
@@ -1203,7 +1260,7 @@ textarea{
   width: 145px;
   font: 17px $font-article;
   font-weight: bolder;
-  margin-bottom: 135px;
+  margin-bottom: 141px;
   background-color: $color_for_yellow;
 }
 
@@ -1229,7 +1286,7 @@ textarea{
 
 .footer_map p{
   padding-top: 65px;
-  padding-bottom: 75px;
+  padding-bottom: 61px;
   font: 30px $font-article;
   font-weight: bolder;
 }
@@ -1277,7 +1334,7 @@ textarea{
   border-radius: 25px;
   border: 1px solid $color_for_grey_h2;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 62px;
 }
 
 .footer_circle:hover{
@@ -1299,7 +1356,7 @@ textarea{
   font: 13px $font-basic;
   color: #FFF;
   padding-top: 15px;
-  padding-bottom: 75px;
+  padding-bottom: 83px;
 }
 
 .bottom_footer_bacground{
