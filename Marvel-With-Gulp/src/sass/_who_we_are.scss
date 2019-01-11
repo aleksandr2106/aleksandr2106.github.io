@@ -1,0 +1,46 @@
+
+.third_content {
+  background: url(../img/third_content_background.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.marvel_who_we_are{
+  max-width: $max-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.marvel_who_we_are p{
+  color: #F3F3F3;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 25px;
+  line-height: 1.8;
+  padding-bottom: 63px;
+}
+
+.marvel_who_we_are .form-main-button button{
+  font: 18px $font-article;
+  padding: 20px 0px;
+  padding-bottom: 19px;
+  width: 225px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 136px;
+  text-transform: none;
+  margin-right: 15px;
+  color: #FFF;
+  background-color: inherit;
+  border: 1px solid #FFF;
+}
+
+.marvel_who_we_are .form-main-button button:last-child{
+  margin-right: 0px;
+}
+
+.marvel_who_we_are .form-main-button button:hover{
+  color: #000;
+  background-color: $color_for_yellow;
+  border: 1px solid $color_for_h1;
+}

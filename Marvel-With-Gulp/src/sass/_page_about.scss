@@ -1,0 +1,153 @@
+.first_content {
+  background: url(../img/first_content_background.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.page_about{
+  max-width: $max-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page_about h2{
+  font-weight: 900;
+}
+
+.page_about h4{
+  font-weight: 900;
+}
+
+.page_about p{
+  font: 16px $font-lato;
+  font-weight: 400;
+  max-width: 945px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  color: $color_for_dark_grey;
+  line-height: 1.8;
+}
+
+.page_about .form-main-button button{
+  font: 18px $font-article;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  min-width: 220px;
+  border: 1px solid $color_for_h1;
+  font-weight: 500;
+  text-transform: none;
+  color: $color_for_yellow;
+  background-color: #000;
+  margin-right: 15px;
+  margin-bottom: 82px;
+}
+
+.page_about .form-main-button button:last-child{
+  margin-right: 0px;
+}
+
+.page_about .form-main-button button:hover{
+  color: #000;
+  background-color: $color_for_yellow;
+  border: 1px solid $color_for_yellow;
+}
+
+.first_content_text_block{
+  padding-top: 0px;
+  padding-bottom: 175px;
+  max-width: $max-width;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.first_c_text_block i{
+  font-size: 100px;
+}
+
+.first_c_text_block{
+  background-color: $color_for_black;
+  color: #FFF;
+  text-align: center;
+}
+
+.first_c_text_block i{
+    padding-top: 90px;
+    padding-bottom: 55px;
+    color: $color_for_yellow;
+}
+
+.first_c_text_block h6{
+    font: 24px $font-article;
+    padding-bottom: 125px;
+    font-weight: 700;
+}
+
+.first_c_text_block p{
+  display: none;
+}
+
+.first_c_text_block:hover p{
+  display: block;
+}
+
+.first_c_text_block:hover{
+  background: url(../img/hover-about.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+
+.first_c_text_block:hover i{
+    padding-top: 50px;
+    padding-bottom: 45px;
+    color: #FFF;
+}
+
+.first_c_text_block:hover h6{
+    font: 24px $font-article;
+    padding-bottom: 33px;
+    font-weight: 700;
+}
+
+.first_block_statistics{
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.first_block_statistics h5{
+  font: 30px $font-article;
+  color: $color_for_h1;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 108px;
+}
+
+.container_to_first_statistics{
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_statistics:first-child{
+  margin-left: 35px;
+}
+
+.first_statistics:last-child{
+  margin-right: 20px;
+}
+
+.first_statistics p:first-child{
+  font: 42px $font-article;
+  color: $color_for_h1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.first_statistics p:last-child{
+  font: 12px $font-article;
+  color: $color_for_main_text;
+  padding-bottom: 148px;
+}

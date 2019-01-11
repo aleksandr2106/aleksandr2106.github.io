@@ -1,0 +1,62 @@
+
+.second_content {
+  background: url(../img/second_content_background.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.responsive_page{
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.responsive_page h2{
+  padding-top: 155px;
+  margin-left: -8px;
+  color: $color_for_yellow;
+  font-size: 70px;
+}
+
+.responsive_page h4{
+font-weight: 800;
+margin-top: -46px;
+}
+
+.responsive_page p{
+  max-width: 555px;
+  color: $color_for_dark_grey;
+  padding-top: 25px;
+  line-height: 1.8;
+}
+
+.ul_second_block_list{
+  margin-top: 28px;
+  color: $color_for_dark_grey;
+}
+
+.ul_second_block_list li{
+  padding-top: 17.5px;
+}
+
+.ul_second_block_list li:last-child{
+  padding-bottom: 35px;
+}
+
+.responsive_page .form-block-button button{
+  font: 13px $font-article;
+  color: #000;
+  background-color: $color_for_yellow;
+  padding: 13px 26px;
+  border: 0px solid $color_for_yellow;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.responsive_page .form-block-button button:hover{
+  color: $color_for_yellow;
+  background-color: #000;
+}
+
+.responsive_page .form-block-button{
+  padding-bottom: 116px;
+}

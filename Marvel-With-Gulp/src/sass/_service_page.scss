@@ -1,0 +1,60 @@
+
+.sixth_background{
+  background: url(../img/sixth_background.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.six_content{
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.service_page{
+  max-width: 555px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-bottom: 65px;
+  background-color: #FFF;
+}
+
+.service_page h2{
+  padding-top: 135px;
+}
+
+.service_page_content{
+  padding-top: 77px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.service_page_content_block{
+  text-align: center;
+}
+
+.service_page_content_block:hover{
+  background-color: $color_for_grey_h2;
+}
+
+.service_page_content_block i{
+  padding-top: 45px;
+  font-size: 40px;
+  color: $color_for_h1;
+}
+
+.service_page_content_block h6{
+  font: 18px $font-article;
+  color: $color_for_h1;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: 35px;
+}
+
+.service_page_content_block p{
+  padding-top: 25px;
+  padding-bottom: 55px;
+  text-align: center;
+  line-height: 1.8;
+  color: $color_for_dark_grey;
+}

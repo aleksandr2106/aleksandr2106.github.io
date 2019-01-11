@@ -1,0 +1,72 @@
+
+.features_page{
+  max-width: $max-width;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 165px;
+}
+
+.features_page h2{
+  padding-top: 105px;
+}
+
+
+.fourth_content_blocks{
+  padding-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 65px;
+  text-align: left;
+}
+
+.fourth_similar_block{
+  display: flex;
+}
+
+.fourth_similar_block_text{
+  padding-left: 20px;
+}
+
+.fourth_similar_block_text h6{
+  font: 17px $font-article;
+  font-weight: bolder;
+  text-transform:uppercase;
+  color: $color_for_h1;
+  padding-bottom: 15px;
+}
+
+.fourth_similar_block_text p{
+  color: $color_for_dark_grey;
+  line-height: 1.8;
+}
+
+.fourth_similar_block_circle{
+  max-width: 65px;
+  max-height: 65px;
+  border-radius: 32.5px;
+}
+
+.fourth_similar_block:nth-child(2n+1) .fourth_similar_block_circle{
+  background-color: $color_for_yellow;
+  color: $color_for_black;
+}
+
+.fourth_similar_block:nth-child(2n+1):hover .fourth_similar_block_circle{
+  background-color: $color_for_black;
+  color: $color_for_yellow;
+}
+
+.fourth_similar_block:nth-child(2n) .fourth_similar_block_circle{
+  background-color: $color_for_black;
+  color: $color_for_yellow;
+}
+
+.fourth_similar_block:nth-child(2n):hover .fourth_similar_block_circle{
+  background-color: $color_for_yellow;
+  color: $color_for_black;
+}
+
+.fourth_similar_block_circle i{
+  padding: 25px;
+}

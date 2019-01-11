@@ -1,0 +1,43 @@
+
+.ninth_content{
+  background: url(../img/nine_backgorund.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.impressed_by_our_work{
+  max-width: $max-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.impressed_by_our_work h3{
+  padding-top: 100px;
+  font: 30px $font-lato;
+  color: #FFF;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.impressed_by_our_work p{
+  padding-top: 5px;
+  font: 13px $font-basic;
+  color: #FFF;
+  padding-bottom: 86px;
+}
+
+.form-main-button button{
+  text-transform: uppercase;
+  color: #000;
+  font: 13px $font-lato;
+  font-weight: 700;
+  margin-bottom: 105px;
+  padding: 16px 25px;
+  margin-left: 10px;
+ /*  width: 170px;*/
+}
+
+.form-main-button button:first-child{
+  background-color: $color_for_yellow;
+  margin-left: 0px;
+}

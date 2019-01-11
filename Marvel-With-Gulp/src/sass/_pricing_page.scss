@@ -1,0 +1,130 @@
+.seventh_content{
+  background: url(../img/seventh_background.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.pricing_page{
+  max-width: $max-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing_page h2{
+  color: #E8D100;
+  padding-top: 85px;
+}
+
+.seven_price_blocks{
+  padding-top: 152px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.price_block:nth-child(1) .top_content_price_block{
+  background: url(../img/services-first.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.grey_top_price_block{
+  background-color: #E6E6E6;
+}
+
+.grey_top_price_block p{
+  font: 15px $font-basic;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  color: $color_for_h1;
+}
+
+.price_block:nth-child(2){
+  margin-top: -40px;
+}
+
+.price_block:nth-child(2) .top_content_price_block{
+  background: url(../img/services-second.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.price_block:nth-child(3) .top_content_price_block{
+  background: url(../img/services-third.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.top_content_price_block{
+  color: #FFF;
+}
+
+.top_content_price_block h6{
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font: 15px $font-poppins;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.top_content_price_block p:last-child{
+  padding-bottom: 38px;
+  font-size: 13px;
+}
+
+.price_per_month{
+  display: flex;
+  justify-content: center;
+}
+
+.price_per_month p:nth-child(1){
+  padding-top: 8px;
+  font: 30px $font-poppins;
+}
+
+.price_per_month p:nth-child(2){
+  font: 60px $font-poppins;
+  font-weight: 700;
+}
+
+.price_per_month p:nth-child(3){
+  padding-top: 50px;
+  padding-left: 5px;
+  padding-bottom: 28px;
+  font: 12px $font-poppins;
+}
+
+.main_content_price_block{
+  background-color: #FFF;
+  padding-top: 60px;
+}
+
+.main_content_price_block p{
+  color: #808080;
+  font: 12px $font-basic;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $color_for_grey_h2;
+}
+
+.form-price_bottom-button{
+margin-top: 4px;
+padding-bottom: 107px;
+}
+
+.form-price_bottom-button button{
+  font: 14px $font-article;
+  font-weight: 500;
+  color: $color_for_h1;
+  background-color: #FFF;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  width: 360px;
+  border: 0px;
+}
+
+.form-price_bottom-button button:hover{
+  color: $color_for_yellow;
+  background-color: #000;
+}
