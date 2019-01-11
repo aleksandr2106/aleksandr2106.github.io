@@ -1,3 +1,4 @@
+include ../components/mixins
 div.eleven_content
   div.contact_page
     h2 Contact 
@@ -12,5 +13,6 @@ div.eleven_content
             input(type="text" placeholder="Subject")
         div.massage
           textarea(placeholder="Type your message")
-          // button
+          form.form-main-button
+            +main_button('SEND')
                    
