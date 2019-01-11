@@ -1,3 +1,4 @@
+include ../components/button
 div.second_content
   div.responsive_page
     h2 Responsive
@@ -5,13 +6,14 @@ div.second_content
     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etia fermentum vel libero eget interdum semper libero.
     ul.ul_second_block_list
       li
-        i(class="fas fa-star") Responsive Design & Retina Ready.
+        i(class="fas fa-star") Responsive Design &amp; Retina Ready.
       li
         i(class="fas fa-star") Business Solution Any Company.
       li
         i(class="fas fa-star") Powerful Admin Panel.
       li
         i(class="fas fa-star") 24/7 Support.
-    //button    
+    form.form-block-button
+      +main_button('Purchase')    
         
         

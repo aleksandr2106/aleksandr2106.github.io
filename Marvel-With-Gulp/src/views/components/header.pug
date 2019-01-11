@@ -1,9 +1,11 @@
+include ../components/button
 div.header
   div.top_header_background
     div.top_header
       h1 Creative and Professional
       p Use, by you or one client, in a single end product which end users are not charged for. Use, by you or one client, in a single end product which end users are not charged for.
-      //+main_button('Contact us')  
+      form.form-main-button
+        +main_button('Contact us')  
 div.header_menu_background
   div.header_menu
     img(class="header-logo" src="../img/logo_header_menu.png" alt="MARVEL logo")

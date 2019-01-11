@@ -1,3 +1,74 @@
 mixin main_button(button_name)
-  form.form-main-button
-    button(type = "submit") #{button_name}
+  button(type = "submit") #{button_name}
+
+mixin fourth_main_block(fourth_icon_name, fourth_h6, fourth_p )
+  div.fourth_similar_block
+    div.fourth_similar_block_circle
+      i(class=fourth_icon_name)
+    div.fourth_similar_block_text
+      h6 #{fourth_h6}
+      p #{fourth_p}
+      
+mixin fifth_container_to_photos_block(fifth_photo_block, fifth_1_icons, fifth_2_icons, fifth_h6, fifth_p )
+  div.container_to_photos_block
+    img(class="people photo" src=fifth_photo_block alt="people photo")
+    div.text_hover_to_photos_block
+      div.icons_to_photo_block
+        div.icon_circle
+          i(class=fifth_1_icons)
+        div.icon_circle
+          i(class=fifth_2_icons)
+      div.text_to_photo_block
+        h6 #{fifth_h6}
+        p #{fifth_p}
+      
+mixin sixth_service_page_content_block(sixth_icon, sixth_h6, sixth_p )
+  div.service_page_content_block
+    a(href="#")
+      i(class=sixth_icon)
+    h6 #{sixth_h6}
+    p #{sixth_p}
+    
+mixin seventh_price_block(seventh_kind_service, eventh_price_number,seventh_achive_1, seventh_achive_2, seventh_achive_3, seventh_achive_4, seventh_achive_5, seventh_achive_6, seventh_achive_7)
+  div.price_block
+    div.top_content_price_block
+      h6 #{seventh_kind_service}
+      div.price_per_month
+        p $
+        p #{seventh_price_number}
+        p / MONTH
+      p 15 day free trial on all accounts  
+    div.main_content_price_block
+      p #{seventh_achive_1}
+      p #{seventh_achive_2} 
+      p #{seventh_achive_3} 
+      p #{seventh_achive_4} 
+      p #{seventh_achive_5} 
+      p #{seventh_achive_6} 
+      p #{seventh_achive_7}
+    div.bottom_content_price_block
+      // button    
+    
+mixin eight_expert_block(eight_expert_photo, eight_h5, eight_h6, eight_p  )
+  div.expert_block
+    img(class="expert_photo" src=eight_expert_photo alt="expert photo")
+    div.text_about_expert
+      h5 #{eight_h5}
+      hr
+      h6 #{eight_h6}
+      p #{eight_p}
+      hr
+      div.social_icons
+        a(href="#")
+          i(class="fab fa-twitter")
+        a(href="#")
+          i(class="fab fa-linkedin")
+        a(href="#")
+          i(class="fab fa-facebook")
+        a(href="#")
+          i(class="fab fa-skype")
+        a(href="#")
+          i(class="fab fa-pinterest")
+        a(href="#")
+          i(class="fab fa-apple")
+            
