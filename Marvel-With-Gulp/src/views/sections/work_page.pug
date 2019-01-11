@@ -1,9 +1,22 @@
+include ../components/mixins
 div.fifth_content
   div.work_page
     h2 Work
     h4 Our portfolio
     div.work_page_buttons
-      //button + icon
+      form.form-block-button
+        i(class="fas fa-th")
+        +main_button('Business')
+        +main_button('Corporate')
+        +main_button('Branding')
+        +main_button('Photography')
     
   div.fifth_photos_block
-    //*8* container_to_photos_block
+    +fifth_container_to_photos_block('../img/fifth_photos_1.png', 'fas fa-link', 'fas fa-search', 'Fullwidth Slideshow', ' - Fasion')
+    +fifth_container_to_photos_block('../img/fifth_photos_2.png', 'fas fa-link', 'fas fa-search', 'Fullwidth Slideshow', ' - Fasion')
+    +fifth_container_to_photos_block('../img/fifth_photos_3.png', 'fas fa-link', 'fas fa-search', 'Fullwidth Slideshow', ' - Fasion')
+    +fifth_container_to_photos_block('../img/fifth_photos_4.png', 'fas fa-link', 'fas fa-search', 'Fullwidth Slideshow', ' - Fasion')
+    +fifth_container_to_photos_block('../img/fifth_photos_5.png', 'fas fa-link', 'fas fa-search', 'Fullwidth Slideshow', ' - Fasion')
+    +fifth_container_to_photos_block('../img/fifth_photos_6.png', 'fas fa-link', 'fas fa-search', 'Fullwidth Slideshow', ' - Fasion')
+    +fifth_container_to_photos_block('../img/fifth_photos_7.png', 'fas fa-link', 'fas fa-search', 'Fullwidth Slideshow', ' - Fasion')
+    +fifth_container_to_photos_block('../img/fifth_photos_8.png', 'fas fa-link', 'fas fa-search', 'Fullwidth Slideshow', ' - Fasion')
