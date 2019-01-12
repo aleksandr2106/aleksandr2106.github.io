@@ -58,3 +58,22 @@
   line-height: 1.8;
   color: $color_for_dark_grey;
 }
+
+@media (min-width:1025px) and (max-width:1199px) {}
+
+@media (min-width:769px) and (max-width:1024px) {
+  /*   Sixth content   */
+
+  .service_page{
+    max-width: 500px;
+    padding-bottom: 30px;
+  }
+
+  .service_page h2{
+    padding-top: 70px;
+  }
+
+  .service_page_content{
+    padding-top: 40px;
+  }
+}

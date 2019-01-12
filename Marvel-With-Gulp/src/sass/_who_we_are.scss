@@ -44,3 +44,41 @@
   background-color: $color_for_yellow;
   border: 1px solid $color_for_h1;
 }
+
+
+
+@media (min-width:1025px) and (max-width:1199px) {
+  .marvel_who_we_are h3{
+    padding-top: 180px;
+  }
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+
+  /* Third Block   */
+
+.marvel_who_we_are{
+text-align: left;
+}
+
+.marvel_who_we_are h3{
+margin-left: 20px;
+}
+
+.marvel_who_we_are p{
+max-width: 500px;
+margin: 0 0;
+padding-bottom: 40px;
+margin-left: 20px;
+}
+
+.marvel_who_we_are .form-main-button button:first-child{
+margin-left: 20px;
+}
+
+.marvel_who_we_are .form-main-button button{
+margin-bottom: 75px;
+}
+
+}

@@ -128,3 +128,57 @@ padding-bottom: 107px;
   color: $color_for_yellow;
   background-color: #000;
 }
+
+
+
+
+@media (min-width:1025px) and (max-width:1199px) {
+
+  .seven_price_blocks{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+
+  .form-price_bottom-button button{
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+
+  /*  Seven Content  */
+
+  .seven_price_blocks{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main_content_price_block{
+    padding-top: 30px;
+  }
+
+  .main_content_price_block p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .form-price_bottom-button{
+  margin-top: 5px;
+  padding-bottom: 80px;
+  }
+
+  .form-price_bottom-button button{
+    width: 100%;
+  }
+}

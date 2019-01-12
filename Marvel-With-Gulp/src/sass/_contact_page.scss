@@ -60,3 +60,45 @@ textarea{
   background-color: $color_for_h1;
   color: $color_for_yellow;
 }
+
+
+
+
+
+@media (min-width:1025px) and (max-width:1199px) {
+
+  .form_bottom{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+
+
+@media (min-width:769px) and (max-width:1024px) {
+  /*  Eleven Content  */
+
+  .eleven_content{
+    margin-top: 100px;
+  }
+
+  .contact_page h2{
+    padding-top: 60px;
+  }
+
+  .form_bottom{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container_to_input{
+    padding-top: 80px;
+  }
+
+  .message .form-main-button button{
+    margin-bottom: 80px;
+  }
+
+
+}

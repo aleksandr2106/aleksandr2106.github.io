@@ -151,3 +151,82 @@
   color: $color_for_main_text;
   padding-bottom: 148px;
 }
+
+
+@media (min-width:1025px) and (max-width:1199px) {
+
+  .first_content_text_block{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+
+  /* First Block  */
+
+
+.page_about h2{
+font-weight: 900;
+padding-top: 50px;
+}
+
+.page_about h4{
+font-weight: 900;
+}
+
+.page_about p{
+font: 15px $font-lato;
+font-weight: 400;
+max-width: 945px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 30px;
+}
+
+.page_about .form-main-button button{
+font: 17px $font-article;
+padding: 20px 0px;
+width: 200px;
+font-weight: 500;
+margin-bottom: 30px;
+}
+
+.first_content_text_block{
+padding-bottom: 80px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-column-gap: 50px;
+grid-row-gap: 50px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.first_c_text_block i{
+font-size: 90px;
+padding-top: 90px;
+padding-bottom: 55px;
+}
+
+.first_c_text_block p{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.first_c_text_block:hover h6{
+ font: 24px $font-article;
+ padding-bottom: 33px;
+ font-weight: 700;
+}
+
+.first_block_statistics h5{
+margin-bottom: 80px;
+}
+
+.first_statistics p:last-child{
+padding-bottom: 100px;
+}
+
+}

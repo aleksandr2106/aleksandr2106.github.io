@@ -1,0 +1,86 @@
+$font-article: Montserrat, sans-serif;
+$font-basic: Muli, sans-serif;
+$font-lato: Lato, sans-serif;
+$font-poppins: Poppins, sans-serif;
+$max-width: 1140px;
+$color_for_h1: #444444;
+$color_for_main_text: #878787;
+$color_for_menu_block: #2A2A2A;
+$color_for_yellow: #FFE400;
+$color_for_grey_h2: #E8E8E8;
+$color_for_black: #212121;
+$color_for_dark_grey: #757575;
+
+      /*  General Style   */
+*{box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h2{
+  color: $color_for_grey_h2;
+  font: 91px $font-article;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-top: 70px;
+}
+
+h3{
+  font: 44px $font-article;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFF;
+  padding-top: 255px;
+}
+
+h4{
+  color: $color_for_h1;
+  font: 28px $font-basic;
+  text-transform: uppercase;
+  margin-top: -52px;
+  margin-bottom: 20px
+}
+
+.form-main-button button{
+  font: 18px $font-article;
+  padding: 20px 0px;
+  border: 1px solid $color_for_h1;
+  font-weight: bolder;
+}
+
+p{
+  font: 16px $font-basic;
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+  /*  General Style   */
+
+
+h2{
+
+font: 78px $font-article;
+padding-top: 60px;
+}
+
+h3{
+font: 40px $font-article;
+font-weight: 700;
+padding-top: 75px;
+}
+
+h4{
+font: 25px $font-basic;
+margin-top: -45px;
+margin-bottom: 20px
+}
+
+.form-main-button button{
+font: 16px $font-article;
+padding: 18px 0px;
+font-weight: 700;
+}
+
+p{
+font: 15px $font-basic;
+}
+}

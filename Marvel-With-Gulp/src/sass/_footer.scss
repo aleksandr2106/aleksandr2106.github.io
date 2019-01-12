@@ -102,3 +102,38 @@
 .bottom_footer p{
   font: 12px $font-basic;
 }
+
+@media (min-width:1025px) and (max-width:1199px) {}
+
+@media (min-width:769px) and (max-width:1024px) {
+  /*  Footer   */
+
+  .footer_map p{
+    padding-top: 35px;
+    padding-bottom: 40px;
+    font: 26px $font-article;
+    font-weight: bolder;
+  }
+
+  .main_content_footer{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer_social_icons i{
+    font-size: 18px;
+  }
+
+  .footer_social_icons a{
+    margin-right: 25px;
+  }
+
+  .footer_circle{
+    margin-top: 30px;
+  }
+
+  .flang_content_footer p{
+    padding-bottom: 45px;
+  }
+  
+}

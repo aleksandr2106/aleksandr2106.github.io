@@ -151,3 +151,38 @@
 .container_to_photos_block:hover .text_hover_to_photos_block{
   display: block;
 }
+
+
+
+@media (min-width:1025px) and (max-width:1199px) {
+
+  .fifth_photos_block{
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+  }
+
+}
+
+
+
+@media (min-width:769px) and (max-width:1024px) {
+  /*  Fifth content  */
+
+.work_page h2{
+padding-top: 30px;
+}
+
+.fifth_photos_block{
+grid-template-columns: repeat(2, 1fr);
+}
+
+
+.text_to_photo_block{
+display: flex;
+background-color: $color_for_grey_h2;
+z-index: 4;
+margin-top: -26px;
+}
+}
