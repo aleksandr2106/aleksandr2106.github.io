@@ -62,6 +62,7 @@
   border: 1px solid $color_for_grey_h2;
   margin: 0 auto;
   margin-top: 62px;
+  margin-bottom: 15px;
 }
 
 .footer_circle:hover{
@@ -79,10 +80,16 @@
   color: $color_for_yellow;
 }
 
+.flang_content_footer a{
+  font: 13px $font-basic;
+  color: #FFF;
+  padding-bottom: 83px;
+  text-decoration: none;
+}
+
 .flang_content_footer p{
   font: 13px $font-basic;
   color: #FFF;
-  padding-top: 15px;
   padding-bottom: 83px;
 }
 

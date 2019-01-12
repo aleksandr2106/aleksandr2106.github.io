@@ -2,6 +2,8 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 
 h2 {
@@ -132,6 +134,7 @@ p {
 
 .top_header h1 {
   padding-top: 490px;
+  max-width: 500px;
   font: 60px Montserrat, sans-serif;
   text-transform: uppercase;
   padding-left: 0px;
@@ -155,6 +158,10 @@ p {
   font: 16px Montserrat, sans-serif;
   font-weight: 700;
   padding: 19px 33px 15px 33px;
+  color: #444444;
+  border: 1px solid #444444;
+  margin-top: 18px;
+  background-color: #FFFFFF;
 }
 
 .form-main-button button {
@@ -207,8 +214,9 @@ p {
   font: 14px Montserrat, sans-serif;
   cursor: pointer;
   padding-right: 65px;
-  margin-top: 30px;
+  margin-top: 28px;
   margin-bottom: 28px;
+  list-style-type: none;
 }
 
 .ul_menu a {
@@ -735,6 +743,8 @@ ul.ul_menu li:last-child {
 }
 
 .container_to_input input {
+  font: 15px Lato, sans-serif;
+  color: #E8E8E8;
   border: none;
   width: 100%;
   height: 60px;
@@ -743,6 +753,8 @@ ul.ul_menu li:last-child {
 }
 
 textarea {
+  font: 15px Lato, sans-serif;
+  color: #E8E8E8;
   margin-top: 15px;
   padding-left: 20px;
   padding-top: 20px;
@@ -1179,6 +1191,8 @@ textarea {
 }
 
 .fourth_similar_block_text h6 {
+  margin-block-start: 20px;
+  margin-block-end: 20px;
   font: 17px Montserrat, sans-serif;
   font-weight: bolder;
   text-transform: uppercase;
@@ -1307,7 +1321,7 @@ textarea {
   padding-bottom: 86px;
 }
 
-.form-main-button button {
+.impressed_by_our_work .form-main-button button {
   text-transform: uppercase;
   color: #000;
   font: 13px Lato, sans-serif;
@@ -1318,8 +1332,7 @@ textarea {
   /*  width: 170px;*/
 }
 
-.form-main-button button:first-child {
-  background-color: #FFE400;
+.impressed_by_our_work .form-main-button button:first-child {
   margin-left: 0px;
 }
 
@@ -1847,6 +1860,14 @@ textarea {
   grid-column-gap: 30px;
 }
 
+.grey_top_price_block {
+  display: none;
+}
+
+.price_block:nth-of-type(2) .grey_top_price_block {
+  display: block;
+}
+
 .price_block:nth-child(1) .top_content_price_block {
   background: url(../img/services-first.png);
   background-size: cover;
@@ -2085,6 +2106,7 @@ textarea {
 
 .ul_second_block_list li {
   padding-top: 17.5px;
+  list-style-type: none;
 }
 
 .ul_second_block_list li:last-child {
@@ -2663,6 +2685,7 @@ textarea {
   border: 1px solid #E8E8E8;
   margin: 0 auto;
   margin-top: 62px;
+  margin-bottom: 15px;
 }
 
 .footer_circle:hover {
@@ -2680,10 +2703,16 @@ textarea {
   color: #FFE400;
 }
 
+.flang_content_footer a {
+  font: 13px Muli, sans-serif;
+  color: #FFF;
+  padding-bottom: 83px;
+  text-decoration: none;
+}
+
 .flang_content_footer p {
   font: 13px Muli, sans-serif;
   color: #FFF;
-  padding-top: 15px;
   padding-bottom: 83px;
 }
 

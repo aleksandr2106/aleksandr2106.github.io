@@ -11,6 +11,7 @@
 
 .top_header h1{
   padding-top: 490px;
+  max-width: 500px;
   font: 60px $font-article;
   text-transform: uppercase;
   padding-left: 0px;
@@ -34,10 +35,14 @@
   font: 16px $font-article;
   font-weight: 700;
   padding: 19px 33px 15px 33px;
+  color: $color_for_h1;
+  border: 1px solid $color_for_h1;
+  margin-top: 18px;
+  background-color: #FFFFFF;
 }
 
 
-.form-main-button button{
+ .form-main-button button{
   font: 16px $font-article;
   font-weight: 900;
   padding: 19px 33px;
@@ -87,8 +92,9 @@
   font: 14px $font-article;
   cursor: pointer;
   padding-right: 65px;
-  margin-top: 30px;
+  margin-top: 28px;
   margin-bottom: 28px;
+  list-style-type: none;
 }
 
 .ul_menu a{
@@ -296,6 +302,7 @@ margin-left: 12px;
 font: 13px $font-article;
 padding-right: 15px;
 margin-bottom: 20px;
+
 }
 
 }
