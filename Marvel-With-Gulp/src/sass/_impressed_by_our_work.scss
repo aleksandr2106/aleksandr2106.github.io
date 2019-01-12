@@ -78,12 +78,16 @@
     padding-bottom: 20px;
   }
 
-  .form-main-button button{
-    font: 12px $font-lato;
+  .impressed_by_our_work .form-main-button button{
+    text-transform: uppercase;
+    color: #000;
+    font: 11px $font-lato;
     font-weight: 700;
     margin-bottom: 40px;
-    width: 150px;
+    padding: 12px 15px;
+    margin-left: 10px;
   }
+
 }
 
 @media (max-width:425px) {
@@ -104,11 +108,13 @@
     padding-right: 12px;
   }
 
-  .form-main-button button{
-    font: 11px $font-lato;
+  .impressed_by_our_work .form-main-button button{
+    text-transform: uppercase;
+    color: #000;
+    font: 10px $font-lato;
     font-weight: 700;
-    margin-bottom: 45px;
-    width: 125px;
-
+    margin-bottom: 35px;
+    padding: 8px 10px;
+    margin-left: 10px;
   }
 }

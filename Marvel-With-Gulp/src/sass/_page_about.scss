@@ -160,6 +160,12 @@
     margin-right: 20px;
   }
 
+  .page_about .form-main-button button{
+    font: 16px $font-article;
+    min-width: 200px;
+    font-weight: 500;
+  }
+
 }
 
 
@@ -187,9 +193,9 @@ padding-bottom: 30px;
 }
 
 .page_about .form-main-button button{
-font: 17px $font-article;
+font: 14px $font-article;
 padding: 20px 0px;
-width: 200px;
+min-width: 180px;
 font-weight: 500;
 margin-bottom: 30px;
 }
@@ -255,9 +261,9 @@ padding-right: 15px;
 }
 
 .page_about .form-main-button button{
-font: 16px $font-article;
+font: 13px $font-article;
 padding: 15px 0px;
-width: 180px;
+min-width: 150px;
 font-weight: 500;
 margin-right: 10px;
 margin-bottom: 80px;
@@ -316,9 +322,9 @@ padding-right: 12px;
 }
 
 .page_about .form-main-button button{
-font: 15px $font-article;
+font: 11px $font-article;
 padding: 14px 0px;
-width: 160px;
+min-width: 120px;
 font-weight: 500;
 margin-right: 15px;
 margin-bottom: 0px;

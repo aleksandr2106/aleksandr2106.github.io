@@ -313,9 +313,9 @@ ul.ul_menu li:last-child {
     padding-left: 15px;
   }
   .top_header .form-main-button button {
-    font: 15px Montserrat, sans-serif;
+    font: 12px Montserrat, sans-serif;
     font-weight: 700;
-    padding: 14px 20px;
+    padding: 14px 16px;
     margin-bottom: 80px;
   }
   .header_menu {
@@ -327,7 +327,8 @@ ul.ul_menu li:last-child {
   }
   .header_menu ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -374,7 +375,7 @@ ul.ul_menu li:last-child {
   }
   .header_menu ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-right: 12px;
     margin-left: 12px;
@@ -545,6 +546,11 @@ ul.ul_menu li:last-child {
     margin-left: 20px;
     margin-right: 20px;
   }
+  .page_about .form-main-button button {
+    font: 16px Montserrat, sans-serif;
+    min-width: 200px;
+    font-weight: 500;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -565,9 +571,9 @@ ul.ul_menu li:last-child {
     padding-bottom: 30px;
   }
   .page_about .form-main-button button {
-    font: 17px Montserrat, sans-serif;
+    font: 14px Montserrat, sans-serif;
     padding: 20px 0px;
-    width: 200px;
+    min-width: 180px;
     font-weight: 500;
     margin-bottom: 30px;
   }
@@ -620,9 +626,9 @@ ul.ul_menu li:last-child {
     padding-right: 15px;
   }
   .page_about .form-main-button button {
-    font: 16px Montserrat, sans-serif;
+    font: 13px Montserrat, sans-serif;
     padding: 15px 0px;
-    width: 180px;
+    min-width: 150px;
     font-weight: 500;
     margin-right: 10px;
     margin-bottom: 80px;
@@ -671,9 +677,9 @@ ul.ul_menu li:last-child {
     padding-right: 12px;
   }
   .page_about .form-main-button button {
-    font: 15px Montserrat, sans-serif;
+    font: 11px Montserrat, sans-serif;
     padding: 14px 0px;
-    width: 160px;
+    min-width: 120px;
     font-weight: 500;
     margin-right: 15px;
     margin-bottom: 0px;
@@ -1363,11 +1369,14 @@ textarea {
   .impressed_by_our_work p {
     padding-bottom: 20px;
   }
-  .form-main-button button {
-    font: 12px Lato, sans-serif;
+  .impressed_by_our_work .form-main-button button {
+    text-transform: uppercase;
+    color: #000;
+    font: 11px Lato, sans-serif;
     font-weight: 700;
     margin-bottom: 40px;
-    width: 150px;
+    padding: 12px 15px;
+    margin-left: 10px;
   }
 }
 
@@ -1386,11 +1395,14 @@ textarea {
     padding-left: 12px;
     padding-right: 12px;
   }
-  .form-main-button button {
-    font: 11px Lato, sans-serif;
+  .impressed_by_our_work .form-main-button button {
+    text-transform: uppercase;
+    color: #000;
+    font: 10px Lato, sans-serif;
     font-weight: 700;
-    margin-bottom: 45px;
-    width: 125px;
+    margin-bottom: 35px;
+    padding: 8px 10px;
+    margin-left: 10px;
   }
 }
 
@@ -1801,7 +1813,7 @@ textarea {
     margin-left: 15px;
     font: 16px Montserrat, sans-serif;
     padding: 16px 0px;
-    width: 180px;
+    width: 175px;
     font-weight: 500;
     margin-top: 0px;
     margin-bottom: 60px;
@@ -1823,10 +1835,10 @@ textarea {
     padding-bottom: 40px;
   }
   .marvel_who_we_are .form-main-button button {
-    font: 14px Montserrat, sans-serif;
+    font: 12px Montserrat, sans-serif;
     margin-left: 10px;
     padding: 14px 0px;
-    width: 140px;
+    width: 130px;
     font-weight: 500;
     margin-bottom: 45px;
     margin-right: 0px;
@@ -2141,10 +2153,13 @@ textarea {
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Second Block   */
   .responsive_page h2 {
+    font-size: 60px;
     padding-top: 75px;
+    font-weight: 800;
     margin-left: 13px;
   }
   .responsive_page h4 {
+    font-size: 30px;
     font-weight: 800;
     margin-left: 20px;
   }
@@ -2167,10 +2182,12 @@ textarea {
 @media (min-width: 426px) and (max-width: 768px) {
   /* Second Block   */
   .responsive_page h2 {
+    font-size: 54px;
     padding-top: 60px;
     margin-left: 12px;
   }
   .responsive_page h4 {
+    font-size: 28px;
     font-weight: 800;
     margin-left: 17px;
     padding-top: 5px;
@@ -2562,6 +2579,9 @@ textarea {
     z-index: 4;
     margin-top: -26px;
   }
+  .icon_circle {
+    display: none;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -2572,24 +2592,35 @@ textarea {
     text-align: center;
     padding-bottom: 45px;
   }
+  .work_page_buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .work_page_buttons .form-block-button button {
-    font: 12px Montserrat, sans-serif;
+    font: 11px Montserrat, sans-serif;
     width: 85px;
     font-weight: 700;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top: 10px;
   }
   .work_page_buttons .form-block-button button:last-child {
-    width: 100px;
+    width: 105px;
+    font: 11px Montserrat, sans-serif;
+    font-weight: 700;
   }
   .work_page_buttons .form-block-button i {
-    padding: 10px;
+    padding: 9px;
   }
   .fifth_photos_block {
     background-color: #FFF;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px;
+  }
+  .icon_circle {
+    display: none;
   }
 }
 
@@ -2598,16 +2629,21 @@ textarea {
   .work_page {
     padding-bottom: 35px;
   }
+  .work_page_buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .work_page_buttons .form-block-button button {
-    font: 11px Montserrat, sans-serif;
-    width: 75px;
+    font: 10px Montserrat, sans-serif;
+    width: 80px;
     font-weight: 700;
     padding-top: 8px;
     padding-bottom: 8px;
     margin-top: 10px;
   }
   .work_page_buttons .form-block-button button:last-child {
-    width: 95px;
+    width: 100px;
   }
   .work_page_buttons .form-block-button i {
     font-size: 14px;
@@ -2618,6 +2654,9 @@ textarea {
   .fifth_photos_block {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 20px;
+  }
+  .icon_circle {
+    display: none;
   }
 }
 

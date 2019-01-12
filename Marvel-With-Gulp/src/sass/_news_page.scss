@@ -239,7 +239,6 @@
     margin-bottom: 37px;
   }
 
-
   .grey_block_under_news_photo p{
     font: 10px $font-article;
     font-weight: bolder;
@@ -297,6 +296,8 @@
     position: relative;
     z-index: 1;
   }
+
+
 
   .similar_news_photo_block:hover .hover_photo-news{
     display: flex;

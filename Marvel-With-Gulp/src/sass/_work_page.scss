@@ -185,6 +185,10 @@ background-color: $color_for_grey_h2;
 z-index: 4;
 margin-top: -26px;
 }
+
+.icon_circle{
+  display: none;
+}
 }
 
 @media (min-width:426px) and (max-width:768px) {
@@ -198,20 +202,29 @@ text-align: center;
 padding-bottom: 45px;
 }
 
+.work_page_buttons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .work_page_buttons .form-block-button button{
-font: 12px $font-article;
+font: 11px $font-article;
 width: 85px;
 font-weight: 700;
 padding-top: 10px;
 padding-bottom: 10px;
+margin-top: 10px;
 }
 
 .work_page_buttons .form-block-button button:last-child{
-width: 100px;
+width: 105px;
+font: 11px $font-article;
+font-weight: 700;
 }
 
 .work_page_buttons .form-block-button i{
-padding: 10px;
+padding: 9px;
 }
 
 .fifth_photos_block{
@@ -219,6 +232,10 @@ background-color: #FFF;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-gap: 0px;
+}
+
+.icon_circle{
+  display: none;
 }
 }
 
@@ -229,9 +246,15 @@ grid-gap: 0px;
 padding-bottom: 35px;
 }
 
+.work_page_buttons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .work_page_buttons .form-block-button button{
-font: 11px $font-article;
-width: 75px;
+font: 10px $font-article;
+width: 80px;
 font-weight: 700;
 padding-top: 8px;
 padding-bottom: 8px;
@@ -239,7 +262,7 @@ margin-top: 10px;
 }
 
 .work_page_buttons .form-block-button button:last-child{
-width: 95px;
+width: 100px;
 }
 
 .work_page_buttons .form-block-button i{
@@ -252,5 +275,9 @@ padding-bottom: 9px;
 .fifth_photos_block{
 grid-template-columns: repeat(1, 1fr);
 grid-row-gap: 20px;
+}
+
+.icon_circle{
+  display: none;
 }
 }
