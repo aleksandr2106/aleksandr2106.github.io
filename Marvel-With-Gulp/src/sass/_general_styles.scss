@@ -84,3 +84,67 @@ p{
 font: 15px $font-basic;
 }
 }
+
+@media (min-width:426px) and (max-width:768px) {
+
+  h2{
+    font: 60px $font-article;
+    font-weight: bolder;
+    padding-top: 40px;
+  }
+
+  h3{
+    font: 36px $font-article;
+    font-weight: 700;
+    padding-top: 55px;
+  }
+
+  h4{
+    font: 22px $font-basic;
+    margin-top: -42px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  .form-main-button button{
+    font: 15px $font-article;
+    padding: 16px 0px;
+    font-weight: bolder;
+  }
+
+  p{
+    font: 14px $font-basic;
+  }
+}
+
+@media (max-width:425px) {
+
+  h2{
+    font: 50px $font-article;
+    font-weight: bolder;
+    padding-top: 30px;
+  }
+
+  h3{
+    font: 32px $font-article;
+    font-weight: 700;
+    color: #FFF;
+    padding-top: 45px;
+  }
+
+  h4{
+    font: 20px $font-basic;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .form-main-button button{
+    font: 14px $font-article;
+    padding: 15px 0px;
+  }
+
+  p{
+    font: 13px $font-basic;
+  }
+}

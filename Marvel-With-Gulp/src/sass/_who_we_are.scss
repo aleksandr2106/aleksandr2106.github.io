@@ -80,5 +80,67 @@ margin-left: 20px;
 .marvel_who_we_are .form-main-button button{
 margin-bottom: 75px;
 }
+}
 
+
+@media (min-width:426px) and (max-width:768px) {
+
+  /* Third Block   */
+
+.marvel_who_we_are{
+text-align: left;
+}
+
+.marvel_who_we_are h3{
+margin-left: 15px;
+}
+
+.marvel_who_we_are p{
+padding-left: 15px;
+padding-right: 15px;
+max-width: 450px;
+margin: 0 0;
+padding-bottom: 50px;
+}
+
+.marvel_who_we_are .form-main-button button{
+margin-left: 15px;
+font: 16px $font-article;
+padding: 16px 0px;
+width: 180px;
+font-weight: 500;
+margin-top: 0px;
+margin-bottom: 60px;
+margin-right: 0px;
+}
+}
+
+@media (max-width:425px) {
+  /* Third Block   */
+  .marvel_who_we_are h3{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+.marvel_who_we_are p{
+padding-left: 12px;
+padding-right: 12px;
+max-width: 350px;
+padding-top: 35px;
+padding-bottom: 40px;
+}
+
+.marvel_who_we_are .form-main-button button{
+font: 14px $font-article;
+margin-left: 10px;
+padding: 14px 0px;
+width: 140px;
+font-weight: 500;
+margin-bottom: 45px;
+margin-right: 0px;
+}
+
+.marvel_who_we_are .form-main-button button:first-child{
+margin-left: 0px;
+}
 }

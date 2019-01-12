@@ -230,3 +230,141 @@ padding-bottom: 100px;
 }
 
 }
+
+
+@media (min-width:426px) and (max-width:768px) {
+
+  /* First Block  */
+
+.page_about h2{
+font-weight: 900;
+}
+
+.page_about h4{
+font-weight: 900;
+padding-top: 5px;
+}
+
+.page_about p{
+font: 14px $font-lato;
+font-weight: 400;
+max-width: 600px;
+padding-bottom: 20px;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.page_about .form-main-button button{
+font: 16px $font-article;
+padding: 15px 0px;
+width: 180px;
+font-weight: 500;
+margin-right: 10px;
+margin-bottom: 80px;
+}
+
+.first_content_text_block{
+padding: 0px 15px 135px 15px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+}
+
+.first_c_text_block i{
+font-size: 100px;
+}
+
+.first_block_statistics h5{
+font: 26px $font-article;
+font-weight: 700;
+margin-bottom: 60px;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.first_statistics:first-child{
+margin-left: 15px;
+}
+
+.first_statistics:last-child{
+margin-right: 15px;
+}
+
+.first_statistics p:first-child{
+font: 32px $font-article;
+font-weight: 700;
+}
+
+.first_statistics p:last-child{
+padding-bottom: 100px;
+}
+}
+
+@media (max-width:425px) {
+  /* First Block  */
+
+
+.page_about p{
+font: 13px $font-lato;
+font-weight: 400;
+max-width: 420px;
+padding-bottom: 20px;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+.page_about .form-main-button button{
+font: 15px $font-article;
+padding: 14px 0px;
+width: 160px;
+font-weight: 500;
+margin-right: 15px;
+margin-bottom: 0px;
+}
+
+.first_content_text_block{
+padding: 40px 12px 65px 12px;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 20px;
+}
+
+.first_block_statistics h5{
+font: 22px $font-article;
+font-weight: 700;
+margin-bottom: 40px;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+.container_to_first_statistics{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 20px;
+padding-left: 12px;
+padding-right: 12px;
+text-align: center;
+}
+
+.first_statistics:first-child{
+margin-left: 0px;
+}
+
+.first_statistics:last-child{
+margin-right: 0px;
+}
+
+.first_statistics p:first-child{
+font: 22px $font-article;
+font-weight: 700;
+}
+
+.first_statistics p:last-child{
+font: 11px $font-article;
+color: $color_for_main_text;
+padding-bottom: 20px;
+}
+}

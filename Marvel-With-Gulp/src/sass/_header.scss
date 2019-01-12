@@ -185,6 +185,117 @@ margin-right: 20px;
 font: 13px $font-article;
 padding-right: 25px;
 }
+}
 
+
+@media (min-width:426px) and (max-width:768px) {
+  /*  Header   */
+
+.top_header h1{
+padding-top: 60px;
+font: 32px $font-article;
+padding-left: 15px;
+font-weight: 800;
+}
+
+.top_header p{
+padding-top: 35px;
+padding-left: 15px;
+max-width: 350px;
+}
+
+.top_header form{
+padding-bottom: 0px;
+padding-left: 15px;
+}
+
+.top_header .form-main-button button{
+font: 15px $font-article;
+font-weight: 700;
+padding: 14px 20px;
+margin-bottom: 80px;
+}
+
+.header_menu {
+display: block;
+text-align: center;
+}
+
+.header_menu img{
+margin-bottom: 0px;
+}
+
+.header_menu ul{
+display: flex;
+justify-content: space-between;
+margin-right: 15px;
+margin-left: 15px;
+}
+
+.ul_menu li{
+font: 13px $font-article;
+padding-right: 15px;
+margin-top: 20px;
+margin-bottom: 25px;
+}
+}
+
+
+@media (max-width:425px) {
+
+  /*  Header   */
+
+
+.top_header h1{
+padding-top: 50px;
+font: 26px $font-article;
+padding-left: 12px;
+font-weight: 800;
+}
+
+.top_header p{
+padding-top: 25px;
+font: 13px $font-lato;
+max-width: 300px;
+padding-left: 12px;
+padding-left: 12px;
+}
+
+.top_header form{
+padding-bottom: 0px;
+padding-left: 12px;
+}
+
+.top_header .form-main-button button{
+font: 13px $font-article;
+font-weight: 600;
+padding: 9px 12px;
+margin-top: 20px;
+margin-bottom: 50px;
+}
+
+
+.header_menu{
+display: block;
+text-align: center;
+}
+
+.header_menu img{
+margin-bottom: 0px;
+}
+
+.header_menu ul{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-right: 12px;
+margin-left: 12px;
+}
+
+.ul_menu li{
+font: 13px $font-article;
+padding-right: 15px;
+margin-bottom: 20px;
+}
 
 }

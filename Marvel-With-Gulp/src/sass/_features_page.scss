@@ -93,3 +93,52 @@ text-align: left;
 }
 
 }
+
+@media (min-width:426px) and (max-width:768px) {
+  /* Fourth Block  */
+
+.features_page{
+padding-bottom: 60px;
+}
+
+.features_page h4{
+padding-top: 10px;
+font-size: 18px;
+}
+
+.fourth_content_blocks{
+grid-template-columns: repeat(1, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 30px;
+text-align: left;
+padding-left: 15px;
+padding-right: 15px;
+}
+}
+
+@media (max-width:425px) {
+  /* Fourth Block  */
+
+.features_page{
+padding-bottom: 40px;
+}
+
+.features_page h2{
+font-size: 44px;
+}
+
+.features_page h4{
+font-size: 14px;
+padding-top: 15px;
+}
+
+.fourth_content_blocks{
+padding-top: 30px;
+grid-template-columns: repeat(1, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 20px;
+text-align: left;
+padding-left: 12px;
+padding-right: 12px;
+}
+}

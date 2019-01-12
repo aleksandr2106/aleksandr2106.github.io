@@ -99,6 +99,73 @@ textarea{
   .message .form-main-button button{
     margin-bottom: 80px;
   }
+}
 
 
+@media (min-width:426px) and (max-width:768px) {
+  /*  Eleven Content  */
+
+  .eleven_content{
+    margin-top: 35px;
+  }
+
+
+  .contact_page h2{
+    padding-top: 40px;
+  }
+
+  .container_to_input{
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .message{
+  padding-right: 15px;
+  padding-left: 15px;
+  }
+
+  .message .form-main-button button{
+    margin-bottom: 65px;
+  }
+}
+
+@media (max-width:425px) {
+  /*  Eleven Content  */
+
+  .eleven_content{
+    margin-top: 35px;
+  }
+
+  .contact_page h2{
+    padding-top: 40px;
+  }
+
+  .container_to_input{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    padding-top: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .message{
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  textarea{
+    height: 400px;
+  }
+
+  .message .form-main-button button{
+    width: 105px;
+    font: 15px $font-article;
+    font-weight: bolder;
+    margin-bottom: 55px;
+  }
 }

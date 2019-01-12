@@ -216,3 +216,135 @@
     padding-right: 20px;
   }
 }
+
+@media (min-width:426px) and (max-width:768px) {
+
+  /*  Ten Content    */
+
+  .news_page h2{
+    padding-top: 40px;
+  }
+
+  .news_photo_block{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .similar_news_photo_block:hover .hover_news_video{
+    margin-top: -110px;
+    margin-bottom: 37px;
+  }
+
+
+  .grey_block_under_news_photo p{
+    font: 10px $font-article;
+    font-weight: bolder;
+    padding: 8px 13px;
+  }
+
+  .similar_news_photo_block h6{
+    font: 15px $font-article;
+    font-weight: bolder;
+  }
+
+  .text_to_ten_block p:first-child{
+    font: 8px $font-basic;
+  }
+
+  .text_to_ten_block p:last-child{
+    padding-top: 20px;
+    font: 11px $font-basic;
+  }
+
+  .link_ten_block{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:425px) {
+  /*  Ten Content    */
+
+  .news_page h2{
+    padding-top: 40px;
+  }
+
+  .left_hover_photo-news, .right_hover_photo-news{
+    width: 25px;
+    height: 25px;
+    border-radius: 13px;
+    border: 1px solid #FFF;
+    color: #FFF;
+  }
+
+  .left_hover_photo-news:hover, .right_hover_photo-news:hover{
+    border: 1px solid #000;
+    color: #FFF;
+    background-color: #000;
+  }
+
+  .hover_photo-news{
+    display: none;
+    position: relative;
+    z-index: 3;
+  }
+
+  .similar_news_photo_block img{
+    position: relative;
+    z-index: 1;
+  }
+
+  .similar_news_photo_block:hover .hover_photo-news{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .similar_news_photo_block:hover .grey_block_under_news_photo{
+    margin-top: 2px;
+  }
+
+  .news_photo_block{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-top: 20px;
+  }
+
+  .grey_block_under_news_photo p{
+    font: 11px $font-article;
+    font-weight: bolder;
+    padding: 8px 16px;
+  }
+
+  .grey_block_under_news_photo {
+    width: 50%;
+  }
+
+  .similar_news_photo_block h6{
+    font: 15px $font-article;
+    font-weight: bolder;
+  }
+
+  .text_to_ten_block p:first-child{
+    font: 8px $font-basic;
+  }
+
+  .text_to_ten_block p:last-child{
+    padding-top: 20px;
+    font: 12px $font-basic;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .link_ten_block{
+    margin-top: 25px;
+  }
+}

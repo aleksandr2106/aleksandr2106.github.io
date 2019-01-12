@@ -103,3 +103,94 @@ margin-left: 20px;
 padding-bottom: 80px;
 }
 }
+
+
+
+@media (min-width:426px) and (max-width:768px) {
+
+  /* Second Block   */
+
+.responsive_page h2{
+padding-top: 60px;
+margin-left: 12px;
+}
+
+.responsive_page h4{
+font-weight: 800;
+margin-left: 17px;
+padding-top: 5px;
+}
+
+.responsive_page p{
+max-width: 500px;
+margin-left: 15px;
+padding-right: 15px;
+color: $color_for_dark_grey;
+}
+
+.ul_second_block_list{
+margin-top: 30px;
+padding-left: 15px;
+}
+
+.ul_second_block_list li{
+padding-top: 15px;
+}
+
+.ul_second_block_list li:last-child{
+padding-bottom: 30px;
+}
+
+.responsive_page .form-block-button button{
+margin-left: 15px;
+}
+
+.responsive_page .form-block-button{
+padding-bottom: 80px;
+}
+}
+
+@media (max-width:425px) {
+  /* Second Block   */
+
+.responsive_page h2{
+padding-top: 4px;
+margin-left: 4px;
+font-size: 40px;
+}
+
+.responsive_page h4{
+font-weight: 800;
+margin-left: 10px;
+}
+
+.responsive_page p{
+max-width: 420px;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+.ul_second_block_list{
+margin-top: 20px;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+.ul_second_block_list li{
+padding-top: 15px;
+}
+
+.ul_second_block_list li:last-child{
+padding-bottom: 25px;
+}
+
+.responsive_page .form-block-button button{
+padding: 14px 22px;
+margin-left: 12px;
+margin-right: 12px;
+}
+
+.responsive_page .form-block-button{
+padding-bottom: 30px;
+}
+}
