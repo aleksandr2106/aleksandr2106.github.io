@@ -13,15 +13,19 @@
 }
 
 .contact_page h2{
-  padding-top: 100px;
+  padding-top: 97px;
+}
+
+.contact_page h4{
+  font-weight: 900;
 }
 
 .container_to_input{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 30px;
+  grid-column-gap: 20px;
   grid-row-gap: 20px;
-  padding-top: 140px;
+  padding-top: 148px;
 }
 
 .container_to_input input{
@@ -53,10 +57,11 @@ textarea{
 }
 
 .message .form-main-button button{
+  margin-top: 22px;
   width: 145px;
-  font: 17px $font-article;
+  font: 16px $font-article;
   font-weight: bolder;
-  margin-bottom: 141px;
+  margin-bottom: 127px;
   background-color: $color_for_yellow;
 }
 
@@ -65,111 +70,102 @@ textarea{
   color: $color_for_yellow;
 }
 
-
-
-
-
 @media (min-width:1025px) and (max-width:1199px) {
 
-  .form_bottom{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
+.form_bottom{
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-
+}
 
 @media (min-width:769px) and (max-width:1024px) {
   /*  Eleven Content  */
 
-  .eleven_content{
-    margin-top: 100px;
-  }
-
-  .contact_page h2{
-    padding-top: 60px;
-  }
-
-  .form_bottom{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .container_to_input{
-    padding-top: 80px;
-  }
-
-  .message .form-main-button button{
-    margin-bottom: 80px;
-  }
+.eleven_content{
+  margin-top: 100px;
 }
 
+.contact_page h2{
+  padding-top: 60px;
+}
+
+.form_bottom{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container_to_input{
+  padding-top: 80px;
+}
+
+.message .form-main-button button{
+  margin-bottom: 80px;
+}
+}
 
 @media (min-width:426px) and (max-width:768px) {
   /*  Eleven Content  */
 
-  .eleven_content{
-    margin-top: 35px;
-  }
+.eleven_content{
+  margin-top: 35px;
+}
 
+.contact_page h2{
+  padding-top: 40px;
+}
 
-  .contact_page h2{
-    padding-top: 40px;
-  }
-
-  .container_to_input{
-    grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 20px;
-    padding-top: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .message{
-  padding-right: 15px;
+.container_to_input{
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 20px;
+  padding-top: 40px;
   padding-left: 15px;
-  }
+  padding-right: 15px;
+}
 
-  .message .form-main-button button{
-    margin-bottom: 65px;
-  }
+.message{
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.message .form-main-button button{
+  margin-bottom: 65px;
+}
 }
 
 @media (max-width:425px) {
   /*  Eleven Content  */
 
-  .eleven_content{
-    margin-top: 35px;
-  }
+.eleven_content{
+  margin-top: 35px;
+}
 
-  .contact_page h2{
-    padding-top: 40px;
-  }
+.contact_page h2{
+  padding-top: 40px;
+}
 
-  .container_to_input{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 20px;
-    padding-top: 40px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+.container_to_input{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  padding-top: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
 
-  .message{
-    padding-right: 12px;
-    padding-left: 12px;
-  }
+.message{
+  padding-right: 12px;
+  padding-left: 12px;
+}
 
-  textarea{
-    height: 400px;
-  }
+textarea{
+  height: 400px;
+}
 
-  .message .form-main-button button{
-    width: 105px;
-    font: 15px $font-article;
-    font-weight: bolder;
-    margin-bottom: 55px;
-  }
+.message .form-main-button button{
+  width: 105px;
+  font: 15px $font-article;
+  font-weight: bolder;
+  margin-bottom: 55px;
+}
 }

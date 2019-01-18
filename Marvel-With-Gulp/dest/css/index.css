@@ -11,15 +11,15 @@ h2 {
   font: 91px Montserrat, sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
-  padding-top: 70px;
+  padding-top: 72px;
 }
 
 h3 {
   font: 44px Montserrat, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: #FFF;
-  padding-top: 105px;
+  padding-top: 50px;
 }
 
 h4 {
@@ -137,7 +137,7 @@ p {
   max-width: 500px;
   font: 60px Montserrat, sans-serif;
   text-transform: uppercase;
-  padding-left: 0px;
+  padding-left: 5px;
   font-weight: 800;
   color: #444444;
 }
@@ -151,16 +151,17 @@ p {
 }
 
 .top_header form {
-  padding-bottom: 229px;
+  padding-bottom: 334px;
 }
 
 .top_header .form-main-button button {
   font: 16px Montserrat, sans-serif;
-  font-weight: 700;
-  padding: 19px 33px 15px 33px;
+  font-weight: 600;
+  padding: 17px 34px 17px 34px;
   color: #444444;
   border: 1px solid #444444;
   margin-top: 18px;
+  text-transform: uppercase;
   background-color: #FFFFFF;
 }
 
@@ -214,7 +215,7 @@ p {
   font: 14px Montserrat, sans-serif;
   cursor: pointer;
   padding-right: 65px;
-  margin-top: 28px;
+  margin-top: 32px;
   margin-bottom: 28px;
   list-style-type: none;
 }
@@ -412,7 +413,7 @@ ul.ul_menu li:last-child {
   font-weight: 400;
   max-width: 945px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
   color: #757575;
   line-height: 1.8;
 }
@@ -421,13 +422,13 @@ ul.ul_menu li:last-child {
   font: 18px Montserrat, sans-serif;
   padding-top: 20px;
   padding-bottom: 18px;
-  min-width: 220px;
+  min-width: 225px;
   border: 1px solid #444444;
   font-weight: 500;
   text-transform: none;
   color: #FFE400;
   background-color: #000;
-  margin-right: 15px;
+  margin-right: 20px;
   margin-bottom: 82px;
 }
 
@@ -512,7 +513,7 @@ ul.ul_menu li:last-child {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 108px;
+  margin-bottom: 103px;
 }
 
 .container_to_first_statistics {
@@ -529,7 +530,7 @@ ul.ul_menu li:last-child {
 }
 
 .first_statistics p:first-child {
-  font: 42px Montserrat, sans-serif;
+  font: 46px Montserrat, sans-serif;
   color: #444444;
   text-transform: uppercase;
   font-weight: 700;
@@ -737,15 +738,19 @@ ul.ul_menu li:last-child {
 }
 
 .contact_page h2 {
-  padding-top: 100px;
+  padding-top: 97px;
+}
+
+.contact_page h4 {
+  font-weight: 900;
 }
 
 .container_to_input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 30px;
+  grid-column-gap: 20px;
   grid-row-gap: 20px;
-  padding-top: 140px;
+  padding-top: 148px;
 }
 
 .container_to_input input {
@@ -777,10 +782,11 @@ textarea {
 }
 
 .message .form-main-button button {
+  margin-top: 22px;
   width: 145px;
-  font: 17px Montserrat, sans-serif;
+  font: 16px Montserrat, sans-serif;
   font-weight: bolder;
-  margin-bottom: 141px;
+  margin-bottom: 127px;
   background-color: #FFE400;
 }
 
@@ -880,7 +886,11 @@ textarea {
 }
 
 .expert_page h2 {
-  padding-top: 230px;
+  padding-top: 231px;
+}
+
+.expert_page h4 {
+  font-weight: 900;
 }
 
 .expert_content_blocks {
@@ -998,7 +1008,7 @@ textarea {
 
 .text_about_expert h6 {
   padding-top: 22px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   font: 11px Montserrat, sans-serif;
   color: #444444;
   font-weight: bolder;
@@ -1179,6 +1189,10 @@ textarea {
   padding-top: 105px;
 }
 
+.features_page h4 {
+  font-weight: 700;
+}
+
 .fourth_content_blocks {
   padding-top: 110px;
   display: grid;
@@ -1197,8 +1211,8 @@ textarea {
 }
 
 .fourth_similar_block_text h6 {
-  margin-block-start: 20px;
-  margin-block-end: 20px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
   font: 17px Montserrat, sans-serif;
   font-weight: bolder;
   text-transform: uppercase;
@@ -1331,6 +1345,7 @@ textarea {
   text-transform: uppercase;
   color: #000;
   font: 13px Lato, sans-serif;
+  min-width: 170px;
   font-weight: 700;
   margin-bottom: 105px;
   padding: 16px 25px;
@@ -1413,11 +1428,11 @@ textarea {
 }
 
 .news_page h2 {
-  padding-top: 115px;
+  padding-top: 117px;
 }
 
 .news_page h4 {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .left_hover_photo-news, .right_hover_photo-news {
@@ -1461,7 +1476,7 @@ textarea {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 30px;
-  padding-top: 94px;
+  padding-top: 92px;
 }
 
 .hover_news_video {
@@ -1521,7 +1536,7 @@ textarea {
 }
 
 .text_to_ten_block p:first-child {
-  padding-top: 5px;
+  padding-top: 17px;
   font: 10px Muli, sans-serif;
   text-transform: uppercase;
   color: #757575;
@@ -1529,10 +1544,11 @@ textarea {
 
 .text_to_ten_block p:last-child {
   padding-top: 28px;
-  font: 16px Muli, sans-serif;
+  font: 13px Muli, sans-serif;
   color: #757575;
   padding-left: 15px;
   padding-right: 15px;
+  line-height: 1.8;
 }
 
 .link_ten_block {
@@ -1727,7 +1743,7 @@ textarea {
 }
 
 .marvel_who_we_are img {
-  margin-top: 150px;
+  margin-top: 162px;
 }
 
 .marvel_who_we_are {
@@ -1742,7 +1758,7 @@ textarea {
   margin: 0 auto;
   padding-top: 25px;
   line-height: 1.8;
-  padding-bottom: 63px;
+  padding-bottom: 61px;
 }
 
 .marvel_who_we_are .form-main-button button {
@@ -1754,7 +1770,7 @@ textarea {
   margin-top: 0px;
   margin-bottom: 136px;
   text-transform: none;
-  margin-right: 15px;
+  margin-right: 20px;
   color: #FFF;
   background-color: inherit;
   border: 1px solid #FFF;
@@ -1866,11 +1882,15 @@ textarea {
 
 .pricing_page h2 {
   color: #E8D100;
-  padding-top: 85px;
+  padding-top: 83px;
+}
+
+.pricing_page h4 {
+  font-weight: 700;
 }
 
 .seven_price_blocks {
-  padding-top: 152px;
+  padding-top: 154px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
@@ -1981,7 +2001,7 @@ textarea {
   color: #444444;
   background-color: #FFF;
   padding-top: 14px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   width: 360px;
   border: 0px;
 }
@@ -2126,14 +2146,14 @@ textarea {
 }
 
 .ul_second_block_list li:last-child {
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 }
 
 .responsive_page .form-block-button button {
   font: 13px Montserrat, sans-serif;
   color: #000;
   background-color: #FFE400;
-  padding: 13px 26px;
+  padding: 13px 25px 14px 25px;
   border: 0px solid #FFE400;
   font-weight: bolder;
   text-transform: uppercase;
@@ -2272,16 +2292,21 @@ textarea {
   max-width: 555px;
   margin-left: auto;
   margin-right: 0;
-  padding-bottom: 65px;
+  padding-bottom: 70px;
   background-color: #FFF;
 }
 
 .service_page h2 {
-  padding-top: 135px;
+  padding-top: 128px;
+  font-weight: 900;
+}
+
+.service_page h4 {
+  font-weight: 700;
 }
 
 .service_page_content {
-  padding-top: 77px;
+  padding-top: 78px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
@@ -2310,7 +2335,7 @@ textarea {
 }
 
 .service_page_content_block p {
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 55px;
   text-align: center;
   line-height: 1.8;
@@ -2363,10 +2388,7 @@ textarea {
     padding-top: 30px;
   }
   .service_page_content_block p {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 15px;
   }
 }
 

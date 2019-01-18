@@ -1,4 +1,3 @@
-
 .second_content {
   background: url(../img/second_content_background.png);
   background-size:cover;
@@ -18,8 +17,8 @@
 }
 
 .responsive_page h4{
-font-weight: 800;
-margin-top: -46px;
+  font-weight: 800;
+  margin-top: -46px;
 }
 
 .responsive_page p{
@@ -40,14 +39,14 @@ margin-top: -46px;
 }
 
 .ul_second_block_list li:last-child{
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 }
 
 .responsive_page .form-block-button button{
   font: 13px $font-article;
   color: #000;
   background-color: $color_for_yellow;
-  padding: 13px 26px;
+  padding: 13px 25px 14px 25px;
   border: 0px solid $color_for_yellow;
   font-weight: bolder;
   text-transform: uppercase;
@@ -62,99 +61,90 @@ margin-top: -46px;
   padding-bottom: 116px;
 }
 
-
 @media (min-width:1025px) and (max-width:1199px) {
-
-  .responsive_page{
-    padding-left: 20px;
-  }
+.responsive_page{
+  padding-left: 20px;
+}
 }
 
-
-
 @media (min-width:769px) and (max-width:1024px) {
-
   /* Second Block   */
 
 .responsive_page h2{
-font-size: 60px;
-padding-top: 75px;
-font-weight: 800;
-margin-left: 13px;
+  font-size: 60px;
+  padding-top: 75px;
+  font-weight: 800;
+  margin-left: 13px;
 }
 
 .responsive_page h4{
-font-size: 30px;
-font-weight: 800;
-margin-left: 20px;
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 20px;
 }
 
 .responsive_page p{
-max-width: 500px;
-margin-left: 20px;
+  max-width: 500px;
+  margin-left: 20px;
 }
 
 .ul_second_block_list{
-margin-top: 40px;
-margin-left: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
 .responsive_page .form-block-button button{
-margin-left: 20px;
+  margin-left: 20px;
 }
 
 .responsive_page .form-block-button{
-padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 }
-
-
 
 @media (min-width:426px) and (max-width:768px) {
 
   /* Second Block   */
 
-
-
 .responsive_page h2{
-font-size: 54px;
-padding-top: 60px;
-margin-left: 12px;
+  font-size: 54px;
+  padding-top: 60px;
+  margin-left: 12px;
 }
 
 .responsive_page h4{
-font-size: 28px;
-font-weight: 800;
-margin-left: 17px;
-padding-top: 5px;
+  font-size: 28px;
+  font-weight: 800;
+  margin-left: 17px;
+  padding-top: 5px;
 }
 
 .responsive_page p{
-max-width: 500px;
-margin-left: 15px;
-padding-right: 15px;
-color: $color_for_dark_grey;
+  max-width: 500px;
+  margin-left: 15px;
+  padding-right: 15px;
+  color: $color_for_dark_grey;
 }
 
 .ul_second_block_list{
-margin-top: 30px;
-padding-left: 15px;
+  margin-top: 30px;
+  padding-left: 15px;
 }
 
 .ul_second_block_list li{
-padding-top: 15px;
+  padding-top: 15px;
 }
 
 .ul_second_block_list li:last-child{
-padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .responsive_page .form-block-button button{
-margin-left: 15px;
+  margin-left: 15px;
 }
 
 .responsive_page .form-block-button{
-padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 }
 
@@ -162,43 +152,43 @@ padding-bottom: 80px;
   /* Second Block   */
 
 .responsive_page h2{
-padding-top: 4px;
-margin-left: 4px;
-font-size: 40px;
+  padding-top: 4px;
+  margin-left: 4px;
+  font-size: 40px;
 }
 
 .responsive_page h4{
-font-weight: 800;
-margin-left: 10px;
+  font-weight: 800;
+  margin-left: 10px;
 }
 
 .responsive_page p{
-max-width: 420px;
-padding-left: 12px;
-padding-right: 12px;
+  max-width: 420px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .ul_second_block_list{
-margin-top: 20px;
-padding-left: 12px;
-padding-right: 12px;
+  margin-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .ul_second_block_list li{
-padding-top: 15px;
+  padding-top: 15px;
 }
 
 .ul_second_block_list li:last-child{
-padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .responsive_page .form-block-button button{
-padding: 14px 22px;
-margin-left: 12px;
-margin-right: 12px;
+  padding: 14px 22px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .responsive_page .form-block-button{
-padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 }

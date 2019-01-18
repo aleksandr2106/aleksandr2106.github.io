@@ -23,7 +23,7 @@
   font-weight: 400;
   max-width: 945px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
   color: $color_for_dark_grey;
   line-height: 1.8;
 }
@@ -32,13 +32,13 @@
   font: 18px $font-article;
   padding-top: 20px;
   padding-bottom: 18px;
-  min-width: 220px;
+  min-width: 225px;
   border: 1px solid $color_for_h1;
   font-weight: 500;
   text-transform: none;
   color: $color_for_yellow;
   background-color: #000;
-  margin-right: 15px;
+  margin-right: 20px;
   margin-bottom: 82px;
 }
 
@@ -123,7 +123,7 @@
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 108px;
+  margin-bottom: 103px;
 }
 
 .container_to_first_statistics{
@@ -140,7 +140,7 @@
 }
 
 .first_statistics p:first-child{
-  font: 42px $font-article;
+  font: 46px $font-article;
   color: $color_for_h1;
   text-transform: uppercase;
   font-weight: 700;
