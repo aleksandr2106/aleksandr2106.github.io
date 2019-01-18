@@ -1,19 +1,12 @@
-//CreateURl
+country = window.prompt("Enter your country, please");
+region = window.prompt("Enter your region, please");
 
-
-function CorrectTime(t, c){
-  return c.test(time);
+function myTag(strings, country, region) {
+  var str0 = strings[0];
+  var str1 = strings[1];
+  var str2 = strings[2];
+  return `${str0}${country}${str1}${region}${str2}`;
 }
 
-let correct_time = /^(([01][0-9])|(2[0-3])):[0-5][0-9]$/;
-let result;
-
-do {
-  time = window.prompt("Enter any time, for checks, please");
-  result = CorrectTime(time, correct_time);
-  if (result) {
-    alert("Correct Format");
-  } else {
-    alert("Incorrect Format");
-  }
-} while (!result);
+var output = myTag`/api/countries/${ country }/regions/${ region }/`;
+alert(output);
