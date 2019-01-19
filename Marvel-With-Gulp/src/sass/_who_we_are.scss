@@ -49,14 +49,23 @@
 }
 
 @media (min-width:1025px) and (max-width:1199px) {
-  .marvel_who_we_are h3{
-    padding-top: 180px;
-  }
+
+.marvel_who_we_are img{
+  margin-top: 130px;
+}
+
+.marvel_who_we_are h3{
+  padding-top: 50px;
+}
 }
 
 @media (min-width:769px) and (max-width:1024px) {
 
   /* Third Block   */
+.marvel_who_we_are img{
+  margin-left: 20px;
+  margin-top: 100px;
+}
 
 .marvel_who_we_are{
   text-align: left;
@@ -64,6 +73,7 @@
 
 .marvel_who_we_are h3{
   margin-left: 20px;
+  padding-top: 50px;
 }
 
 .marvel_who_we_are p{
@@ -85,6 +95,10 @@
 @media (min-width:426px) and (max-width:768px) {
 
   /* Third Block   */
+.marvel_who_we_are img{
+  margin-left: 15px;
+  margin-top: 80px;
+}
 
 .marvel_who_we_are{
   text-align: left;
@@ -92,6 +106,7 @@
 
 .marvel_who_we_are h3{
   margin-left: 15px;
+  padding-top: 30px;
 }
 
 .marvel_who_we_are p{
@@ -116,6 +131,10 @@
 
 @media (max-width:425px) {
   /* Third Block   */
+.marvel_who_we_are img{
+  margin-top: 50px;
+}
+
 .marvel_who_we_are h3{
   padding-left: 12px;
   padding-right: 12px;
