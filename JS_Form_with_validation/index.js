@@ -17,7 +17,8 @@ function showError(container, errorMessage) {
    function validate(form) {
      var elems = form.elements;
      var counter = form.elements.length;
-     console.log(counter);
+     const radioButton = document.querySelectorAll('.gender input');
+
      resetError(elems.firstName.parentNode);
      if (!elems.firstName.value) {
        showError(elems.firstName.parentNode, 'Enter your First Name!!!');
@@ -29,12 +30,18 @@ function showError(container, errorMessage) {
        showError(elems.lastName.parentNode, 'Enter your Last Name!!!');
        counter--;
      }
-     /*console.log(elems.gender.value);
-     //resetError(elems.gender.parentNode);
-      if (!elems.gender.value) {
-        showError(elems.gender.parentNode, 'Enter your Last Name!!!');
-      }*/
 
+     radioButton[1].parentNode.style.color = '';
+     if(radioButton[0].checked!==true&&radioButton[1].checked!==true){
+       radioButton[1].parentNode.style.color = 'red';
+       counter--;
+     }
+
+      resetError(elems.birthday.parentNode);
+      if (!elems.birthday.value) {
+        showError(elems.birthday.parentNode, 'Enter your birthday!!!');
+        counter--;
+      }
 
      resetError(elems.password.parentNode);
      if (!elems.password.value) {
