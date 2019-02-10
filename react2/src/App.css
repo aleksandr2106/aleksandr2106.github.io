@@ -1,0 +1,12 @@
+.rect {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.rect2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: none;
+}
