@@ -14,6 +14,12 @@ class App extends Component {
     });
   };
 
+  clearInput = () => {
+    this.setState({
+      query: '',
+    });
+  };
+
   render() {
     const { query } = this.state;
     const filteredCountries = countries.filter(c =>
@@ -40,10 +46,10 @@ class App extends Component {
         />
 
         <button onClick={this.handleClick.bind(this)}>Reverse</button>
+        <button onClick={this.clearInput.bind(this)}>Clear</button>
         {query && (
           <p>
-            Found {filteredCountries.length} / {countries.length}
-            for "{query}"{' '}
+            Found {filteredCountries.length} / {countries.length}; for "{query}"{' '}
           </p>
         )}
         <ul>
