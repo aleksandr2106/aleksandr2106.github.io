@@ -40,18 +40,23 @@ class App extends Component {
     );
     return (
       <div>
-        <input
-          onChange={e => this.setState({ query: e.target.value })}
-          value={query}
-        />
+        <div className="search_place">
+          <button onClick={this.handleClick.bind(this)}>Reverse</button>
+          <input
+            placeholder="Enter country"
+            onChange={e => this.setState({ query: e.target.value })}
+            value={query}
+          />
 
-        <button onClick={this.handleClick.bind(this)}>Reverse</button>
-        <button onClick={this.clearInput.bind(this)}>Clear</button>
-        {query && (
-          <p>
-            Found {filteredCountries.length} / {countries.length}; for "{query}"{' '}
-          </p>
-        )}
+          <button onClick={this.clearInput.bind(this)}>Clear</button>
+
+          {query && (
+            <p>
+              Found {filteredCountries.length} / {countries.length}; for "
+              {query}"{' '}
+            </p>
+          )}
+        </div>
         <ul>
           {filteredCountries.map(c => (
             <li key={c}>{c}</li>

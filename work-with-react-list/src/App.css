@@ -1,0 +1,51 @@
+body {
+  background-color: #dee8e3;
+}
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+li:hover {
+  color: orange;
+}
+
+.search_place {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+}
+
+button:first-child {
+  height: 36px;
+  padding: 5px 30px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: orange;
+  color: black;
+  border-color: black;
+}
+
+button:last-child {
+  height: 36px;
+  padding: 5px 30px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: orange;
+  color: black;
+  border-color: black;
+}
+
+button:hover {
+  background-color: black;
+  color: orange;
+  border-color: orange;
+}
