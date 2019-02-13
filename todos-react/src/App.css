@@ -1,0 +1,59 @@
+* {
+  text-align: center;
+  padding-inline-start: 0px;
+}
+h3 {
+  font-size: 46px;
+  text-align: center;
+  color: grey;
+}
+
+input {
+  height: 50px;
+  width: 350px;
+}
+
+button {
+  height: 56px;
+  padding: 10px 30px;
+}
+
+button:hover {
+  background-color: white;
+}
+
+ul {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+li {
+  list-style-type: none;
+  border: 1px solid grey;
+  padding: 10px 5px;
+  display: flex;
+  text-align: left;
+}
+
+li:hover {
+  background-color: grey;
+}
+
+div .complete {
+  max-width: 50px;
+}
+
+.complete {
+  float: left;
+  height: 30px;
+  width: 30px;
+  border: 1px solid green;
+  border-radius: 15px;
+  max-width: 50px;
+  padding-top: 5px;
+}
+
+.complete p {
+  padding-top: 0px;
+}

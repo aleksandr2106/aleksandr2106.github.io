@@ -25,19 +25,26 @@ class App extends Component {
     const filteredCountries = countries.filter(c =>
       c.toLowerCase().includes(query.toLowerCase())
     );
-    let order = this.state.order ? (
-      <ul>
-        {filteredCountries.reverse().map(c => (
-          <li key={c}>{c}</li>
-        ))}
-      </ul>
-    ) : (
-      <ul>
-        {filteredCountries.map(c => (
-          <li key={c}>{c}</li>
-        ))}
-      </ul>
-    );
+
+    if (this.state.order) {
+      {
+        filteredCountries.reverse().map(c => <li key={c}>{c}</li>);
+      }
+    }
+
+    // let order = this.state.order ? (
+    //   <ul>
+    //     {filteredCountries.reverse().map(c => (
+    //       <li key={c}>{c}</li>
+    //     ))}
+    //   </ul>
+    // ) : (
+    //   <ul>
+    //     {filteredCountries.map(c => (
+    //       <li key={c}>{c}</li>
+    //     ))}
+    //   </ul>
+    // );
     return (
       <div>
         <div className="search_place">
