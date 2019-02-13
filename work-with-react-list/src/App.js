@@ -27,9 +27,7 @@ class App extends Component {
     );
 
     if (this.state.order) {
-      {
-        filteredCountries.reverse().map(c => <li key={c}>{c}</li>);
-      }
+      filteredCountries.reverse();
     }
 
     // let order = this.state.order ? (

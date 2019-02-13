@@ -29,7 +29,10 @@ class App extends Component {
         <div className="complete">
           <p>V</p>
         </div>
-        {todo}
+        <div className="main_list">{todo}</div>
+        <div className="remove">
+          <p>X</p>
+        </div>
       </li>
     ));
     return (
