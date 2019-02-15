@@ -26,11 +26,9 @@ import countries from './countries';
 import Pagination from './Pagination';
 
 class App extends Component {
-
   state = {
-    itemsPerPage = 10;
     currentPage: 1,
-    itemsPerPage: this.itemsPerPage,
+    itemsPerPage: 10,
     countPage: Math.ceil(countries.length / this.itemsPerPage),
   };
 
