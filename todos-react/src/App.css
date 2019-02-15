@@ -22,38 +22,22 @@ button:hover {
   background-color: white;
 }
 
-ul {
+.todos {
   width: 500px;
   margin: 0 auto;
   margin-top: 50px;
 }
 
-li {
+.list {
   list-style-type: none;
   border: 1px solid grey;
   padding: 10px 5px;
   display: flex;
   text-align: left;
-}
-
-li:hover {
-  background-color: grey;
-}
-
-div .complete {
-  max-width: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .complete {
-  float: left;
-  height: 50px;
-  width: 50px;
-  border: 1px solid green;
-  border-radius: 25px;
-  max-width: 50px;
-  margin-top: 5px;
-}
-
-.complete p {
-  padding-top: 0px;
+  background-color: green;
 }

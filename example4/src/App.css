@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+}
+
+button.prev-next-button {
+  min-width: 80px;
+  padding: 5px 0;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+button.prev-next-button:hover {
+  background-color: blue;
+}
+
+button.active-page {
+  cursor: pointer;
+  transform: scale(1.5);
+  background-color: red;
+  border: 1px solid red;
+}
+
+.list-button:hover {
+  transform: scale(1.1);
+}
+
+li {
+  padding: 5px 5px;
+  list-style-type: none;
+}
+
+button {
+  margin: 10px 5px;
+  display: inline-block;
+}
