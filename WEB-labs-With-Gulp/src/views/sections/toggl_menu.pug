@@ -1,0 +1,22 @@
+include ../components/mixins
+div.menu
+  div.logo
+    div.circle_logo_icon
+      i(class='fas fa-power-off')
+    p toggl
+  div.main_list_menu
+    +menu_list_element('far fa-clock', 'Timer')
+    +menu_list_element('fas fa-chart-bar', 'Dashboard')
+    +menu_list_element('fas fa-file-alt', 'Reports')
+    +menu_list_element('fas fa-chart-line', 'Insights')
+    +menu_list_element('far fa-star', 'Saved Reports')
+  div.manage_menu
+    h6 Manage
+    +menu_list_element('far fa-folder', 'Projects')
+    +menu_list_element('fas fa-user', 'Clients')
+    +menu_list_element('fas fa-users', 'Team')
+    +menu_list_element('fas fa-briefcase', 'Workspaces')
+    +menu_list_element('fas fa-tag', 'Tags')
+    +menu_list_element('far fa-question-circle', 'Help')
+    
+    

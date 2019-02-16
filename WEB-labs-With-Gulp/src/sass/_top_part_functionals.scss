@@ -1,0 +1,12 @@
+%flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_part_of_functionals {
+  @extend %flex-space-between;
+}
+
+.top_functionals {
+  @extend %flex-space-between;
+}
