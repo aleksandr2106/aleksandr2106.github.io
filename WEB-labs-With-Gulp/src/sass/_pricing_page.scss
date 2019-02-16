@@ -1,0 +1,256 @@
+.seventh_content{
+  background: url(../img/seventh_background.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.pricing_page{
+  max-width: $max-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing_page h2{
+  color: #E8D100;
+  padding-top: 83px;
+}
+
+.pricing_page h4{
+  font-weight: 700;
+}
+
+.seven_price_blocks{
+  padding-top: 154px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.grey_top_price_block{
+  display: none;
+}
+
+.price_block:nth-of-type(2) .grey_top_price_block{
+  display: block;
+}
+
+.price_block:nth-child(1) .top_content_price_block{
+  background: url(../img/services-first.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.grey_top_price_block{
+  background-color: #E6E6E6;
+}
+
+.grey_top_price_block p{
+  font: 15px $font-basic;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  color: $color_for_h1;
+}
+
+.price_block:nth-child(2){
+  margin-top: -40px;
+}
+
+.price_block:nth-child(2) .top_content_price_block{
+  background: url(../img/services-second.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.price_block:nth-child(3) .top_content_price_block{
+  background: url(../img/services-third.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.top_content_price_block{
+  color: #FFF;
+}
+
+.top_content_price_block h6{
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font: 15px $font-poppins;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.top_content_price_block p:last-child{
+  padding-bottom: 38px;
+  font-size: 13px;
+}
+
+.price_per_month{
+  display: flex;
+  justify-content: center;
+}
+
+.price_per_month p:nth-child(1){
+  padding-top: 8px;
+  font: 30px $font-poppins;
+}
+
+.price_per_month p:nth-child(2){
+  font: 60px $font-poppins;
+  font-weight: 700;
+}
+
+.price_per_month p:nth-child(3){
+  padding-top: 50px;
+  padding-left: 5px;
+  padding-bottom: 28px;
+  font: 12px $font-poppins;
+}
+
+.main_content_price_block{
+  background-color: #FFF;
+  padding-top: 60px;
+}
+
+.main_content_price_block p{
+  color: #808080;
+  font: 12px $font-basic;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $color_for_grey_h2;
+}
+
+.form-price_bottom-button{
+  margin-top: 4px;
+  padding-bottom: 107px;
+}
+
+.form-price_bottom-button button{
+  font: 14px $font-article;
+  font-weight: 500;
+  color: $color_for_h1;
+  background-color: #FFF;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  width: 360px;
+  border: 0px;
+}
+
+.form-price_bottom-button button:hover{
+  color: $color_for_yellow;
+  background-color: #000;
+}
+
+@media (min-width:1025px) and (max-width:1199px) {
+
+.seven_price_blocks{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.form-price_bottom-button button{
+  width: 100%;
+}
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+  /*  Seven Content  */
+
+.seven_price_blocks{
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main_content_price_block{
+  padding-top: 30px;
+}
+
+.main_content_price_block p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-price_bottom-button{
+margin-top: 5px;
+padding-bottom: 80px;
+}
+
+.form-price_bottom-button button{
+  width: 100%;
+}
+}
+
+@media (min-width:426px) and (max-width:768px) {
+
+  /*  Seven Content  */
+
+.seven_price_blocks{
+  padding-top: 50px;
+  grid-template-columns: 1fr;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form-price_bottom-button button{
+  width: 100%;
+}
+}
+
+@media (max-width:425px) {
+  /*  Seven Content  */
+
+.seven_price_blocks{
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 30px;
+}
+
+.grey_top_price_block p{
+  font: 15px $font-basic;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  color: $color_for_h1;
+}
+
+.price_block:nth-child(2){
+  margin-top: -40px;
+}
+
+.top_content_price_block h6{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font: 18px $font-poppins;
+  font-weight: 500;
+}
+
+.top_content_price_block p:last-child{
+  padding-bottom: 40px;
+}
+
+.price_per_month{
+  display: flex;
+  justify-content: center;
+}
+
+.main_content_price_block{
+  padding-top: 0px;
+}
+
+.form-price_bottom-button{
+  padding-bottom: 65px;
+}
+
+.form-price_bottom-button button{
+  width: 100%;
+}
+}

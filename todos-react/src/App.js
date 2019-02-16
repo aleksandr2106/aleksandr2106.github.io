@@ -37,6 +37,16 @@ class App extends Component {
     });
   };
 
+  handlePageNumberButton = number => {
+    this.setState({
+      activeTittle:
+        number > 0 && number <= this.state.todos.length;
+          ? number
+          : this.state.activeTittle,
+    });
+  };
+
+
   removeFromTodos = id => {
     const { todos } = this.state;
 

@@ -1,0 +1,18 @@
+include ../components/mixins
+div.eleven_content
+  div.contact_page
+    h2 Contact 
+    h4 Send us Message
+    div.form_bottom
+      section.personal-information
+        div.block
+          div.container_to_input
+            input(required type="text" placeholder="First Name")
+            input(required type="text" placeholder="Last Name")
+            input(required type="email" placeholder="Email")
+            input(type="text" placeholder="Subject")
+        div.message
+          textarea(placeholder="Type your message")
+          form.form-main-button
+            +main_button('SEND')
+                   

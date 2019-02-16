@@ -1,0 +1,115 @@
+.ninth_content{
+  background: url(../img/nine_backgorund.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.impressed_by_our_work{
+  max-width: $max-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.impressed_by_our_work h3{
+  padding-top: 100px;
+  font: 30px $font-lato;
+  color: #FFF;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.impressed_by_our_work p{
+  padding-top: 5px;
+  font: 13px $font-basic;
+  color: #FFF;
+  padding-bottom: 86px;
+}
+
+.impressed_by_our_work .form-main-button button{
+  text-transform: uppercase;
+  color: #000;
+  font: 13px $font-lato;
+  min-width: 170px;
+  font-weight: 700;
+  margin-bottom: 105px;
+  padding: 16px 25px;
+  margin-left: 10px;
+ /*  width: 170px;*/
+}
+
+.impressed_by_our_work .form-main-button button:first-child{
+  margin-left: 0px;
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  /* Nine Block   */
+
+.impressed_by_our_work h3{
+  padding-top: 50px;
+}
+
+.impressed_by_our_work p{
+  padding-bottom: 30px;
+}
+
+.form-main-button button{
+  text-transform: uppercase;
+  color: #000;
+  font: 13px $font-lato;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+}
+
+@media (min-width:426px) and (max-width:768px) {
+  /* Nine Block   */
+
+.impressed_by_our_work h3{
+  padding-top: 40px;
+  font: 24px $font-lato;
+  font-weight: bolder;
+}
+
+.impressed_by_our_work p{
+  padding-bottom: 20px;
+}
+
+.impressed_by_our_work .form-main-button button{
+  text-transform: uppercase;
+  color: #000;
+  font: 11px $font-lato;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding: 12px 15px;
+  margin-left: 10px;
+}
+}
+
+@media (max-width:425px) {
+  /* Nine Block   */
+
+.impressed_by_our_work h3{
+  padding-top: 40px;
+  font: 20px $font-lato;
+  font-weight: bolder;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.impressed_by_our_work p{
+  font: 12px $font-basic;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.impressed_by_our_work .form-main-button button{
+  text-transform: uppercase;
+  color: #000;
+  font: 10px $font-lato;
+  font-weight: 700;
+  margin-bottom: 35px;
+  padding: 8px 10px;
+  margin-left: 10px;
+}
+}

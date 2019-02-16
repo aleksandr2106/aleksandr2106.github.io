@@ -1,0 +1,152 @@
+$font-article: Montserrat, sans-serif;
+$font-basic: Muli, sans-serif;
+$font-lato: Lato, sans-serif;
+$font-poppins: Poppins, sans-serif;
+$max-width: 1140px;
+$color_for_h1: #444444;
+$color_for_main_text: #878787;
+$color_for_menu_block: #2A2A2A;
+$color_for_yellow: #FFE400;
+$color_for_grey_h2: #E8E8E8;
+$color_for_black: #212121;
+$color_for_dark_grey: #757575;
+
+      /*  General Style   */
+*{box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+h2{
+  color: $color_for_grey_h2;
+  font: 91px $font-article;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-top: 72px;
+}
+
+h3{
+  font: 44px $font-article;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #FFF;
+  padding-top: 50px;
+}
+
+h4{
+  color: $color_for_h1;
+  font: 28px $font-basic;
+  text-transform: uppercase;
+  margin-top: -52px;
+  margin-bottom: 20px
+}
+
+.form-main-button button{
+  font: 18px $font-article;
+  padding: 20px 0px;
+  border: 1px solid $color_for_h1;
+  font-weight: bolder;
+}
+
+p{
+  font: 16px $font-basic;
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+  /*  General Style   */
+
+
+h2{
+
+font: 78px $font-article;
+padding-top: 60px;
+}
+
+h3{
+font: 40px $font-article;
+font-weight: 700;
+padding-top: 75px;
+}
+
+h4{
+font: 25px $font-basic;
+margin-top: -45px;
+margin-bottom: 20px
+}
+
+.form-main-button button{
+font: 16px $font-article;
+padding: 18px 0px;
+font-weight: 700;
+}
+
+p{
+font: 15px $font-basic;
+}
+}
+
+@media (min-width:426px) and (max-width:768px) {
+
+  h2{
+    font: 60px $font-article;
+    font-weight: bolder;
+    padding-top: 40px;
+  }
+
+  h3{
+    font: 36px $font-article;
+    font-weight: 700;
+    padding-top: 55px;
+  }
+
+  h4{
+    font: 22px $font-basic;
+    margin-top: -42px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  .form-main-button button{
+    font: 15px $font-article;
+    padding: 16px 0px;
+    font-weight: bolder;
+  }
+
+  p{
+    font: 14px $font-basic;
+  }
+}
+
+@media (max-width:425px) {
+
+  h2{
+    font: 50px $font-article;
+    font-weight: bolder;
+    padding-top: 30px;
+  }
+
+  h3{
+    font: 32px $font-article;
+    font-weight: 700;
+    color: #FFF;
+    padding-top: 45px;
+  }
+
+  h4{
+    font: 20px $font-basic;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .form-main-button button{
+    font: 14px $font-article;
+    padding: 15px 0px;
+  }
+
+  p{
+    font: 13px $font-basic;
+  }
+}

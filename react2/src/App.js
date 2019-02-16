@@ -1,23 +1,24 @@
-import React, { Component } from "react";
-import "./App.css";
+import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Header from './Elements/Header';
+import PageOne from './Views/PageOne';
+import PageTwo from './Views/PageTwo';
+import PageThree from './Views/PageThree';
+import NotFound from './Views/NotFound';
+import './App.css';
 
 class App extends Component {
-  state = {
-    counter: 0,
-    rect: true
-  };
-
-  handleClick = () => {
-    this.setState({
-      rect: !this.state.rect
-    });
-  };
   render() {
-    let rect = this.state.rect ? "rect2" : "rect";
     return (
-      <div>
-        <button onClick={this.handleClick.bind(this)}>Click me</button>
-        <div className={rect} />
+      <div className="App">
+        <Header />
+
+        <Switch>
+          <Route component={PageOne} path="/" exact />
+          <Route component={PageTwo} path="/two/:itemId" />
+          <Route component={PageThree} path="/three" exact />
+          <Route component={NotFound} />
+        </Switch>
       </div>
     );
   }
