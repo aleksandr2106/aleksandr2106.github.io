@@ -1,0 +1,35 @@
+.main_statistic {
+  padding: 20px 0px 0px 13vw;
+}
+
+.period-select p {
+  font-size: 18px;
+}
+
+.output_statistics {
+  padding-top: 15px;
+  padding-right: 30px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+.output_statistics p {
+  font-size: 18px;
+}
+
+.output_statistics p:first-child {
+  padding: 10px 0px;
+  border-bottom: 2px solid $orange;
+}
+
+.output_statistics p:last-child {
+  padding: 10px 0px;
+  border-bottom: 2px solid $red_in_site;
+}
+
+.output_statistics p:nth-child(2) {
+  padding: 10px 0px;
+  border-bottom: 2px solid $green;
+}

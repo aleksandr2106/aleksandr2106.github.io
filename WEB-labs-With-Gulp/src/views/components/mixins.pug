@@ -1,7 +1,3 @@
-mixin main_button(button_name)
-  button(type = "submit") #{button_name}
-
-mixin menu_list_element(menu_icon_name, menu_title )
-  div.menu_single_elements
-    i(class=menu_icon_name)
-    p #{menu_title}
+include ./menu_list_element
+include ./one_day_block
+    

@@ -1,0 +1,8 @@
+include ./one_time_period
+mixin one_day_block(date, work_time)
+  div.single_day_block
+    div.top_day_block
+      p #{date}
+      p #{work_time}
+    +one_time_period('Add description', '15:18 - 16:18' , '1:00:00')
+    +one_time_period('Add description', '17:18 - 19:18' , '2:00:00')

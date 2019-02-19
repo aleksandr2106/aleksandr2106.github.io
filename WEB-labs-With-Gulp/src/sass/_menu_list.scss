@@ -1,5 +1,5 @@
 .menu {
-  background-color: #323232;
+  background-color: $background-color_menu;
   height: 100vh;
   width: 12vw;
   float: left;
@@ -11,7 +11,7 @@
 }
 
 .circle_logo_icon {
-  background-color: #e20505;
+  background-color: $red_in_site;
   border-radius: 30px;
   margin-left: 10px;
 }
@@ -41,32 +41,38 @@
   padding-left: 10px;
   font-size: 16px;
   text-transform: uppercase;
-  color: #9c9c9c;
+  color: $h6_color;
   font-weight: 900;
 }
 
 .menu_single_elements {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   padding: 10px 0px;
 }
 
 .menu_single_elements:first-child {
-  background-color: #494949;
+  background-color: $menu_single_elements_hover_color;
   border-radius: 10px;
 }
 
+.menu_single_elements:first-child i,
+.menu_single_elements:first-child p {
+  color: $green;
+}
+
 .menu_single_elements:hover {
-  background-color: #494949;
+  background-color: $menu_single_elements_hover_color;
   border-radius: 10px;
 }
 
 .menu_single_elements i {
-  color: #d6d6d6;
+  color: $light_grey;
   font-size: 20px;
   padding-left: 10px;
 }
 
 .menu_single_elements p {
-  color: #d6d6d6;
+  color: $light_grey;
   padding-left: 10px;
 }

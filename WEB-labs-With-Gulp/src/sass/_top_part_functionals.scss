@@ -5,8 +5,38 @@
 
 .top_part_of_functionals {
   @extend %flex-space-between;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.top_part_of_functionals p {
+  font-size: 22px;
+}
+
+.top_part_of_functionals i {
+  font-size: 20px;
+  color: $menu_single_elements_hover_color;
+  padding: 5px 15px;
+}
+
+.top_part_of_functionals i:hover {
+  color: $green;
 }
 
 .top_functionals {
   @extend %flex-space-between;
+}
+
+.top_functionals i:nth-child(4) {
+  font-size: 36px;
+  color: $green;
+  padding: 0px 15px;
+}
+
+.top_functionals i:nth-child(4):hover {
+  color: $red_in_site;
+}
+
+.top_functionals p {
+  padding: 0px 25px;
 }
