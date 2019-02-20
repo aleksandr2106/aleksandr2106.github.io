@@ -22,7 +22,7 @@ class App extends Component {
       todos: [
         ...todos,
         {
-          id: todos.length,
+          id: Math.floor(Math.random() * 100000),
           title: taskTitle,
         },
       ],
@@ -37,16 +37,6 @@ class App extends Component {
     });
   };
 
-  handlePageNumberButton = number => {
-    this.setState({
-      activeTittle:
-        number > 0 && number <= this.state.todos.length;
-          ? number
-          : this.state.activeTittle,
-    });
-  };
-
-
   removeFromTodos = id => {
     const { todos } = this.state;
 
@@ -56,19 +46,23 @@ class App extends Component {
   };
 
   completeTodos = id => {
-    // this.setState({
-    //   activeTittle: id,
-    // });
-
     const { todos } = this.state;
 
-    const otherTodos = todos.filter(p => p.id !== id);
+    for (var key in todos) {
+      todos[key]['id'] === id
+        ? (todos[key]['title'] += '__complete!!!')
+        : (todos[key]['title'] += '');
+    }
+    this.setState({
+      todos: [...todos],
+    });
+    console.log(todos);
 
-    const completeTodos = todos.filter(p => p.id === id);
-
-    const newTodos = [...otherTodos, ...completeTodos];
-
-    this.setState({ todos: newTodos });
+    // for (var i = 0; i < todos.length; i++) {
+    //   todos[i]['id'] === id
+    //     ? console.log('URRRAAAA', id)
+    //     : console.log('Ne to', id);
+    // }
   };
 
   render() {
