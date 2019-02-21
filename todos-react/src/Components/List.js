@@ -5,11 +5,10 @@ class List extends Component {
     const { title, id, remove, complete, listClassName } = this.props;
 
     return (
-      <div className={listClassName}>
+      <div className="list_item">
         <button onClick={() => complete(id)}>V</button>
 
         {title}
-
         <button onClick={() => remove(id)}>X</button>
       </div>
     );

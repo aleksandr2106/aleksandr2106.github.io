@@ -7,16 +7,31 @@ class FullList extends Component {
 
     return (
       <div className="todos">
-        {todos.map(todo => (
-          <List
-            key={todo.id}
-            id={todo.id}
-            title={todo.title}
-            remove={removeFromTodos}
-            complete={completeTodos}
-            listClassName={listClassName}
-          />
-        ))}
+        {todos.map(todo =>
+          todo.done === 1 ? (
+            <div className="list complete">
+              <List
+                key={todo.id}
+                id={todo.id}
+                title={todo.title}
+                remove={removeFromTodos}
+                complete={completeTodos}
+                listClassName={listClassName}
+              />
+            </div>
+          ) : (
+            <div className="list">
+              <List
+                key={todo.id}
+                id={todo.id}
+                title={todo.title}
+                remove={removeFromTodos}
+                complete={completeTodos}
+                listClassName={listClassName}
+              />
+            </div>
+          )
+        )}
       </div>
     );
   }

@@ -7,7 +7,6 @@ class App extends Component {
     taskTitle: '',
     todos: [],
     listClassName: 'list',
-    activeTittle: -1,
   };
 
   handleAddToTodos = () => {
@@ -24,6 +23,7 @@ class App extends Component {
         {
           id: Math.floor(Math.random() * 100000),
           title: taskTitle,
+          done: 0,
         },
       ],
       taskTitle: '',
@@ -50,19 +50,12 @@ class App extends Component {
 
     for (var key in todos) {
       todos[key]['id'] === id
-        ? (todos[key]['title'] += '__complete!!!')
-        : (todos[key]['title'] += '');
+        ? (todos[key]['done'] = 1)
+        : (todos[key]['done'] += 0);
     }
     this.setState({
       todos: [...todos],
     });
-    console.log(todos);
-
-    // for (var i = 0; i < todos.length; i++) {
-    //   todos[i]['id'] === id
-    //     ? console.log('URRRAAAA', id)
-    //     : console.log('Ne to', id);
-    // }
   };
 
   render() {
@@ -92,74 +85,3 @@ class App extends Component {
 }
 
 export default App;
-
-/*import React, { Component } from 'react';
-import './App.css';
-
-class App extends Component {
-  state = {
-    query: '',
-    todos: [],
-    liClassName: '',
-  };
-
-  addTodos = () => {
-    //  this.state.todos.push(this.state.query);
-
-    const { query, todos } = this.state;
-
-    this.setState({
-      todos: [
-        ...todos,
-        {
-          id: todos.length,
-          query: query,
-        },
-      ],
-      query: '',
-    });
-  };
-
-  clearTodos = () => {
-    this.setState({
-      query: '',
-      todos: [],
-    });
-  };
-
-  changeClassName = () => {
-    this.setState({
-      liClassName: 'active_complete',
-    });
-  };
-
-  render() {
-    const { query, liClassName } = this.state;
-    const items = this.state.todos.map(todo => (
-      <li className={this.state.liClassName}>
-        <button className="complete" onClick={this.changeClassName.bind(this)}>
-          V
-        </button>
-        <div className="main_list">{todo}</div>
-        <button className="remove">X</button>
-      </li>
-    ));
-    return (
-      <div>
-        <h3>todos</h3>
-        <div className="todos_form">
-          <button onClick={this.clearTodos.bind(this)}>Clear list</button>
-          <input
-            placeholder="What needs to be done?"
-            onChange={e => this.setState({ query: e.target.value })}
-            value={query}
-          />
-          <button onClick={this.addTodos.bind(this)}>Add</button>
-          <ul>{items}</ul>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default App;*/
