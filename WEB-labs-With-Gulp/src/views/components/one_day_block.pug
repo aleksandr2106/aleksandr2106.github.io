@@ -1,8 +1,10 @@
-include ./one_time_period
-mixin one_day_block(date, work_time)
-  div.single_day_block
-    div.top_day_block
-      p #{date}
-      p #{work_time}
-    +one_time_period('Add description', '15:18 - 16:18' , '1:00:00')
-    +one_time_period('Add description', '17:18 - 19:18' , '2:00:00')
+mixin one_day_block(text_todo, work_time_to_complete, work_time)
+  div.single_list_block
+    i(class="far fa-check-circle")
+    div.info_list_block
+      p.text_todo #{text_todo}
+      p Time to complete #{work_time_to_complete} h.
+      p Time spend #{work_time} h.
+    i(class='fas fa-play-circle')      
+    i(class="far fa-times-circle")
+  
