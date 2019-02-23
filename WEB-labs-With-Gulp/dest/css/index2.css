@@ -24,7 +24,7 @@ body {
   background-color: #323232;
   height: 100vh;
   width: 12vw;
-  float: left;
+  float: right;
 }
 
 .logo {
@@ -100,7 +100,8 @@ body {
 }
 
 /*  Top part   */
-.top_part_of_functionals, .top_functionals {
+.top_part_of_functionals,
+.top_functionals {
   display: flex;
   justify-content: space-between;
 }

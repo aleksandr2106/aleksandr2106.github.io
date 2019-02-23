@@ -5,8 +5,15 @@
   margin-bottom: 50px;
 }
 
-.main_statistic p {
-  font-size: 18px;
+.main_statistic span {
+  font-size: 22px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.main_statistic span:hover {
+  border-bottom: 4px solid $orange;
+  transition: border-bottom 0.2s linear;
 }
 
 .enter_form {
