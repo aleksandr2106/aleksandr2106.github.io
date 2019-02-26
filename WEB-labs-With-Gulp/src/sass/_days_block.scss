@@ -32,6 +32,10 @@
   margin-top: 20px;
 }
 
+.single_list_block:hover {
+  background-color: #f4f4f4;
+}
+
 .info_list_block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
