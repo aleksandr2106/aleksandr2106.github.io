@@ -5,18 +5,19 @@ $font-poppins: Poppins, sans-serif;
 $max-width: 1140px;
 $color_for_h1: #444444;
 $color_for_main_text: #878787;
-$color_for_menu_block: #2A2A2A;
-$color_for_yellow: #FFE400;
-$color_for_grey_h2: #E8E8E8;
+$color_for_menu_block: #2a2a2a;
+$color_for_yellow: #ffe400;
+$color_for_grey_h2: #e8e8e8;
 $color_for_black: #212121;
 $color_for_dark_grey: #757575;
 
-      /*  General Style   */
-*{box-sizing: border-box;
+/*  General Style   */
+* {
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-h2{
+h2 {
   color: $color_for_grey_h2;
   font: 91px $font-article;
   text-transform: uppercase;
@@ -24,46 +25,46 @@ h2{
   padding-top: 70px;
 }
 
-h3{
+h3 {
   font: 44px $font-article;
   text-transform: uppercase;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   padding-top: 255px;
 }
 
-h4{
+h4 {
   color: $color_for_h1;
   font: 28px $font-basic;
   text-transform: uppercase;
   margin-top: -52px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
-.form-main-button button{
+.form-main-button button {
   font: 18px $font-article;
   padding: 20px 0px;
   border: 1px solid $color_for_h1;
   font-weight: bolder;
 }
 
-p{
+p {
   font: 16px $font-basic;
 }
 
-      /*  Header   */
+/*  Header   */
 .top_header_background {
   background: url(../img/top_header_background.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .top_header {
-    max-width: $max-width;
-    margin: 0 auto;
+  max-width: $max-width;
+  margin: 0 auto;
 }
 
-.top_header h1{
+.top_header h1 {
   padding-top: 490px;
   font: 60px $font-article;
   text-transform: uppercase;
@@ -72,7 +73,7 @@ p{
   color: $color_for_h1;
 }
 
-.top_header p{
+.top_header p {
   padding-top: 65px;
   font: 13px $font-lato;
   color: $color_for_main_text;
@@ -80,39 +81,38 @@ p{
   line-height: 1.8;
 }
 
-.top_header form{
+.top_header form {
   padding-bottom: 229px;
 }
 
-.top_header .form-main-button button{
+.top_header .form-main-button button {
   font: 16px $font-article;
   font-weight: 700;
   padding: 19px 33px 15px 33px;
 }
 
-
-.form-main-button button{
+.form-main-button button {
   font: 16px $font-article;
   font-weight: 900;
   padding: 19px 33px;
   color: $color_for_h1;
   border: 1px solid $color_for_h1;
   margin-top: 18px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.form-main-button button:hover{
+.form-main-button button:hover {
   background-color: $color_for_yellow;
 }
 
-.header_menu_background{
-    background-color: $color_for_menu_block;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+.header_menu_background {
+  background-color: $color_for_menu_block;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.header_menu{
+.header_menu {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -122,7 +122,7 @@ p{
   margin: 0 auto;
 }
 
-.header_menu img{
+.header_menu img {
   width: 186px;
   height: 33px;
   margin-top: 24px;
@@ -130,13 +130,13 @@ p{
   margin-left: 4px;
 }
 
-.header_menu ul{
+.header_menu ul {
   display: flex;
   justify-content: space-between;
   margin-right: 45px;
 }
 
-.ul_menu li{
+.ul_menu li {
   font: 14px $font-article;
   cursor: pointer;
   padding-right: 65px;
@@ -144,40 +144,40 @@ p{
   margin-bottom: 28px;
 }
 
-.ul_menu a{
-  color: #FFF;
+.ul_menu a {
+  color: #fff;
   text-decoration: none;
 }
 
-.ul_menu a:hover{
+.ul_menu a:hover {
   color: $color_for_yellow;
 }
 
-ul.ul_menu li:last-child{
+ul.ul_menu li:last-child {
   padding-right: 0px;
 }
-     /* First Block  */
+/* First Block  */
 .first_content {
   background: url(../img/first_content_background.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.page_about{
+.page_about {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
 }
 
-.page_about h2{
+.page_about h2 {
   font-weight: 900;
 }
 
-.page_about h4{
+.page_about h4 {
   font-weight: 900;
 }
 
-.page_about p{
+.page_about p {
   font: 16px $font-lato;
   font-weight: 400;
   max-width: 945px;
@@ -187,7 +187,7 @@ ul.ul_menu li:last-child{
   line-height: 1.8;
 }
 
-.page_about .form-main-button button{
+.page_about .form-main-button button {
   font: 18px $font-article;
   padding-top: 20px;
   padding-bottom: 18px;
@@ -201,17 +201,17 @@ ul.ul_menu li:last-child{
   margin-bottom: 82px;
 }
 
-.page_about .form-main-button button:last-child{
+.page_about .form-main-button button:last-child {
   margin-right: 0px;
 }
 
-.page_about .form-main-button button:hover{
+.page_about .form-main-button button:hover {
   color: #000;
   background-color: $color_for_yellow;
   border: 1px solid $color_for_yellow;
 }
 
-.first_content_text_block{
+.first_content_text_block {
   padding-top: 0px;
   padding-bottom: 175px;
   max-width: $max-width;
@@ -221,62 +221,62 @@ ul.ul_menu li:last-child{
   grid-column-gap: 30px;
 }
 
-.first_c_text_block i{
+.first_c_text_block i {
   font-size: 100px;
 }
 
-.first_c_text_block{
+.first_c_text_block {
   background-color: $color_for_black;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 
-.first_c_text_block i{
-    padding-top: 90px;
-    padding-bottom: 55px;
-    color: $color_for_yellow;
+.first_c_text_block i {
+  padding-top: 90px;
+  padding-bottom: 55px;
+  color: $color_for_yellow;
 }
 
-.first_c_text_block h6{
-    font: 24px $font-article;
-    padding-bottom: 125px;
-    font-weight: 700;
+.first_c_text_block h6 {
+  font: 24px $font-article;
+  padding-bottom: 125px;
+  font-weight: 700;
 }
 
-.first_c_text_block p{
+.first_c_text_block p {
   display: none;
 }
 
-.first_c_text_block:hover p{
+.first_c_text_block:hover p {
   display: block;
 }
 
-.first_c_text_block:hover{
+.first_c_text_block:hover {
   background: url(../img/hover-about.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 
-.first_c_text_block:hover i{
-    padding-top: 50px;
-    padding-bottom: 45px;
-    color: #FFF;
+.first_c_text_block:hover i {
+  padding-top: 50px;
+  padding-bottom: 45px;
+  color: #fff;
 }
 
-.first_c_text_block:hover h6{
-    font: 24px $font-article;
-    padding-bottom: 33px;
-    font-weight: 700;
+.first_c_text_block:hover h6 {
+  font: 24px $font-article;
+  padding-bottom: 33px;
+  font-weight: 700;
 }
 
-.first_block_statistics{
+.first_block_statistics {
   max-width: $max-width;
   margin: 0 auto;
 }
 
-.first_block_statistics h5{
+.first_block_statistics h5 {
   font: 30px $font-article;
   color: $color_for_h1;
   text-transform: uppercase;
@@ -285,78 +285,78 @@ ul.ul_menu li:last-child{
   margin-bottom: 108px;
 }
 
-.container_to_first_statistics{
+.container_to_first_statistics {
   display: flex;
   justify-content: space-between;
 }
 
-.first_statistics:first-child{
+.first_statistics:first-child {
   margin-left: 35px;
 }
 
-.first_statistics:last-child{
+.first_statistics:last-child {
   margin-right: 20px;
 }
 
-.first_statistics p:first-child{
+.first_statistics p:first-child {
   font: 42px $font-article;
   color: $color_for_h1;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.first_statistics p:last-child{
+.first_statistics p:last-child {
   font: 12px $font-article;
   color: $color_for_main_text;
   padding-bottom: 148px;
 }
 
-      /* Second Block   */
+/* Second Block   */
 
 .second_content {
   background: url(../img/second_content_background.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.responsive_page{
+.responsive_page {
   max-width: $max-width;
   margin: 0 auto;
 }
 
-.responsive_page h2{
+.responsive_page h2 {
   padding-top: 155px;
   margin-left: -8px;
   color: $color_for_yellow;
   font-size: 70px;
 }
 
-.responsive_page h4{
-font-weight: 800;
-margin-top: -46px;
+.responsive_page h4 {
+  font-weight: 800;
+  margin-top: -46px;
 }
 
-.responsive_page p{
+.responsive_page p {
   max-width: 555px;
   color: $color_for_dark_grey;
   padding-top: 25px;
   line-height: 1.8;
 }
 
-.ul_second_block_list{
+.ul_second_block_list {
   margin-top: 28px;
   color: $color_for_dark_grey;
 }
 
-.ul_second_block_list li{
+.ul_second_block_list li {
   padding-top: 17.5px;
 }
 
-.ul_second_block_list li:last-child{
+.ul_second_block_list li:last-child {
   padding-bottom: 35px;
 }
 
-.responsive_page .form-block-button button{
+.responsive_page .form-block-button button {
   font: 13px $font-article;
   color: #000;
   background-color: $color_for_yellow;
@@ -366,31 +366,31 @@ margin-top: -46px;
   text-transform: uppercase;
 }
 
-.responsive_page .form-block-button button:hover{
+.responsive_page .form-block-button button:hover {
   color: $color_for_yellow;
   background-color: #000;
 }
 
-.responsive_page .form-block-button{
+.responsive_page .form-block-button {
   padding-bottom: 116px;
 }
 
-    /* Third Block   */
+/* Third Block   */
 
 .third_content {
   background: url(../img/third_content_background.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.marvel_who_we_are{
+.marvel_who_we_are {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
 }
 
-.marvel_who_we_are p{
-  color: #F3F3F3;
+.marvel_who_we_are p {
+  color: #f3f3f3;
   max-width: 750px;
   margin: 0 auto;
   padding-top: 25px;
@@ -398,7 +398,7 @@ margin-top: -46px;
   padding-bottom: 63px;
 }
 
-.marvel_who_we_are .form-main-button button{
+.marvel_who_we_are .form-main-button button {
   font: 18px $font-article;
   padding: 20px 0px;
   padding-bottom: 19px;
@@ -408,36 +408,35 @@ margin-top: -46px;
   margin-bottom: 136px;
   text-transform: none;
   margin-right: 15px;
-  color: #FFF;
+  color: #fff;
   background-color: inherit;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
 }
 
-.marvel_who_we_are .form-main-button button:last-child{
+.marvel_who_we_are .form-main-button button:last-child {
   margin-right: 0px;
 }
 
-.marvel_who_we_are .form-main-button button:hover{
+.marvel_who_we_are .form-main-button button:hover {
   color: #000;
   background-color: $color_for_yellow;
   border: 1px solid $color_for_h1;
 }
 
-      /* Fourth Block  */
+/* Fourth Block  */
 
-.features_page{
+.features_page {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 165px;
 }
 
-.features_page h2{
+.features_page h2 {
   padding-top: 105px;
 }
 
-
-.fourth_content_blocks{
+.fourth_content_blocks {
   padding-top: 110px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -446,85 +445,85 @@ margin-top: -46px;
   text-align: left;
 }
 
-.fourth_similar_block{
+.fourth_similar_block {
   display: flex;
 }
 
-.fourth_similar_block_text{
+.fourth_similar_block_text {
   padding-left: 20px;
 }
 
-.fourth_similar_block_text h6{
+.fourth_similar_block_text h6 {
   font: 17px $font-article;
   font-weight: bolder;
-  text-transform:uppercase;
+  text-transform: uppercase;
   color: $color_for_h1;
   padding-bottom: 15px;
 }
 
-.fourth_similar_block_text p{
+.fourth_similar_block_text p {
   color: $color_for_dark_grey;
   line-height: 1.8;
 }
 
-.fourth_similar_block_circle{
+.fourth_similar_block_circle {
   max-width: 65px;
   max-height: 65px;
   border-radius: 32.5px;
 }
 
-.fourth_similar_block:nth-child(2n+1) .fourth_similar_block_circle{
+.fourth_similar_block:nth-child(2n + 1) .fourth_similar_block_circle {
   background-color: $color_for_yellow;
   color: $color_for_black;
 }
 
-.fourth_similar_block:nth-child(2n+1):hover .fourth_similar_block_circle{
+.fourth_similar_block:nth-child(2n + 1):hover .fourth_similar_block_circle {
   background-color: $color_for_black;
   color: $color_for_yellow;
 }
 
-.fourth_similar_block:nth-child(2n) .fourth_similar_block_circle{
+.fourth_similar_block:nth-child(2n) .fourth_similar_block_circle {
   background-color: $color_for_black;
   color: $color_for_yellow;
 }
 
-.fourth_similar_block:nth-child(2n):hover .fourth_similar_block_circle{
+.fourth_similar_block:nth-child(2n):hover .fourth_similar_block_circle {
   background-color: $color_for_yellow;
   color: $color_for_black;
 }
 
-.fourth_similar_block_circle i{
+.fourth_similar_block_circle i {
   padding: 25px;
 }
 
-    /*  Fifth content  */
+/*  Fifth content  */
 
-.fifth_content{
+.fifth_content {
   background-color: $color_for_yellow;
 }
 
-.work_page{
+.work_page {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 55px;
 }
 
-.work_page h2{
-  color: #E8D100;
+.work_page h2 {
+  color: #e8d100;
   padding-top: 85px;
 }
 
-.work_page h4{
+.work_page h4 {
   font-weight: 800;
   color: #000;
 }
 
-.work_page_buttons{
+.work_page_buttons {
   padding-top: 40px;
 }
 
-.work_page_buttons .form-block-button button{
+.work_page_buttons .form-block-button button {
   font: 13px $font-article;
   color: #000;
   background-color: inherit;
@@ -535,20 +534,19 @@ margin-top: -46px;
   font-weight: 700;
   padding-top: 9px;
   padding-bottom: 9px;
-
 }
 
-.work_page_buttons .form-block-button button:hover{
+.work_page_buttons .form-block-button button:hover {
   color: $color_for_yellow;
   background-color: #000;
   border: 1px solid #000;
 }
 
-.work_page_buttons .form-block-button button:last-child{
+.work_page_buttons .form-block-button button:last-child {
   margin-right: 0px;
 }
 
-.work_page_buttons .form-block-button i{
+.work_page_buttons .form-block-button i {
   font-size: 14px;
   color: #fff;
   background-color: #000;
@@ -557,30 +555,30 @@ margin-top: -46px;
   margin-right: 5px;
 }
 
-.work_page_buttons .form-block-button i:hover{
+.work_page_buttons .form-block-button i:hover {
   color: $color_for_yellow;
   background-color: #000;
   border: 1px solid #000;
 }
 
-.fifth_photos_block{
-  background-color: #FFF;
+.fifth_photos_block {
+  background-color: #fff;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0px;
 }
 
-.container_to_photos_block{
+.container_to_photos_block {
   position: relative;
   z-index: 1;
 }
 
-.text_hover_to_photos_block{
+.text_hover_to_photos_block {
   position: relative;
   z-index: 2;
 }
 
-.text_hover_to_photos_block .icons_to_photo_block{
+.text_hover_to_photos_block .icons_to_photo_block {
   position: relative;
   margin-left: auto;
   display: flex;
@@ -594,21 +592,21 @@ margin-top: -46px;
   z-index: 5;
 }
 
-.icon_circle{
+.icon_circle {
   height: 25px;
   width: 25px;
   border-radius: 13px;
   border: 1px solid #000;
-  background-color: #FFF;
+  background-color: #fff;
   margin-right: 11px;
   z-index: 5;
 }
 
-.container_to_photos_block:hover .fifth_photos_block{
+.container_to_photos_block:hover .fifth_photos_block {
   background-color: $color_for_grey_h2;
 }
 
-.icon_circle i{
+.icon_circle i {
   color: #000;
   font-size: 13px;
   padding-left: 5px;
@@ -620,85 +618,85 @@ margin-top: -46px;
   background-color: $color_for_yellow;
 }
 
-.text_to_photo_block{
+.text_to_photo_block {
   display: flex;
   background-color: $color_for_grey_h2;
   z-index: 4;
   margin-top: -27px;
 }
 
-.text_to_photo_block h6{
+.text_to_photo_block h6 {
   font: 14px $font-article;
   font-weight: bolder;
-  text-transform:uppercase;
+  text-transform: uppercase;
   color: $color_for_h1;
   padding-bottom: 25px;
   padding-left: 10px;
   padding-top: 25px;
 }
 
-.text_to_photo_block p{
+.text_to_photo_block p {
   padding-top: 30px;
   color: $color_for_dark_grey;
   font: 9px $font-basic;
   text-transform: uppercase;
 }
 
-.text_hover_to_photos_block{
+.text_hover_to_photos_block {
   display: none;
 }
 
-.container_to_photos_block:hover .text_hover_to_photos_block{
+.container_to_photos_block:hover .text_hover_to_photos_block {
   display: block;
 }
 
 /*   Sixth content   */
 
-.sixth_background{
+.sixth_background {
   background: url(../img/sixth_background.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.six_content{
+.six_content {
   max-width: $max-width;
   margin: 0 auto;
 }
 
-.service_page{
+.service_page {
   max-width: 555px;
   margin-left: auto;
   margin-right: 0;
   padding-bottom: 65px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-.service_page h2{
+.service_page h2 {
   padding-top: 135px;
 }
 
-.service_page_content{
+.service_page_content {
   padding-top: 77px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
 }
 
-.service_page_content_block{
+.service_page_content_block {
   text-align: center;
 }
 
-.service_page_content_block:hover{
+.service_page_content_block:hover {
   background-color: $color_for_grey_h2;
 }
 
-.service_page_content_block i{
+.service_page_content_block i {
   padding-top: 45px;
   font-size: 40px;
   color: $color_for_h1;
 }
 
-.service_page_content_block h6{
+.service_page_content_block h6 {
   font: 18px $font-article;
   color: $color_for_h1;
   font-weight: bolder;
@@ -706,7 +704,7 @@ margin-top: -46px;
   padding-top: 35px;
 }
 
-.service_page_content_block p{
+.service_page_content_block p {
   padding-top: 25px;
   padding-bottom: 55px;
   text-align: center;
@@ -716,68 +714,68 @@ margin-top: -46px;
 
 /*  Seven Content  */
 
-.seventh_content{
+.seventh_content {
   background: url(../img/seventh_background.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.pricing_page{
+.pricing_page {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
 }
 
-.pricing_page h2{
-  color: #E8D100;
+.pricing_page h2 {
+  color: #e8d100;
   padding-top: 85px;
 }
 
-.seven_price_blocks{
+.seven_price_blocks {
   padding-top: 152px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
 }
 
-.price_block:nth-child(1) .top_content_price_block{
+.price_block:nth-child(1) .top_content_price_block {
   background: url(../img/services-first.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.grey_top_price_block{
-  background-color: #E6E6E6;
+.grey_top_price_block {
+  background-color: #e6e6e6;
 }
 
-.grey_top_price_block p{
+.grey_top_price_block p {
   font: 15px $font-basic;
   padding-top: 10px;
   padding-bottom: 12px;
   color: $color_for_h1;
 }
 
-.price_block:nth-child(2){
+.price_block:nth-child(2) {
   margin-top: -40px;
 }
 
-.price_block:nth-child(2) .top_content_price_block{
+.price_block:nth-child(2) .top_content_price_block {
   background: url(../img/services-second.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.price_block:nth-child(3) .top_content_price_block{
+.price_block:nth-child(3) .top_content_price_block {
   background: url(../img/services-third.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.top_content_price_block{
-  color: #FFF;
+.top_content_price_block {
+  color: #fff;
 }
 
-.top_content_price_block h6{
+.top_content_price_block h6 {
   padding-top: 25px;
   padding-bottom: 15px;
   font: 15px $font-poppins;
@@ -786,39 +784,39 @@ margin-top: -46px;
   font-weight: 500;
 }
 
-.top_content_price_block p:last-child{
+.top_content_price_block p:last-child {
   padding-bottom: 38px;
   font-size: 13px;
 }
 
-.price_per_month{
+.price_per_month {
   display: flex;
   justify-content: center;
 }
 
-.price_per_month p:nth-child(1){
+.price_per_month p:nth-child(1) {
   padding-top: 8px;
   font: 30px $font-poppins;
 }
 
-.price_per_month p:nth-child(2){
+.price_per_month p:nth-child(2) {
   font: 60px $font-poppins;
   font-weight: 700;
 }
 
-.price_per_month p:nth-child(3){
+.price_per_month p:nth-child(3) {
   padding-top: 50px;
   padding-left: 5px;
   padding-bottom: 28px;
   font: 12px $font-poppins;
 }
 
-.main_content_price_block{
-  background-color: #FFF;
+.main_content_price_block {
+  background-color: #fff;
   padding-top: 60px;
 }
 
-.main_content_price_block p{
+.main_content_price_block p {
   color: #808080;
   font: 12px $font-basic;
   padding-top: 22px;
@@ -826,27 +824,26 @@ margin-top: -46px;
   border-bottom: 1px solid $color_for_grey_h2;
 }
 
-.form-price_bottom-button{
-margin-top: 4px;
-padding-bottom: 107px;
+.form-price_bottom-button {
+  margin-top: 4px;
+  padding-bottom: 107px;
 }
 
-.form-price_bottom-button button{
+.form-price_bottom-button button {
   font: 14px $font-article;
   font-weight: 500;
   color: $color_for_h1;
-  background-color: #FFF;
+  background-color: #fff;
   padding-top: 14px;
   padding-bottom: 13px;
   width: 360px;
   border: 0px;
 }
 
-.form-price_bottom-button button:hover{
+.form-price_bottom-button button:hover {
   color: $color_for_yellow;
   background-color: #000;
 }
-
 
 /*   Eigth Content      */
 
@@ -869,7 +866,7 @@ padding-bottom: 107px;
 }
 
 .expert_block:hover {
-  background-color: #FFE400;
+  background-color: #ffe400;
 }
 
 .expert_block:hover img {
@@ -877,7 +874,7 @@ padding-bottom: 107px;
 }
 
 .expert_block:hover .text_about_expert {
-  background-color: #FFE400;
+  background-color: #ffe400;
 }
 
 .expert_block:hover h5 {
@@ -896,7 +893,7 @@ padding-bottom: 107px;
   color: #000;
 }
 
-.social_icons a:hover i{
+.social_icons a:hover i {
   color: #000;
 }
 
@@ -911,7 +908,7 @@ padding-bottom: 107px;
 }
 
 .expert_block:hover hr {
-  border-top: 1px dashed #6B6000;
+  border-top: 1px dashed #6b6000;
   width: 80%;
   margin: 0 auto;
 }
@@ -920,51 +917,51 @@ padding-bottom: 107px;
   display: none;
 }
 
-.expert_block .social_icons{
+.expert_block .social_icons {
   display: none;
 }
 
-.expert_block:hover .social_icons{
+.expert_block:hover .social_icons {
   display: block;
 }
 
-.expert_block p{
+.expert_block p {
   display: none;
 }
 
-.expert_block:hover p{
+.expert_block:hover p {
   display: block;
 }
 
-.expert_block hr:last-of-type{
+.expert_block hr:last-of-type {
   display: none;
 }
 
-.expert_block:hover hr:last-of-type{
+.expert_block:hover hr:last-of-type {
   display: block;
 }
 
-.expert_block .social_icons i{
-  color: #6B6000;
+.expert_block .social_icons i {
+  color: #6b6000;
   font-size: 18px;
 }
 
-.expert_block .social_icons{
+.expert_block .social_icons {
   margin-top: 40px;
 }
 
-.expert_block .social_icons a{
+.expert_block .social_icons a {
   margin-right: 28px;
 }
-.expert_block .social_icons a:last-child{
+.expert_block .social_icons a:last-child {
   margin-right: 0px;
 }
 
-.text_about_expert{
+.text_about_expert {
   background-color: $color_for_grey_h2;
 }
 
-.expert_block h5{
+.expert_block h5 {
   padding-top: 20px;
   padding-bottom: 20px;
   font: 16px $font-article;
@@ -973,7 +970,7 @@ padding-bottom: 107px;
   text-transform: uppercase;
 }
 
-.text_about_expert h6{
+.text_about_expert h6 {
   padding-top: 22px;
   padding-bottom: 23px;
   font: 11px $font-article;
@@ -982,13 +979,13 @@ padding-bottom: 107px;
   text-transform: uppercase;
 }
 
-.text_about_expert hr{
-  border-top: 1px dashed #D0D0D0;
+.text_about_expert hr {
+  border-top: 1px dashed #d0d0d0;
   width: 80%;
   margin: 0 auto;
 }
 
-.text_about_expert p{
+.text_about_expert p {
   padding-top: 20px;
   padding-bottom: 20px;
   font: 11px $font-article;
@@ -999,40 +996,38 @@ padding-bottom: 107px;
 
 .text_about_expert {
   margin-top: 6px;
-
 }
-
 
 /* Nine Block   */
 
-.ninth_content{
+.ninth_content {
   background: url(../img/nine_backgorund.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.impressed_by_our_work{
+.impressed_by_our_work {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
 }
 
-.impressed_by_our_work h3{
+.impressed_by_our_work h3 {
   padding-top: 100px;
   font: 30px $font-lato;
-  color: #FFF;
+  color: #fff;
   font-weight: bolder;
   text-transform: uppercase;
 }
 
-.impressed_by_our_work p{
+.impressed_by_our_work p {
   padding-top: 5px;
   font: 13px $font-basic;
-  color: #FFF;
+  color: #fff;
   padding-bottom: 86px;
 }
 
-.form-main-button button{
+.form-main-button button {
   text-transform: uppercase;
   color: #000;
   font: 13px $font-lato;
@@ -1040,59 +1035,53 @@ padding-bottom: 107px;
   margin-bottom: 105px;
   padding: 16px 25px;
   margin-left: 10px;
- /*  width: 170px;*/
+  /*  width: 170px;*/
 }
-
-.form-main-button button:first-child{
-  background-color: $color_for_yellow;
-  margin-left: 0px;
-}
-
-
-
 
 /*  Ten Content    */
 
-.tenth_content{
+.tenth_content {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
 }
 
-.news_page h2{
+.news_page h2 {
   padding-top: 115px;
 }
 
-.news_page h4{
+.news_page h4 {
   font-weight: 700;
 }
 
-.left_hover_photo-news, .right_hover_photo-news{
+.left_hover_photo-news,
+.right_hover_photo-news {
   width: 25px;
   height: 25px;
   border-radius: 13px;
-  border: 1px solid #FFF;
-  color: #FFF;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
-.left_hover_photo-news:hover, .right_hover_photo-news:hover{
+.left_hover_photo-news:hover,
+.right_hover_photo-news:hover {
   border: 1px solid #000;
-  color: #FFF;
+  color: #fff;
   background-color: #000;
 }
 
-.hover_photo-news{
+.hover_photo-news {
   display: none;
   position: relative;
   z-index: 3;
 }
 
-.similar_news_photo_block img{
+.similar_news_photo_block img {
   position: relative;
   z-index: 1;
 }
 
-.similar_news_photo_block:hover .hover_photo-news{
+.similar_news_photo_block:hover .hover_photo-news {
   display: flex;
   justify-content: space-between;
   margin-top: -50px;
@@ -1100,28 +1089,28 @@ padding-bottom: 107px;
   margin-right: 20px;
 }
 
-.similar_news_photo_block:hover .grey_block_under_news_photo{
+.similar_news_photo_block:hover .grey_block_under_news_photo {
   margin-top: 2px;
 }
 
-.news_photo_block{
+.news_photo_block {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 30px;
   padding-top: 94px;
 }
 
-.hover_news_video{
+.hover_news_video {
   display: none;
   position: relative;
   z-index: 3;
 }
 
-.similar_news_photo_block:hover .hover_news_video{
+.similar_news_photo_block:hover .hover_news_video {
   display: block;
   width: 50px;
   height: 50px;
-  color: #FFF;
+  color: #fff;
   margin: 0 auto;
   margin-top: -120px;
   margin-bottom: 47px;
@@ -1131,17 +1120,17 @@ padding-bottom: 107px;
   background-color: #000;
 }
 
-.similar_news_photo_block .hover_news_video:hover{
+.similar_news_photo_block .hover_news_video:hover {
   color: $color_for_yellow;
 }
 
-.hover_news_video p{
+.hover_news_video p {
   font-size: 28px;
   padding-top: 5px;
   padding-left: 5px;
 }
 
-.grey_block_under_news_photo p{
+.grey_block_under_news_photo p {
   font: 12px $font-article;
   text-transform: uppercase;
   font-weight: bolder;
@@ -1150,7 +1139,7 @@ padding-bottom: 107px;
 
 .grey_block_under_news_photo {
   position: relative;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   color: $color_for_h1;
   border-radius: 20px;
   width: 60%;
@@ -1160,21 +1149,21 @@ padding-bottom: 107px;
   z-index: 2;
 }
 
-.similar_news_photo_block h6{
+.similar_news_photo_block h6 {
   font: 18px $font-article;
   font-weight: bolder;
   text-transform: uppercase;
   color: $color_for_h1;
 }
 
-.text_to_ten_block p:first-child{
+.text_to_ten_block p:first-child {
   padding-top: 5px;
   font: 10px $font-basic;
   text-transform: uppercase;
   color: $color_for_dark_grey;
 }
 
-.text_to_ten_block p:last-child{
+.text_to_ten_block p:last-child {
   padding-top: 28px;
   font: 16px $font-basic;
   color: $color_for_dark_grey;
@@ -1182,49 +1171,48 @@ padding-bottom: 107px;
   padding-right: 15px;
 }
 
-.link_ten_block{
+.link_ten_block {
   margin-top: 36px;
 }
 
-.link_ten_block a{
+.link_ten_block a {
   text-decoration: none;
   text-transform: uppercase;
   font: 9px $font-article;
   font-weight: bolder;
   color: $color_for_h1;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   padding: 6px 16px;
   border-radius: 13px;
-  border: 2px solid  #F9F9F9;
+  border: 2px solid #f9f9f9;
 }
 
-.link_ten_block a:hover{
+.link_ten_block a:hover {
   color: $color_for_h1;
   background-color: $color_for_yellow;
-  border: 2px solid   $color_for_h1;
+  border: 2px solid $color_for_h1;
 }
-
 
 /*  Eleven Content  */
 
-.eleven_content{
+.eleven_content {
   background: url(../img/eleven_backgorund.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-top: 166px;
 }
 
-.contact_page{
+.contact_page {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
 }
 
-.contact_page h2{
+.contact_page h2 {
   padding-top: 100px;
 }
 
-.container_to_input{
+.container_to_input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
@@ -1232,15 +1220,15 @@ padding-bottom: 107px;
   padding-top: 140px;
 }
 
-.container_to_input input{
-    border:none;
-    width: 100%;
-    height: 60px;
-    padding-left: 20px;
-    border: 1px solid $color_for_grey_h2;
+.container_to_input input {
+  border: none;
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  border: 1px solid $color_for_grey_h2;
 }
 
-textarea{
+textarea {
   margin-top: 15px;
   padding-left: 20px;
   padding-top: 20px;
@@ -1252,11 +1240,11 @@ textarea{
   border: 1px solid $color_for_grey_h2;
 }
 
-.message .form-main-button{
+.message .form-main-button {
   text-align: left;
 }
 
-.message .form-main-button button{
+.message .form-main-button button {
   width: 145px;
   font: 17px $font-article;
   font-weight: bolder;
@@ -1264,38 +1252,37 @@ textarea{
   background-color: $color_for_yellow;
 }
 
-.message .form-main-button button:hover{
+.message .form-main-button button:hover {
   background-color: $color_for_h1;
   color: $color_for_yellow;
 }
 
-
 /*  Footer   */
 
-.footer_map_bacground{
+.footer_map_bacground {
   background: url(../img/footer-map-backgound.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.footer_map{
+.footer_map {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
 }
 
-.footer_map p{
+.footer_map p {
   padding-top: 65px;
   padding-bottom: 61px;
   font: 30px $font-article;
   font-weight: bolder;
 }
 
-.main_content_footer_background{
+.main_content_footer_background {
   background-color: #212121;
 }
 
-.main_content_footer{
+.main_content_footer {
   max-width: $max-width;
   margin: 0 auto;
   display: grid;
@@ -1303,32 +1290,32 @@ textarea{
   grid-column-gap: 30px;
   text-align: center;
 }
-.flang_content_footer{
+.flang_content_footer {
   margin: 0 auto;
 }
 
-.footer_social_icons{
+.footer_social_icons {
   margin: auto 0;
 }
 
-.footer_social_icons i{
-  color: #FFF;
+.footer_social_icons i {
+  color: #fff;
   font-size: 20px;
 }
 
-.footer_social_icons i:hover{
+.footer_social_icons i:hover {
   color: $color_for_yellow;
 }
 
-.footer_social_icons a{
+.footer_social_icons a {
   margin-right: 35px;
 }
 
-.footer_social_icons a:last-child{
+.footer_social_icons a:last-child {
   margin-right: 0px;
 }
 
-.footer_circle{
+.footer_circle {
   width: 50px;
   height: 50px;
   border-radius: 25px;
@@ -1337,235 +1324,218 @@ textarea{
   margin-top: 62px;
 }
 
-.footer_circle:hover{
+.footer_circle:hover {
   border: 1px solid $color_for_yellow;
 }
 
-.footer_circle i{
+.footer_circle i {
   font-size: 22px;
   padding-left: 0px;
   padding-top: 12px;
-  color: #FFF;
+  color: #fff;
 }
 
-.footer_circle:hover i{
+.footer_circle:hover i {
   color: $color_for_yellow;
 }
 
-.flang_content_footer p{
+.flang_content_footer p {
   font: 13px $font-basic;
-  color: #FFF;
+  color: #fff;
   padding-top: 15px;
   padding-bottom: 83px;
 }
 
-.bottom_footer_bacground{
-  background-color: #2E2D2D;
+.bottom_footer_bacground {
+  background-color: #2e2d2d;
 }
 
-.bottom_footer{
+.bottom_footer {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.bottom_footer p{
+.bottom_footer p {
   font: 12px $font-basic;
 }
 
-
-
-
-
-
-
-@media (min-width:1025px) and (max-width:1199px) {
+@media (min-width: 1025px) and (max-width: 1199px) {
   /* Header */
 
+  .top_header h1 {
+    padding-top: 250px;
+    font: 50px $font-article;
+    font-weight: 800;
+  }
 
-.top_header h1{
-  padding-top: 250px;
-  font: 50px $font-article;
-  font-weight: 800;
+  .top_header form {
+    padding-bottom: 150px;
+  }
+
+  .top_header p {
+    padding-left: 50px;
+  }
+
+  .top_header form {
+    padding-left: 50px;
+  }
+
+  .header_menu img {
+    padding-left: 20px;
+  }
+
+  .header_menu ul {
+    margin-right: 20px;
+  }
+
+  .ul_menu li {
+    padding-right: 50px;
+  }
+
+  /* First */
+
+  .first_content_text_block {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Second  */
+
+  .responsive_page {
+    padding-left: 20px;
+  }
+
+  /* Third */
+  .marvel_who_we_are h3 {
+    padding-top: 180px;
+  }
+  /*fifth */
+  .fifth_photos_block {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+  }
+
+  /* Seven  */
+
+  .seven_price_blocks {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  .form-price_bottom-button button {
+    width: 100%;
+  }
+
+  /* Eight Content*/
+  .expert_page h2 {
+    padding-top: 150px;
+  }
+
+  .expert_page {
+    padding-bottom: 250px;
+  }
+
+  .expert_content_blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .expert_content_blocks:first-child {
+    padding-top: 110px;
+  }
+
+  .expert_block:hover h5 {
+    padding-top: 60px;
+  }
+
+  .expert_block:hover p {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  /* Ten   */
+  .news_photo_block {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+  }
+
+  /* Eleven  */
+
+  .form_bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-.top_header form{
-  padding-bottom: 150px;
-}
-
-.top_header p{
-  padding-left: 50px;
-}
-
-.top_header form{
-  padding-left: 50px;
-}
-
-.header_menu img{
-  padding-left: 20px;
-}
-
-.header_menu ul{
-  margin-right: 20px;
-}
-
-.ul_menu li{
-  padding-right: 50px;
-}
-
-/* First */
-
-.first_content_text_block{
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-/* Second  */
-
-.responsive_page{
-  padding-left: 20px;
-}
-
-/* Third */
-.marvel_who_we_are h3{
-  padding-top: 180px;
-}
-/*fifth */
-.fifth_photos_block{
-  background-color: #FFF;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0px;
-}
-
-/* Seven  */
-
-.seven_price_blocks{
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 120px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 30px;
-}
-
-
-.form-price_bottom-button button{
-  width: 100%;
-}
-
-/* Eight Content*/
-.expert_page h2 {
-  padding-top: 150px;
-}
-
-.expert_page{
-  padding-bottom: 250px;
-}
-
-.expert_content_blocks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.expert_content_blocks:first-child {
-  padding-top: 110px;
-}
-
-.expert_block:hover h5 {
-  padding-top: 60px;
-}
-
-.expert_block:hover p {
-  padding-top: 50px;
-  padding-bottom: 70px;
-}
-
-/* Ten   */
-.news_photo_block{
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 100px;
-}
-
-
-/* Eleven  */
-
-.form_bottom{
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-}
-
-
-@media (min-width:769px) and (max-width:1024px) {
-
+@media (min-width: 769px) and (max-width: 1024px) {
   /*  General Style   */
 
+  h2 {
+    font: 78px $font-article;
+    padding-top: 60px;
+  }
 
-h2{
+  h3 {
+    font: 40px $font-article;
+    font-weight: 700;
+    padding-top: 75px;
+  }
 
-font: 78px $font-article;
-padding-top: 60px;
-}
+  h4 {
+    font: 25px $font-basic;
+    margin-top: -45px;
+    margin-bottom: 20px;
+  }
 
-h3{
-font: 40px $font-article;
-font-weight: 700;
-padding-top: 75px;
-}
+  .form-main-button button {
+    font: 16px $font-article;
+    padding: 18px 0px;
+    font-weight: 700;
+  }
 
-h4{
-font: 25px $font-basic;
-margin-top: -45px;
-margin-bottom: 20px
-}
+  p {
+    font: 15px $font-basic;
+  }
 
-.form-main-button button{
-font: 16px $font-article;
-padding: 18px 0px;
-font-weight: 700;
-}
+  /*  Header   */
 
-p{
-font: 15px $font-basic;
-}
-
-
-
-        /*  Header   */
-
-
-  .top_header h1{
+  .top_header h1 {
     padding-top: 150px;
     font: 40px $font-article;
     padding-left: 20px;
     font-weight: 800;
   }
 
-  .top_header p{
+  .top_header p {
     padding-top: 50px;
     padding-left: 20px;
     max-width: 525px;
   }
 
-  .top_header form{
+  .top_header form {
     padding-bottom: 50px;
     padding-left: 20px;
   }
 
-  .form-main-button button{
+  .form-main-button button {
     padding: 16px 22px;
   }
 
-  .header_menu img{
+  .header_menu img {
     width: 150px;
     height: 28px;
     margin-top: 20px;
@@ -1573,28 +1543,27 @@ font: 15px $font-basic;
     margin-left: 20px;
   }
 
-  .header_menu ul{
+  .header_menu ul {
     margin-right: 20px;
   }
 
-  .ul_menu li{
+  .ul_menu li {
     font: 13px $font-article;
     padding-right: 25px;
   }
 
-       /* First Block  */
+  /* First Block  */
 
-
-  .page_about h2{
+  .page_about h2 {
     font-weight: 900;
     padding-top: 50px;
   }
 
-  .page_about h4{
+  .page_about h4 {
     font-weight: 900;
   }
 
-  .page_about p{
+  .page_about p {
     font: 15px $font-lato;
     font-weight: 400;
     max-width: 945px;
@@ -1603,7 +1572,7 @@ font: 15px $font-basic;
     padding-bottom: 30px;
   }
 
-  .page_about .form-main-button button{
+  .page_about .form-main-button button {
     font: 17px $font-article;
     padding: 20px 0px;
     width: 200px;
@@ -1611,7 +1580,7 @@ font: 15px $font-basic;
     margin-bottom: 30px;
   }
 
-  .first_content_text_block{
+  .first_content_text_block {
     padding-bottom: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1621,93 +1590,93 @@ font: 15px $font-basic;
     padding-right: 20px;
   }
 
-  .first_c_text_block i{
+  .first_c_text_block i {
     font-size: 90px;
     padding-top: 90px;
     padding-bottom: 55px;
   }
 
-.first_c_text_block p{
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-  .first_c_text_block:hover h6{
-      font: 24px $font-article;
-      padding-bottom: 33px;
-      font-weight: 700;
+  .first_c_text_block p {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .first_block_statistics h5{
+  .first_c_text_block:hover h6 {
+    font: 24px $font-article;
+    padding-bottom: 33px;
+    font-weight: 700;
+  }
+
+  .first_block_statistics h5 {
     margin-bottom: 80px;
   }
 
-  .first_statistics p:last-child{
+  .first_statistics p:last-child {
     padding-bottom: 100px;
   }
 
-        /* Second Block   */
+  /* Second Block   */
 
-  .responsive_page h2{
+  .responsive_page h2 {
     padding-top: 75px;
     margin-left: 13px;
   }
 
-  .responsive_page h4{
-  font-weight: 800;
-  margin-left: 20px;
+  .responsive_page h4 {
+    font-weight: 800;
+    margin-left: 20px;
   }
 
-  .responsive_page p{
+  .responsive_page p {
     max-width: 500px;
     margin-left: 20px;
   }
 
-  .ul_second_block_list{
+  .ul_second_block_list {
     margin-top: 40px;
     margin-left: 20px;
   }
 
-  .responsive_page .form-block-button button{
+  .responsive_page .form-block-button button {
     margin-left: 20px;
   }
 
-  .responsive_page .form-block-button{
+  .responsive_page .form-block-button {
     padding-bottom: 80px;
   }
 
-      /* Third Block   */
+  /* Third Block   */
 
-  .marvel_who_we_are{
+  .marvel_who_we_are {
     text-align: left;
   }
 
-  .marvel_who_we_are h3{
+  .marvel_who_we_are h3 {
     margin-left: 20px;
   }
 
-  .marvel_who_we_are p{
+  .marvel_who_we_are p {
     max-width: 500px;
     margin: 0 0;
     padding-bottom: 40px;
     margin-left: 20px;
   }
 
-  .marvel_who_we_are .form-main-button button:first-child{
+  .marvel_who_we_are .form-main-button button:first-child {
     margin-left: 20px;
   }
 
-  .marvel_who_we_are .form-main-button button{
+  .marvel_who_we_are .form-main-button button {
     margin-bottom: 75px;
   }
 
-        /* Fourth Block  */
+  /* Fourth Block  */
 
-  .features_page{
+  .features_page {
     padding-bottom: 100px;
   }
 
-  .fourth_content_blocks{
+  .fourth_content_blocks {
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1718,18 +1687,17 @@ font: 15px $font-basic;
     text-align: left;
   }
 
-      /*  Fifth content  */
+  /*  Fifth content  */
 
-  .work_page h2{
+  .work_page h2 {
     padding-top: 30px;
   }
 
-  .fifth_photos_block{
+  .fifth_photos_block {
     grid-template-columns: repeat(2, 1fr);
   }
 
-
-  .text_to_photo_block{
+  .text_to_photo_block {
     display: flex;
     background-color: $color_for_grey_h2;
     z-index: 4;
@@ -1738,22 +1706,22 @@ font: 15px $font-basic;
 
   /*   Sixth content   */
 
-  .service_page{
+  .service_page {
     max-width: 500px;
     padding-bottom: 30px;
   }
 
-  .service_page h2{
+  .service_page h2 {
     padding-top: 70px;
   }
 
-  .service_page_content{
+  .service_page_content {
     padding-top: 40px;
   }
 
   /*  Seven Content  */
 
-  .seven_price_blocks{
+  .seven_price_blocks {
     padding-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1762,24 +1730,23 @@ font: 15px $font-basic;
     padding-right: 20px;
   }
 
-  .main_content_price_block{
+  .main_content_price_block {
     padding-top: 30px;
   }
 
-  .main_content_price_block p{
+  .main_content_price_block p {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-  .form-price_bottom-button{
-  margin-top: 5px;
-  padding-bottom: 80px;
+  .form-price_bottom-button {
+    margin-top: 5px;
+    padding-bottom: 80px;
   }
 
-  .form-price_bottom-button button{
+  .form-price_bottom-button button {
     width: 100%;
   }
-
 
   /*   Eigth Content      */
 
@@ -1820,22 +1787,21 @@ font: 15px $font-basic;
     color: #000;
   }
 
-  .expert_block .social_icons a{
+  .expert_block .social_icons a {
     margin-right: 15px;
   }
 
-
   /* Nine Block   */
 
-  .impressed_by_our_work h3{
+  .impressed_by_our_work h3 {
     padding-top: 50px;
   }
 
-  .impressed_by_our_work p{
+  .impressed_by_our_work p {
     padding-bottom: 30px;
   }
 
-  .form-main-button button{
+  .form-main-button button {
     text-transform: uppercase;
     color: #000;
     font: 13px $font-lato;
@@ -1849,39 +1815,40 @@ font: 15px $font-basic;
   }
   */
 
-
   /*  Ten Content    */
 
-  .news_page h2{
+  .news_page h2 {
     padding-top: 60px;
   }
 
-  .left_hover_photo-news, .right_hover_photo-news{
+  .left_hover_photo-news,
+  .right_hover_photo-news {
     width: 25px;
     height: 25px;
     border-radius: 13px;
-    border: 1px solid #FFF;
-    color: #FFF;
+    border: 1px solid #fff;
+    color: #fff;
   }
 
-  .left_hover_photo-news:hover, .right_hover_photo-news:hover{
+  .left_hover_photo-news:hover,
+  .right_hover_photo-news:hover {
     border: 1px solid #000;
-    color: #FFF;
+    color: #fff;
     background-color: #000;
   }
 
-  .hover_photo-news{
+  .hover_photo-news {
     display: none;
     position: relative;
     z-index: 3;
   }
 
-  .similar_news_photo_block img{
+  .similar_news_photo_block img {
     position: relative;
     z-index: 1;
   }
 
-  .similar_news_photo_block:hover .hover_photo-news{
+  .similar_news_photo_block:hover .hover_photo-news {
     display: flex;
     justify-content: space-between;
     margin-top: -50px;
@@ -1889,11 +1856,11 @@ font: 15px $font-basic;
     margin-right: 20px;
   }
 
-  .similar_news_photo_block:hover .grey_block_under_news_photo{
+  .similar_news_photo_block:hover .grey_block_under_news_photo {
     margin-top: 2px;
   }
 
-  .news_photo_block{
+  .news_photo_block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
@@ -1903,113 +1870,111 @@ font: 15px $font-basic;
     padding-right: 20px;
   }
 
-
   /*  Eleven Content  */
 
-  .eleven_content{
+  .eleven_content {
     margin-top: 100px;
   }
 
-  .contact_page h2{
+  .contact_page h2 {
     padding-top: 60px;
   }
 
-  .form_bottom{
+  .form_bottom {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .container_to_input{
+  .container_to_input {
     padding-top: 80px;
   }
 
-  .message .form-main-button button{
+  .message .form-main-button button {
     margin-bottom: 80px;
   }
 
   /*  Footer   */
 
-  .footer_map p{
+  .footer_map p {
     padding-top: 35px;
     padding-bottom: 40px;
     font: 26px $font-article;
     font-weight: bolder;
   }
 
-  .main_content_footer{
+  .main_content_footer {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .footer_social_icons i{
+  .footer_social_icons i {
     font-size: 18px;
   }
 
-  .footer_social_icons a{
+  .footer_social_icons a {
     margin-right: 25px;
   }
 
-  .footer_circle{
+  .footer_circle {
     margin-top: 30px;
   }
 
-  .flang_content_footer p{
+  .flang_content_footer p {
     padding-bottom: 45px;
   }
 }
 
-@media (min-width:426px) and (max-width:768px) {
-
-  h2{
+@media (min-width: 426px) and (max-width: 768px) {
+  h2 {
     font: 60px $font-article;
     font-weight: bolder;
     padding-top: 40px;
   }
 
-  h3{
+  h3 {
     font: 36px $font-article;
     font-weight: 700;
     padding-top: 55px;
   }
 
-  h4{
+  h4 {
     font: 22px $font-basic;
     margin-top: -42px;
     margin-bottom: 20px;
     padding-top: 5px;
   }
 
-  .form-main-button button{
+  .form-main-button button {
     font: 15px $font-article;
     padding: 16px 0px;
     font-weight: bolder;
   }
 
-  p{
+  p {
     font: 14px $font-basic;
   }
 
-        /*  Header   */
+  /*  Header   */
 
-  .top_header h1{
+  .top_header h1 {
     padding-top: 60px;
     font: 32px $font-article;
     padding-left: 15px;
     font-weight: 800;
   }
 
-  .top_header p{
+  .top_header p {
     padding-top: 35px;
     padding-left: 15px;
     max-width: 350px;
   }
 
-  .top_header form{
+  .top_header form {
     padding-bottom: 0px;
     padding-left: 15px;
   }
 
-.top_header .form-main-button button{
+  .top_header .form-main-button button {
     font: 15px $font-article;
     font-weight: 700;
     padding: 14px 20px;
@@ -2021,36 +1986,36 @@ font: 15px $font-basic;
     text-align: center;
   }
 
-  .header_menu img{
+  .header_menu img {
     margin-bottom: 0px;
   }
 
-  .header_menu ul{
+  .header_menu ul {
     display: flex;
     justify-content: space-between;
     margin-right: 15px;
     margin-left: 15px;
   }
 
-  .ul_menu li{
+  .ul_menu li {
     font: 13px $font-article;
     padding-right: 15px;
     margin-top: 20px;
     margin-bottom: 25px;
   }
 
-       /* First Block  */
+  /* First Block  */
 
-  .page_about h2{
+  .page_about h2 {
     font-weight: 900;
   }
 
-  .page_about h4{
+  .page_about h4 {
     font-weight: 900;
     padding-top: 5px;
   }
 
-  .page_about p{
+  .page_about p {
     font: 14px $font-lato;
     font-weight: 400;
     max-width: 600px;
@@ -2059,7 +2024,7 @@ font: 15px $font-basic;
     padding-right: 15px;
   }
 
-  .page_about .form-main-button button{
+  .page_about .form-main-button button {
     font: 16px $font-article;
     padding: 15px 0px;
     width: 180px;
@@ -2068,7 +2033,7 @@ font: 15px $font-basic;
     margin-bottom: 80px;
   }
 
-  .first_content_text_block{
+  .first_content_text_block {
     padding: 0px 15px 135px 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2077,11 +2042,11 @@ font: 15px $font-basic;
     grid-row-gap: 20px;
   }
 
-  .first_c_text_block i{
+  .first_c_text_block i {
     font-size: 100px;
   }
 
-  .first_block_statistics h5{
+  .first_block_statistics h5 {
     font: 26px $font-article;
     font-weight: 700;
     margin-bottom: 60px;
@@ -2089,75 +2054,75 @@ font: 15px $font-basic;
     padding-right: 15px;
   }
 
-  .first_statistics:first-child{
+  .first_statistics:first-child {
     margin-left: 15px;
   }
 
-  .first_statistics:last-child{
+  .first_statistics:last-child {
     margin-right: 15px;
   }
 
-  .first_statistics p:first-child{
+  .first_statistics p:first-child {
     font: 32px $font-article;
     font-weight: 700;
   }
 
-  .first_statistics p:last-child{
+  .first_statistics p:last-child {
     padding-bottom: 100px;
   }
 
-        /* Second Block   */
+  /* Second Block   */
 
-  .responsive_page h2{
+  .responsive_page h2 {
     padding-top: 60px;
     margin-left: 12px;
   }
 
-  .responsive_page h4{
-  font-weight: 800;
-  margin-left: 17px;
-  padding-top: 5px;
+  .responsive_page h4 {
+    font-weight: 800;
+    margin-left: 17px;
+    padding-top: 5px;
   }
 
-  .responsive_page p{
+  .responsive_page p {
     max-width: 500px;
     margin-left: 15px;
     padding-right: 15px;
     color: $color_for_dark_grey;
   }
 
-  .ul_second_block_list{
+  .ul_second_block_list {
     margin-top: 30px;
     padding-left: 15px;
   }
 
-  .ul_second_block_list li{
+  .ul_second_block_list li {
     padding-top: 15px;
   }
 
-  .ul_second_block_list li:last-child{
+  .ul_second_block_list li:last-child {
     padding-bottom: 30px;
   }
 
-  .responsive_page .form-block-button button{
+  .responsive_page .form-block-button button {
     margin-left: 15px;
   }
 
-  .responsive_page .form-block-button{
+  .responsive_page .form-block-button {
     padding-bottom: 80px;
   }
 
-      /* Third Block   */
+  /* Third Block   */
 
-.marvel_who_we_are{
-  text-align: left;
-}
+  .marvel_who_we_are {
+    text-align: left;
+  }
 
-.marvel_who_we_are h3{
-  margin-left: 15px;
-}
+  .marvel_who_we_are h3 {
+    margin-left: 15px;
+  }
 
-  .marvel_who_we_are p{
+  .marvel_who_we_are p {
     padding-left: 15px;
     padding-right: 15px;
     max-width: 450px;
@@ -2165,7 +2130,7 @@ font: 15px $font-basic;
     padding-bottom: 50px;
   }
 
-  .marvel_who_we_are .form-main-button button{
+  .marvel_who_we_are .form-main-button button {
     margin-left: 15px;
     font: 16px $font-article;
     padding: 16px 0px;
@@ -2176,18 +2141,18 @@ font: 15px $font-basic;
     margin-right: 0px;
   }
 
-        /* Fourth Block  */
+  /* Fourth Block  */
 
-  .features_page{
+  .features_page {
     padding-bottom: 60px;
   }
 
-  .features_page h4{
+  .features_page h4 {
     padding-top: 10px;
     font-size: 18px;
   }
 
-  .fourth_content_blocks{
+  .fourth_content_blocks {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 30px;
@@ -2196,16 +2161,16 @@ font: 15px $font-basic;
     padding-right: 15px;
   }
 
-      /*  Fifth content  */
+  /*  Fifth content  */
 
-  .work_page{
+  .work_page {
     max-width: $max-width;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 45px;
   }
 
-  .work_page_buttons .form-block-button button{
+  .work_page_buttons .form-block-button button {
     font: 12px $font-article;
     width: 85px;
     font-weight: 700;
@@ -2213,16 +2178,16 @@ font: 15px $font-basic;
     padding-bottom: 10px;
   }
 
-  .work_page_buttons .form-block-button button:last-child{
+  .work_page_buttons .form-block-button button:last-child {
     width: 100px;
   }
 
-  .work_page_buttons .form-block-button i{
+  .work_page_buttons .form-block-button i {
     padding: 10px;
   }
 
-  .fifth_photos_block{
-    background-color: #FFF;
+  .fifth_photos_block {
+    background-color: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px;
@@ -2230,43 +2195,43 @@ font: 15px $font-basic;
 
   /*   Sixth content   */
 
-  .sixth_background{
+  .sixth_background {
     background: none;
   }
 
-  .service_page{
+  .service_page {
     margin: 0 auto;
     padding-bottom: 45px;
   }
 
-  .service_page h2{
+  .service_page h2 {
     padding-top: 40px;
     text-align: center;
   }
 
-  .service_page h4{
+  .service_page h4 {
     text-align: center;
   }
 
-  .service_page_content{
+  .service_page_content {
     padding-top: 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
   }
 
-  .service_page_content_block i{
+  .service_page_content_block i {
     padding-top: 25px;
     font-size: 28px;
   }
 
-  .service_page_content_block h6{
+  .service_page_content_block h6 {
     font: 16px $font-article;
     font-weight: bolder;
     padding-top: 30px;
   }
 
-  .service_page_content_block p{
+  .service_page_content_block p {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 30px;
@@ -2275,14 +2240,14 @@ font: 15px $font-basic;
 
   /*  Seven Content  */
 
-  .seven_price_blocks{
+  .seven_price_blocks {
     padding-top: 50px;
     grid-template-columns: 1fr;
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  .form-price_bottom-button button{
+  .form-price_bottom-button button {
     width: 100%;
   }
 
@@ -2322,27 +2287,27 @@ font: 15px $font-basic;
     padding-bottom: 50px;
   }
 
-  .expert_block .social_icons{
+  .expert_block .social_icons {
     margin-top: 20px;
   }
 
-  .expert_block .social_icons a{
+  .expert_block .social_icons a {
     margin-right: 15px;
   }
 
   /* Nine Block   */
 
-  .impressed_by_our_work h3{
+  .impressed_by_our_work h3 {
     padding-top: 40px;
     font: 24px $font-lato;
     font-weight: bolder;
   }
 
-  .impressed_by_our_work p{
+  .impressed_by_our_work p {
     padding-bottom: 20px;
   }
 
-  .form-main-button button{
+  .form-main-button button {
     font: 12px $font-lato;
     font-weight: 700;
     margin-bottom: 40px;
@@ -2351,11 +2316,11 @@ font: 15px $font-basic;
 
   /*  Ten Content    */
 
-  .news_page h2{
+  .news_page h2 {
     padding-top: 40px;
   }
 
-  .news_photo_block{
+  .news_photo_block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
@@ -2364,49 +2329,47 @@ font: 15px $font-basic;
     padding-right: 15px;
   }
 
-  .similar_news_photo_block:hover .hover_news_video{
+  .similar_news_photo_block:hover .hover_news_video {
     margin-top: -110px;
     margin-bottom: 37px;
   }
 
-
-  .grey_block_under_news_photo p{
+  .grey_block_under_news_photo p {
     font: 10px $font-article;
     font-weight: bolder;
     padding: 8px 13px;
   }
 
-  .similar_news_photo_block h6{
+  .similar_news_photo_block h6 {
     font: 15px $font-article;
     font-weight: bolder;
   }
 
-  .text_to_ten_block p:first-child{
+  .text_to_ten_block p:first-child {
     font: 8px $font-basic;
   }
 
-  .text_to_ten_block p:last-child{
+  .text_to_ten_block p:last-child {
     padding-top: 20px;
     font: 11px $font-basic;
   }
 
-  .link_ten_block{
+  .link_ten_block {
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
   /*  Eleven Content  */
 
-  .eleven_content{
+  .eleven_content {
     margin-top: 35px;
   }
 
-
-  .contact_page h2{
+  .contact_page h2 {
     padding-top: 40px;
   }
 
-  .container_to_input{
+  .container_to_input {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 20px;
     padding-top: 40px;
@@ -2414,26 +2377,25 @@ font: 15px $font-basic;
     padding-right: 15px;
   }
 
-.message{
-  padding-right: 15px;
-  padding-left: 15px;
-}
+  .message {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
-  .message .form-main-button button{
+  .message .form-main-button button {
     margin-bottom: 65px;
   }
 
   /*  Footer   */
 
-
-  .footer_map p{
+  .footer_map p {
     padding-top: 30px;
     padding-bottom: 30px;
     font: 22px $font-article;
     font-weight: bolder;
   }
 
-  .main_content_footer{
+  .main_content_footer {
     grid-template-columns: 1fr 2fr 1fr;
     grid-column-gap: 15px;
     text-align: center;
@@ -2441,64 +2403,60 @@ font: 15px $font-basic;
     padding-right: 15px;
   }
 
-  .footer_social_icons i{
+  .footer_social_icons i {
     font-size: 16px;
     padding-top: 5px;
   }
 
-  .footer_social_icons a{
+  .footer_social_icons a {
     margin-right: 20px;
   }
 
-  .bottom_footer{
+  .bottom_footer {
     margin-top: -1px;
   }
-
 }
 
-@media (max-width:425px) {
-
-  h2{
+@media (max-width: 425px) {
+  h2 {
     font: 50px $font-article;
     font-weight: bolder;
     padding-top: 30px;
   }
 
-  h3{
+  h3 {
     font: 32px $font-article;
     font-weight: 700;
-    color: #FFF;
+    color: #fff;
     padding-top: 45px;
   }
 
-  h4{
+  h4 {
     font: 20px $font-basic;
     margin-top: -40px;
     margin-bottom: 20px;
     padding-top: 10px;
   }
 
-  .form-main-button button{
+  .form-main-button button {
     font: 14px $font-article;
     padding: 15px 0px;
   }
 
-  p{
+  p {
     font: 13px $font-basic;
   }
 
+  /*  Header   */
 
-        /*  Header   */
-
-
-  .top_header h1{
+  .top_header h1 {
     padding-top: 50px;
     font: 26px $font-article;
     padding-left: 12px;
     font-weight: 800;
   }
 
-  .top_header p{
+  .top_header p {
     padding-top: 25px;
     font: 13px $font-lato;
     max-width: 300px;
@@ -2506,12 +2464,12 @@ font: 15px $font-basic;
     padding-left: 12px;
   }
 
-  .top_header form{
+  .top_header form {
     padding-bottom: 0px;
     padding-left: 12px;
   }
 
-  .top_header .form-main-button button{
+  .top_header .form-main-button button {
     font: 13px $font-article;
     font-weight: 600;
     padding: 9px 12px;
@@ -2519,17 +2477,16 @@ font: 15px $font-basic;
     margin-bottom: 50px;
   }
 
-
-  .header_menu{
+  .header_menu {
     display: block;
     text-align: center;
   }
 
-  .header_menu img{
+  .header_menu img {
     margin-bottom: 0px;
   }
 
-  .header_menu ul{
+  .header_menu ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -2537,16 +2494,15 @@ font: 15px $font-basic;
     margin-left: 12px;
   }
 
-  .ul_menu li{
+  .ul_menu li {
     font: 13px $font-article;
     padding-right: 15px;
     margin-bottom: 20px;
   }
 
-       /* First Block  */
+  /* First Block  */
 
-
-  .page_about p{
+  .page_about p {
     font: 13px $font-lato;
     font-weight: 400;
     max-width: 420px;
@@ -2555,7 +2511,7 @@ font: 15px $font-basic;
     padding-right: 12px;
   }
 
-  .page_about .form-main-button button{
+  .page_about .form-main-button button {
     font: 15px $font-article;
     padding: 14px 0px;
     width: 160px;
@@ -2564,7 +2520,7 @@ font: 15px $font-basic;
     margin-bottom: 0px;
   }
 
-  .first_content_text_block{
+  .first_content_text_block {
     padding: 40px 12px 65px 12px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -2572,7 +2528,7 @@ font: 15px $font-basic;
     grid-row-gap: 20px;
   }
 
-  .first_block_statistics h5{
+  .first_block_statistics h5 {
     font: 22px $font-article;
     font-weight: 700;
     margin-bottom: 40px;
@@ -2580,7 +2536,7 @@ font: 15px $font-basic;
     padding-right: 12px;
   }
 
-  .container_to_first_statistics{
+  .container_to_first_statistics {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -2589,75 +2545,75 @@ font: 15px $font-basic;
     text-align: center;
   }
 
-  .first_statistics:first-child{
+  .first_statistics:first-child {
     margin-left: 0px;
   }
 
-  .first_statistics:last-child{
+  .first_statistics:last-child {
     margin-right: 0px;
   }
 
-  .first_statistics p:first-child{
+  .first_statistics p:first-child {
     font: 22px $font-article;
     font-weight: 700;
   }
 
-  .first_statistics p:last-child{
+  .first_statistics p:last-child {
     font: 11px $font-article;
     color: $color_for_main_text;
     padding-bottom: 20px;
   }
 
-        /* Second Block   */
+  /* Second Block   */
 
-  .responsive_page h2{
+  .responsive_page h2 {
     padding-top: 4px;
     margin-left: 4px;
     font-size: 40px;
   }
 
-  .responsive_page h4{
-  font-weight: 800;
-  margin-left: 10px;
+  .responsive_page h4 {
+    font-weight: 800;
+    margin-left: 10px;
   }
 
-  .responsive_page p{
+  .responsive_page p {
     max-width: 420px;
     padding-left: 12px;
     padding-right: 12px;
   }
 
-  .ul_second_block_list{
+  .ul_second_block_list {
     margin-top: 20px;
     padding-left: 12px;
     padding-right: 12px;
   }
 
-  .ul_second_block_list li{
+  .ul_second_block_list li {
     padding-top: 15px;
   }
 
-  .ul_second_block_list li:last-child{
+  .ul_second_block_list li:last-child {
     padding-bottom: 25px;
   }
 
-  .responsive_page .form-block-button button{
+  .responsive_page .form-block-button button {
     padding: 14px 22px;
     margin-left: 12px;
     margin-right: 12px;
   }
 
-  .responsive_page .form-block-button{
+  .responsive_page .form-block-button {
     padding-bottom: 30px;
   }
 
-      /* Third Block   */
-      .marvel_who_we_are h3{
-        padding-left: 12px;
-        padding-right: 12px;
-      }
+  /* Third Block   */
+  .marvel_who_we_are h3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 
-  .marvel_who_we_are p{
+  .marvel_who_we_are p {
     padding-left: 12px;
     padding-right: 12px;
     max-width: 350px;
@@ -2665,7 +2621,7 @@ font: 15px $font-basic;
     padding-bottom: 40px;
   }
 
-  .marvel_who_we_are .form-main-button button{
+  .marvel_who_we_are .form-main-button button {
     font: 14px $font-article;
     margin-left: 10px;
     padding: 14px 0px;
@@ -2675,26 +2631,26 @@ font: 15px $font-basic;
     margin-right: 0px;
   }
 
-  .marvel_who_we_are .form-main-button button:first-child{
+  .marvel_who_we_are .form-main-button button:first-child {
     margin-left: 0px;
   }
 
-        /* Fourth Block  */
+  /* Fourth Block  */
 
-  .features_page{
+  .features_page {
     padding-bottom: 40px;
   }
 
-  .features_page h2{
+  .features_page h2 {
     font-size: 44px;
   }
 
-  .features_page h4{
+  .features_page h4 {
     font-size: 14px;
     padding-top: 15px;
   }
 
-  .fourth_content_blocks{
+  .fourth_content_blocks {
     padding-top: 30px;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0px;
@@ -2704,13 +2660,13 @@ font: 15px $font-basic;
     padding-right: 12px;
   }
 
-      /*  Fifth content  */
+  /*  Fifth content  */
 
-  .work_page{
+  .work_page {
     padding-bottom: 35px;
   }
 
-  .work_page_buttons .form-block-button button{
+  .work_page_buttons .form-block-button button {
     font: 11px $font-article;
     width: 75px;
     font-weight: 700;
@@ -2719,42 +2675,42 @@ font: 15px $font-basic;
     margin-top: 10px;
   }
 
-  .work_page_buttons .form-block-button button:last-child{
+  .work_page_buttons .form-block-button button:last-child {
     width: 95px;
   }
 
-  .work_page_buttons .form-block-button i{
+  .work_page_buttons .form-block-button i {
     font-size: 14px;
     padding: 8px;
     padding-top: 7px;
     padding-bottom: 9px;
   }
 
-  .fifth_photos_block{
+  .fifth_photos_block {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 20px;
   }
   /*   Sixth content   */
 
-  .sixth_background{
+  .sixth_background {
     background: none;
   }
 
-  .service_page{
+  .service_page {
     max-width: 401px;
     padding-bottom: 35px;
   }
 
-  .service_page h2{
+  .service_page h2 {
     padding-top: 30px;
     text-align: center;
   }
 
-  .service_page h4{
+  .service_page h4 {
     text-align: center;
   }
 
-  .service_page_content{
+  .service_page_content {
     padding-top: 0px;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 12px;
@@ -2762,74 +2718,69 @@ font: 15px $font-basic;
     padding-right: 12px;
   }
 
-  .service_page_content_block i{
+  .service_page_content_block i {
     padding-top: 25px;
     font-size: 26px;
   }
 
-  .service_page_content_block h6{
+  .service_page_content_block h6 {
     font: 14px $font-article;
     font-weight: bolder;
     padding-top: 25px;
   }
 
-  .service_page_content_block p{
+  .service_page_content_block p {
     padding-top: 25px;
     padding-bottom: 30px;
   }
 
   /*  Seven Content  */
 
-  .seven_price_blocks{
+  .seven_price_blocks {
     padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
   }
 
-
-
-  .grey_top_price_block p{
+  .grey_top_price_block p {
     font: 15px $font-basic;
     padding-top: 10px;
     padding-bottom: 12px;
     color: $color_for_h1;
   }
 
-  .price_block:nth-child(2){
+  .price_block:nth-child(2) {
     margin-top: -40px;
   }
 
-  .top_content_price_block h6{
+  .top_content_price_block h6 {
     padding-top: 25px;
     padding-bottom: 25px;
     font: 18px $font-poppins;
     font-weight: 500;
   }
 
-  .top_content_price_block p:last-child{
+  .top_content_price_block p:last-child {
     padding-bottom: 40px;
   }
 
-  .price_per_month{
+  .price_per_month {
     display: flex;
     justify-content: center;
   }
 
-  .main_content_price_block{
+  .main_content_price_block {
     padding-top: 0px;
   }
 
-
-  .form-price_bottom-button{
-  padding-bottom: 65px;
+  .form-price_bottom-button {
+    padding-bottom: 65px;
   }
 
-  .form-price_bottom-button button{
+  .form-price_bottom-button button {
     width: 100%;
   }
-
-
 
   /*   Eigth Content      */
 
@@ -2871,20 +2822,17 @@ font: 15px $font-basic;
     padding-bottom: 80px;
   }
 
-
-  .expert_block .social_icons i{
+  .expert_block .social_icons i {
     font-size: 16px;
   }
 
-
-  .expert_block .social_icons a{
+  .expert_block .social_icons a {
     margin-right: 18px;
   }
 
-
   /* Nine Block   */
 
-  .impressed_by_our_work h3{
+  .impressed_by_our_work h3 {
     padding-top: 40px;
     font: 20px $font-lato;
     font-weight: bolder;
@@ -2892,53 +2840,54 @@ font: 15px $font-basic;
     padding-right: 12px;
   }
 
-  .impressed_by_our_work p{
+  .impressed_by_our_work p {
     font: 12px $font-basic;
     padding-bottom: 20px;
     padding-left: 12px;
     padding-right: 12px;
   }
 
-  .form-main-button button{
+  .form-main-button button {
     font: 11px $font-lato;
     font-weight: 700;
     margin-bottom: 45px;
     width: 125px;
-
   }
 
   /*  Ten Content    */
 
-  .news_page h2{
+  .news_page h2 {
     padding-top: 40px;
   }
 
-  .left_hover_photo-news, .right_hover_photo-news{
+  .left_hover_photo-news,
+  .right_hover_photo-news {
     width: 25px;
     height: 25px;
     border-radius: 13px;
-    border: 1px solid #FFF;
-    color: #FFF;
+    border: 1px solid #fff;
+    color: #fff;
   }
 
-  .left_hover_photo-news:hover, .right_hover_photo-news:hover{
+  .left_hover_photo-news:hover,
+  .right_hover_photo-news:hover {
     border: 1px solid #000;
-    color: #FFF;
+    color: #fff;
     background-color: #000;
   }
 
-  .hover_photo-news{
+  .hover_photo-news {
     display: none;
     position: relative;
     z-index: 3;
   }
 
-  .similar_news_photo_block img{
+  .similar_news_photo_block img {
     position: relative;
     z-index: 1;
   }
 
-  .similar_news_photo_block:hover .hover_photo-news{
+  .similar_news_photo_block:hover .hover_photo-news {
     display: flex;
     justify-content: space-between;
     margin-top: -50px;
@@ -2946,11 +2895,11 @@ font: 15px $font-basic;
     margin-right: 20px;
   }
 
-  .similar_news_photo_block:hover .grey_block_under_news_photo{
+  .similar_news_photo_block:hover .grey_block_under_news_photo {
     margin-top: 2px;
   }
 
-  .news_photo_block{
+  .news_photo_block {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 30px;
@@ -2958,7 +2907,7 @@ font: 15px $font-basic;
     padding-top: 20px;
   }
 
-  .grey_block_under_news_photo p{
+  .grey_block_under_news_photo p {
     font: 11px $font-article;
     font-weight: bolder;
     padding: 8px 16px;
@@ -2968,37 +2917,37 @@ font: 15px $font-basic;
     width: 50%;
   }
 
-  .similar_news_photo_block h6{
+  .similar_news_photo_block h6 {
     font: 15px $font-article;
     font-weight: bolder;
   }
 
-  .text_to_ten_block p:first-child{
+  .text_to_ten_block p:first-child {
     font: 8px $font-basic;
   }
 
-  .text_to_ten_block p:last-child{
+  .text_to_ten_block p:last-child {
     padding-top: 20px;
     font: 12px $font-basic;
     padding-left: 12px;
     padding-right: 12px;
   }
 
-  .link_ten_block{
+  .link_ten_block {
     margin-top: 25px;
   }
 
   /*  Eleven Content  */
 
-  .eleven_content{
+  .eleven_content {
     margin-top: 35px;
   }
 
-  .contact_page h2{
+  .contact_page h2 {
     padding-top: 40px;
   }
 
-  .container_to_input{
+  .container_to_input {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0px;
@@ -3008,16 +2957,16 @@ font: 15px $font-basic;
     padding-right: 12px;
   }
 
-  .message{
+  .message {
     padding-right: 12px;
     padding-left: 12px;
   }
 
-  textarea{
+  textarea {
     height: 400px;
   }
 
-  .message .form-main-button button{
+  .message .form-main-button button {
     width: 105px;
     font: 15px $font-article;
     font-weight: bolder;
@@ -3026,38 +2975,38 @@ font: 15px $font-basic;
 
   /*  Footer   */
 
-  .footer_map p{
+  .footer_map p {
     padding-top: 25px;
     padding-bottom: 25px;
     font: 18px $font-article;
     font-weight: bolder;
   }
 
-  .main_content_footer{
+  .main_content_footer {
     grid-template-columns: 1fr 2fr 1fr;
     grid-column-gap: 12px;
     padding-left: 12px;
     padding-right: 12px;
   }
 
-  .footer_social_icons i{
+  .footer_social_icons i {
     font-size: 15px;
     padding-top: 5px;
   }
 
-  .footer_social_icons a{
+  .footer_social_icons a {
     margin-right: 15px;
   }
 
-  .footer_circle{
+  .footer_circle {
     margin-top: 20px;
   }
 
-.flang_content_footer .footer_circle i{
+  .flang_content_footer .footer_circle i {
     font-size: 20px;
   }
 
-  .flang_content_footer p{
+  .flang_content_footer p {
     padding-bottom: 25px;
   }
 }
