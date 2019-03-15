@@ -1,0 +1,32 @@
+$font-article: Montserrat, sans-serif;
+$font-basic: Muli, sans-serif;
+$font-lato: Lato, sans-serif;
+$font-poppins: Poppins, sans-serif;
+$background-color_menu: #323232;
+$red_in_site: #e20505;
+$h6_color: #9c9c9c;
+$menu_single_elements_hover_color: #494949;
+$green: #59ec0f;
+$light_grey: #d6d6d6;
+$orange: #ff7400;
+
+.timer {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+}
+
+.timer a:nth-child(2) i {
+  color: $green;
+}
+
+.timer a:nth-child(2) i:hover {
+  color: $red_in_site;
+}
+
+.timer a:last-child i {
+  color: $red_in_site;
+}
+
+.timer a:last-child i:hover {
+  color: $green;
+}

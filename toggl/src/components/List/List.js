@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Timer from '../Timer';
 class List extends Component {
   render() {
     const {
@@ -18,11 +18,10 @@ class List extends Component {
         </a>
         <p class="text_todo">{title}</p>
         <p class="time_to_complete">Time to complete {timeToComplete} h.</p>
-        <p className="time_spend">Time spend 3:30 h.</p>
+        <p className="time_spend">
+          <Timer />
+        </p>
 
-        <a onClick={() => remove(id)}>
-          <i class="fas fa-play-circle" />
-        </a>
         <a onClick={() => remove(id)}>
           <i class="far fa-times-circle" />
         </a>
