@@ -4,7 +4,22 @@ import './TogglMain.scss';
 import './reset.css';
 import Clock from 'react-live-clock';
 import { Link } from 'react-router-dom';
-
+var store = require('store');
+store.set('16.03', [
+  {
+    title: 'olololololo',
+    timeToComplete: '1:00',
+    time_spend: '2:00',
+  },
+  {
+    title: 'olololololodsgsd',
+    timeToComplete: '2:00',
+    time_spend: '3:00',
+  },
+]);
+store.set('15.03', { title: 'work hard' });
+store.set('14.03', { title: 'fixed bug' });
+store.set('13.03', { title: 'klsfjskl' });
 class TogglMain extends Component {
   state = {
     taskTitle: '',
@@ -56,9 +71,10 @@ class TogglMain extends Component {
     const { todos } = this.state;
 
     for (var key in todos) {
-      todos[key]['id'] === id
-        ? (todos[key]['done'] = 1)
-        : (todos[key]['done'] += 0);
+      if (todos[key]['id'] === id) {
+        todos[key]['done'] = 1;
+        console.log(todos);
+      }
     }
     this.setState({
       todos: [...todos],
@@ -133,10 +149,10 @@ class TogglMain extends Component {
               <i className="fas fa-tag" />
               <p>Tags</p>
             </div>
-            <div className="menu_single_elements">
+            <Link to={`/help`} className="menu_single_elements">
               <i className="far fa-question-circle" />
               <p>Help</p>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="top_part_of_functionals">
@@ -146,7 +162,7 @@ class TogglMain extends Component {
               className="clock"
               format={'HH:mm:ss'}
               ticking={true}
-              timezone={'UA/Pacific'}
+              timezone={'Europe/Kiev'}
             />
           </div>
         </div>

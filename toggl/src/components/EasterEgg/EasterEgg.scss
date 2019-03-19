@@ -1,0 +1,58 @@
+$font-article: Montserrat, sans-serif;
+$font-basic: Muli, sans-serif;
+$font-lato: Lato, sans-serif;
+$font-poppins: Poppins, sans-serif;
+$background-color_menu: #323232;
+$red_in_site: #e20505;
+$h6_color: #9c9c9c;
+$menu_single_elements_hover_color: #494949;
+$green: #59ec0f;
+$light_grey: #d6d6d6;
+$orange: #ff7400;
+
+.clock_easter {
+  background: $background-color_menu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0px 0px 0px 12vw;
+}
+
+.info_easter h2 {
+  margin: 30px 20px 30px 13vw;
+  font-size: 22px;
+}
+
+.info_easter p {
+  margin: 30px 20px 30px 13vw;
+  font-size: 20px;
+  text-align: center;
+}
+.pip {
+  width: 17px;
+  height: 17px;
+  margin: 7px;
+  background-color: $red_in_site;
+  border-radius: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.pip--on {
+  background-color: $green;
+  transform: scale(1.1);
+}
+
+.clock_easter {
+  display: flex;
+}
+
+.easter_form {
+  margin: 30px 30px 30px 13vw;
+  font-size: 22px;
+}
+
+.binary-digit-group {
+  display: flex;
+  margin: 0 6px;
+}

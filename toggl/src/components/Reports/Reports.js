@@ -84,7 +84,7 @@ class Reports extends Component {
               className="clock"
               format={'HH:mm:ss'}
               ticking={true}
-              timezone={'UA/Pacific'}
+              timezone={'Europe/Kiev'}
             />
           </div>
         </div>
