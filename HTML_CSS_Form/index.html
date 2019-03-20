@@ -1,109 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Lesson_1</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Lesson_1</title>
+  </head>
 
-<body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST" target="_blank">
-        <h1>Personal Information</h1>
-        <section class="personal-information">
-            <fieldset>
-                <legend>Personal Information</legend>
-                    <div class="block">
-                    <div>
-                        <label for="surname">Surname:</label>
-                        <input required type="text" name="surname" id="surname">
-                    </div>
-
-                    <div>
-                        <label for="name">Name:</label>
-                        <input required type="text" name="name" id="name">
-                    </div>
-
-                    <div>
-                        <label for="how-old">How old are You?:</label>
-                        <input required type="number" name="how-old" id="how-old" min="18" max="120" step="1">
-                    </div>
-
-                    <div>
-                        <label for="date-of-birth">Full date of birth:</label>
-                        <input type="date" name="date-of-birth" id="date-of-birth">
-                    </div>
-
-                    <div>
-                        <label>I accept the terms of the agreement</label>
-                        <input required type="checkbox">
-                    </div>
-                    </div>
-             </fieldset>
-        </section>
-        <section class="registration">
-            <fieldset>
-                <legend>Registration</legend>
-                <div class="block">
-                <div>
-                    <label for="email">E-mail</label>
-                    <input required type="email" name="email" id="email">
-                </div>
-
-                <div>
-                    <label for="password">Password</label>
-                    <input required type="password" name="password" id="password">
-                </div>
-                </div>
-            </fieldset>
-        </section>
-        <section class="facts">
-            <fieldset>
-                <legend>An interesting fact about you!</legend>
-                <div class="block_facts">
-                <p>Do you love cats?</p>
-                    <div>
-                        <input type="radio" name="Cat" value="Yes">
-                        <label for="Yes">Yes</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="Cat" value="No">
-                        <label for="No">Not</label>
-                    </div>
-
-                <p>What is your favorite color?</p>
-                    <input type="color" name="color" id="color">
-
-                <p>What time do you go to bed?</p>
-                    <input type="time" name="time" id="time">
-
-                <p>What your favourite brand of cars?</p>
-                    <select name="car" id="usear-car">
-                        <option value="BMW">BMW</option>
-                        <option value="Audi">Audi</option>
-                        <option value="Opel">Opel</option>
-                        <option value="Renault">Renault</option>
-                        <option value="Honda">Honda</option>
-                    </select>
-
-                <p>How do you rate our work?</p>
-                    <input type="range" name="rate" id="rate">
-                </div>
-            </fieldset>
-        </section>
-        <section class="comments">
-            <fieldset>
-                <legend>Your comments</legend>
-                <textarea placeholder="Your comments"></textarea>
-            </fieldset>
-        </section>
-
-        <section class="buttons-section">
-            <div class="button">
-                <input class="button-submit" type="submit" value="Submit">
+  <body>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      target="_blank"
+    >
+      <h1>Personal Information</h1>
+      <section class="personal-information">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="block">
+            <div>
+              <label for="surname">Surname:</label>
+              <input required type="text" name="surname" id="surname" />
             </div>
-        </section>
+
+            <div>
+              <label for="name">Name:</label>
+              <input required type="text" name="name" id="name" />
+            </div>
+
+            <div>
+              <label for="how-old">How old are You?:</label>
+              <input
+                required
+                type="number"
+                name="how-old"
+                id="how-old"
+                min="18"
+                max="120"
+                step="1"
+              />
+            </div>
+
+            <div>
+              <label for="date-of-birth">Full date of birth:</label>
+              <input type="date" name="date-of-birth" id="date-of-birth" />
+            </div>
+
+            <div>
+              <label>I accept the terms of the agreement</label>
+              <input required type="checkbox" />
+            </div>
+          </div>
+        </fieldset>
+      </section>
+      <section class="registration">
+        <fieldset>
+          <legend>Registration</legend>
+          <div class="block">
+            <div>
+              <label for="email">E-mail</label>
+              <input required type="email" name="email" id="email" />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input required type="password" name="password" id="password" />
+            </div>
+          </div>
+        </fieldset>
+      </section>
+      <section class="facts">
+        <fieldset>
+          <legend>An interesting fact about you!</legend>
+          <div class="block_facts">
+            <p>Do you love cats?</p>
+            <div>
+              <input type="radio" name="Cat" value="Yes" />
+              <label for="Yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" name="Cat" value="No" />
+              <label for="No">Not</label>
+            </div>
+
+            <p>What is your favorite color?</p>
+            <input type="color" name="color" id="color" />
+
+            <p>What time do you go to bed?</p>
+            <input type="time" name="time" id="time" />
+
+            <p>What your favourite brand of cars?</p>
+            <select name="car" id="usear-car">
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Opel">Opel</option>
+              <option value="Renault">Renault</option>
+              <option value="Honda">Honda</option>
+            </select>
+
+            <p>How do you rate our work?</p>
+            <input type="range" name="rate" id="rate" />
+          </div>
+        </fieldset>
+      </section>
+      <section class="comments">
+        <fieldset>
+          <legend>Your comments</legend>
+          <textarea placeholder="Your comments"></textarea>
+        </fieldset>
+      </section>
+
+      <section class="buttons-section">
+        <div class="button">
+          <input class="button-submit" type="submit" value="Submit" />
+        </div>
+      </section>
     </form>
-</body>
+  </body>
 </html>

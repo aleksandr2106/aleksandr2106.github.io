@@ -1,19 +1,19 @@
-.features_page{
+.features_page {
   max-width: $max-width;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 165px;
 }
 
-.features_page h2{
+.features_page h2 {
   padding-top: 105px;
 }
 
-.features_page h4{
+.features_page h4 {
   font-weight: 700;
 }
 
-.fourth_content_blocks{
+.fourth_content_blocks {
   padding-top: 110px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -22,124 +22,123 @@
   text-align: left;
 }
 
-.fourth_similar_block{
+.fourth_similar_block {
   display: flex;
 }
 
-.fourth_similar_block_text{
+.fourth_similar_block_text {
   padding-left: 20px;
 }
 
-.fourth_similar_block_text h6{
+.fourth_similar_block_text h6 {
   margin-block-start: 0px;
   margin-block-end: 0px;
   font: 17px $font-article;
   font-weight: bolder;
-  text-transform:uppercase;
+  text-transform: uppercase;
   color: $color_for_h1;
   padding-bottom: 15px;
 }
 
-.fourth_similar_block_text p{
+.fourth_similar_block_text p {
   color: $color_for_dark_grey;
   line-height: 1.8;
 }
 
-.fourth_similar_block_circle{
+.fourth_similar_block_circle {
   max-width: 65px;
   max-height: 65px;
   border-radius: 32.5px;
 }
 
-.fourth_similar_block:nth-child(2n+1) .fourth_similar_block_circle{
+.fourth_similar_block:nth-child(2n + 1) .fourth_similar_block_circle {
   background-color: $color_for_yellow;
   color: $color_for_black;
 }
 
-.fourth_similar_block:nth-child(2n+1):hover .fourth_similar_block_circle{
+.fourth_similar_block:nth-child(2n + 1):hover .fourth_similar_block_circle {
   background-color: $color_for_black;
   color: $color_for_yellow;
 }
 
-.fourth_similar_block:nth-child(2n) .fourth_similar_block_circle{
+.fourth_similar_block:nth-child(2n) .fourth_similar_block_circle {
   background-color: $color_for_black;
   color: $color_for_yellow;
 }
 
-.fourth_similar_block:nth-child(2n):hover .fourth_similar_block_circle{
+.fourth_similar_block:nth-child(2n):hover .fourth_similar_block_circle {
   background-color: $color_for_yellow;
   color: $color_for_black;
 }
 
-.fourth_similar_block_circle i{
+.fourth_similar_block_circle i {
   padding: 25px;
 }
 
-@media (min-width:769px) and (max-width:1024px) {
-
+@media (min-width: 769px) and (max-width: 1024px) {
   /* Fourth Block  */
 
-.features_page{
-  padding-bottom: 100px;
+  .features_page {
+    padding-bottom: 100px;
+  }
+
+  .fourth_content_blocks {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    text-align: left;
+  }
 }
 
-.fourth_content_blocks{
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 50px;
-  text-align: left;
-}
-}
-
-@media (min-width:426px) and (max-width:768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   /* Fourth Block  */
 
-.features_page{
-  padding-bottom: 60px;
+  .features_page {
+    padding-bottom: 60px;
+  }
+
+  .features_page h4 {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .fourth_content_blocks {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-.features_page h4{
-  padding-top: 10px;
-  font-size: 18px;
-}
-
-.fourth_content_blocks{
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 30px;
-  text-align: left;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-}
-
-@media (max-width:425px) {
+@media (max-width: 425px) {
   /* Fourth Block  */
 
-.features_page{
-  padding-bottom: 40px;
-}
+  .features_page {
+    padding-bottom: 40px;
+  }
 
-.features_page h2{
-  font-size: 44px;
-}
+  .features_page h2 {
+    font-size: 44px;
+  }
 
-.features_page h4{
-  font-size: 14px;
-  padding-top: 15px;
-}
+  .features_page h4 {
+    font-size: 14px;
+    padding-top: 15px;
+  }
 
-.fourth_content_blocks{
-  padding-top: 30px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 20px;
-  text-align: left;
-  padding-left: 12px;
-  padding-right: 12px;
-}
+  .fourth_content_blocks {
+    padding-top: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }

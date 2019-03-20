@@ -24,6 +24,7 @@ class TogglMain extends Component {
   state = {
     taskTitle: '',
     timeToComplete: '',
+    timeSpend: '',
     todos: [],
     listClassName: 'list',
   };

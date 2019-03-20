@@ -21,7 +21,7 @@
 }
 
 .expert_block:hover {
-  background-color: #FFE400;
+  background-color: #ffe400;
 }
 
 .expert_block:hover img {
@@ -29,7 +29,7 @@
 }
 
 .expert_block:hover .text_about_expert {
-  background-color: #FFE400;
+  background-color: #ffe400;
 }
 
 .expert_block:hover h5 {
@@ -48,7 +48,7 @@
   color: #000;
 }
 
-.social_icons a:hover i{
+.social_icons a:hover i {
   color: #000;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .expert_block:hover hr {
-  border-top: 1px dashed #6B6000;
+  border-top: 1px dashed #6b6000;
   width: 80%;
   margin: 0 auto;
 }
@@ -72,52 +72,52 @@
   display: none;
 }
 
-.expert_block .social_icons{
+.expert_block .social_icons {
   display: none;
 }
 
-.expert_block:hover .social_icons{
+.expert_block:hover .social_icons {
   display: block;
 }
 
-.expert_block p{
+.expert_block p {
   display: none;
 }
 
-.expert_block:hover p{
+.expert_block:hover p {
   display: block;
 }
 
-.expert_block hr:last-of-type{
+.expert_block hr:last-of-type {
   display: none;
 }
 
-.expert_block:hover hr:last-of-type{
+.expert_block:hover hr:last-of-type {
   display: block;
 }
 
-.expert_block .social_icons i{
-  color: #6B6000;
+.expert_block .social_icons i {
+  color: #6b6000;
   font-size: 18px;
 }
 
-.expert_block .social_icons{
+.expert_block .social_icons {
   margin-top: 40px;
 }
 
-.expert_block .social_icons a{
+.expert_block .social_icons a {
   margin-right: 28px;
 }
 
-.expert_block .social_icons a:last-child{
+.expert_block .social_icons a:last-child {
   margin-right: 0px;
 }
 
-.text_about_expert{
+.text_about_expert {
   background-color: $color_for_grey_h2;
 }
 
-.expert_block h5{
+.expert_block h5 {
   padding-top: 20px;
   padding-bottom: 20px;
   font: 16px $font-article;
@@ -126,7 +126,7 @@
   text-transform: uppercase;
 }
 
-.text_about_expert h6{
+.text_about_expert h6 {
   padding-top: 22px;
   padding-bottom: 21px;
   font: 11px $font-article;
@@ -135,13 +135,13 @@
   text-transform: uppercase;
 }
 
-.text_about_expert hr{
-  border-top: 1px dashed #D0D0D0;
+.text_about_expert hr {
+  border-top: 1px dashed #d0d0d0;
   width: 80%;
   margin: 0 auto;
 }
 
-.text_about_expert p{
+.text_about_expert p {
   padding-top: 20px;
   padding-bottom: 20px;
   font: 11px $font-article;
@@ -152,178 +152,176 @@
 
 .text_about_expert {
   margin-top: 6px;
-
 }
 
-@media (min-width:1025px) and (max-width:1199px) {
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .expert_page h2 {
+    padding-top: 150px;
+  }
 
-.expert_page h2 {
-  padding-top: 150px;
+  .expert_page {
+    padding-bottom: 250px;
+  }
+
+  .expert_content_blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .expert_content_blocks:first-child {
+    padding-top: 110px;
+  }
+
+  .expert_block:hover h5 {
+    padding-top: 60px;
+  }
+
+  .expert_block:hover p {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
 }
 
-.expert_page{
-  padding-bottom: 250px;
-}
-
-.expert_content_blocks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.expert_content_blocks:first-child {
-  padding-top: 110px;
-}
-
-.expert_block:hover h5 {
-  padding-top: 60px;
-}
-
-.expert_block:hover p {
-  padding-top: 50px;
-  padding-bottom: 70px;
-}
-}
-
-@media (min-width:769px) and (max-width:1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   /*   Eigth Content      */
 
-.expert_page {
-  padding-bottom: 150px;
+  .expert_page {
+    padding-bottom: 150px;
+  }
+
+  .expert_page h2 {
+    padding-top: 100px;
+  }
+
+  .expert_content_blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .expert_block:hover h5 {
+    font-size: 22px;
+    padding-top: 40px;
+  }
+
+  .expert_block:hover h6 {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+  .expert_block:hover p {
+    font: 11px $font-basic;
+    color: $color_for_dark_grey;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    color: #000;
+  }
+
+  .expert_block .social_icons a {
+    margin-right: 15px;
+  }
 }
 
-.expert_page h2 {
-  padding-top: 100px;
-}
-
-.expert_content_blocks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
-  padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.expert_block:hover h5 {
-  font-size: 22px;
-  padding-top: 40px;
-}
-
-.expert_block:hover h6 {
-  font-size: 15px;
-  padding-top: 10px;
-}
-
-.expert_block:hover p {
-  font: 11px $font-basic;
-  color: $color_for_dark_grey;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 40px;
-  color: #000;
-}
-
-.expert_block .social_icons a{
-  margin-right: 15px;
-}
-}
-
-@media (min-width:426px) and (max-width:768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   /*   Eigth Content      */
 
-.expert_page {
-  padding-bottom: 80px;
+  .expert_page {
+    padding-bottom: 80px;
+  }
+
+  .expert_page h2 {
+    padding-top: 80px;
+  }
+
+  .expert_content_blocks {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    padding-top: 30px;
+  }
+
+  .expert_block:hover h5 {
+    padding-top: 30px;
+    font: 19px $font-article;
+    font-weight: bolder;
+  }
+
+  .expert_block:hover h6 {
+    font: 15px $font-article;
+    font-weight: bolder;
+  }
+
+  .expert_block:hover p {
+    font: 11px $font-basic;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    padding-bottom: 50px;
+  }
+
+  .expert_block .social_icons {
+    margin-top: 20px;
+  }
+
+  .expert_block .social_icons a {
+    margin-right: 15px;
+  }
 }
 
-.expert_page h2 {
-  padding-top: 80px;
-}
-
-.expert_content_blocks {
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 30px;
-  padding-top: 30px;
-}
-
-.expert_block:hover h5 {
-  padding-top: 30px;
-  font: 19px $font-article;
-  font-weight: bolder;
-}
-
-.expert_block:hover h6 {
-  font: 15px $font-article;
-  font-weight: bolder;
-}
-
-.expert_block:hover p {
-  font: 11px $font-basic;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-weight: 700;
-  padding-bottom: 50px;
-}
-
-.expert_block .social_icons{
-  margin-top: 20px;
-}
-
-.expert_block .social_icons a{
-  margin-right: 15px;
-}
-}
-
-@media (max-width:425px) {
+@media (max-width: 425px) {
   /*   Eigth Content      */
 
-.expert_page {
-  padding-bottom: 40px;
-}
+  .expert_page {
+    padding-bottom: 40px;
+  }
 
-.expert_page h2 {
-  padding-top: 60px;
-}
+  .expert_page h2 {
+    padding-top: 60px;
+  }
 
-.expert_content_blocks {
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 40px;
-}
+  .expert_content_blocks {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+  }
 
-.expert_block:hover h5 {
-  padding-top: 35px;
-  font: 19px $font-article;
-  font-weight: bolder;
-}
+  .expert_block:hover h5 {
+    padding-top: 35px;
+    font: 19px $font-article;
+    font-weight: bolder;
+  }
 
-.expert_block:hover h6 {
-  font: 15px $font-article;
-  font-weight: bolder;
-}
+  .expert_block:hover h6 {
+    font: 15px $font-article;
+    font-weight: bolder;
+  }
 
-.expert_block:hover p {
-  font: 11px $font-basic;
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-weight: 700;
-  padding-bottom: 80px;
-}
+  .expert_block:hover p {
+    font: 11px $font-basic;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    padding-bottom: 80px;
+  }
 
-.expert_block .social_icons i{
-  font-size: 16px;
-}
+  .expert_block .social_icons i {
+    font-size: 16px;
+  }
 
-.expert_block .social_icons a{
-  margin-right: 18px;
-}
+  .expert_block .social_icons a {
+    margin-right: 18px;
+  }
 }
