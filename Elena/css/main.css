@@ -1,36 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway");
 
-body{
+body {
   margin: 0px;
   padding: 0px;
   font-family: "Raleway";
   font-size: 16px;
 }
-.header{
+
+.header {
   background-image: url(header.png);
   background-size: 100%;
   height: auto;
-
 }
 
-hr{
+hr {
   height: 1px;
 }
-.header-picture{
+
+.header-picture {
   margin-left: 45%;
   margin-top: 7%;
   width: 10%;
   height: auto;
 }
-ul{
+
+ul {
   margin: 0px;
   padding-top: 5%;
   display: flex;
   justify-content: center;
 }
 
-ul.ul_menu li{
-  float:left;
+ul.ul_menu li {
+  float: left;
   margin-left: 10px;
   padding-left: 20px;
   margin-right: 10px;
@@ -40,20 +42,22 @@ ul.ul_menu li{
   cursor: pointer;
   list-style-type: none;
 }
-ul.ul_menu li a:hover{
+
+ul.ul_menu li a:hover {
   color: black;
 }
-ul.ul_menu li:first-child{
+
+ul.ul_menu li:first-child {
   margin-left: 0px;
   padding-left: 0px;
-
 }
-ul.ul_menu li:last-child{
+
+ul.ul_menu li:last-child {
   margin-right: 0px;
   padding-right: 0px;
-
 }
-.header h1{
+
+.header h1 {
   display: flex;
   justify-content: center;
   font-size: 82px;
@@ -62,147 +66,158 @@ ul.ul_menu li:last-child{
   margin-top: 50px;
 }
 
-.header_text{
+.header_text {
   display: flex;
   justify-content: center;
   width: 100%;
   padding-top: 1%;
-
 }
-.header_text p{
+
+.header_text p {
   font-size: 25px;
   color: white;
   margin-top: -11px;
   padding-left: 20px;
   margin-left: 20px;
 }
-.header_text hr{
+
+.header_text hr {
   width: 8%;
   float: right;
   margin: 0px;
+}
 
+.header_text hr:last-child {
+  margin-left: 40px;
 }
-.header_text hr:last-child{
-    margin-left: 40px;
-}
-.form-main-button{
+
+.form-main-button {
   display: flex;
   justify-content: center;
 }
-.form-main-button button{
+
+.form-main-button button {
   margin-top: 8%;
   border: 0px;
-
-  cursor:  pointer;
+  cursor: pointer;
   height: auto;
   font-weight: bold;
   font-size: 24px;
   color: #fff;
   text-transform: uppercase;
-  background: #52C9B3;
+  background: #52c9b3;
   border-radius: 50px;
   margin-bottom: 10%;
   padding: 2% 10% 2% 10%;
 }
-.form-main-button button:hover{
+
+.form-main-button button:hover {
   background: #0db697;
-  }
-
-.main_content{
-  text-align: center;
-  background-color: #EEEEEF;
-
 }
-.first_block{
+
+.main_content {
+  text-align: center;
+  background-color: #eeeeef;
+}
+
+.first_block {
   display: flex;
   justify-content: center;
-
 }
-.local_menu{
+
+.local_menu {
   width: 20%;
   padding: 5% 4% 5% 4%;
   text-align: center;
 }
-.local_menu img{
+
+.local_menu img {
   width: 35%;
   height: 25%;
 }
-.local_menu img:hover{
+
+.local_menu img:hover {
   width: 35%;
   height: 35%;
 }
-.local_menu h4{
+
+.local_menu h4 {
   font-size: 22px;
 }
 
-.local_menu p{
+.local_menu p {
   font-size: 16px;
-  color:  #6E6E6E;
+  color: #6e6e6e;
   margin-bottom: 30px;
   padding-bottom: 30px;
   width: 70%;
   padding-left: 25px;
   margin-left: 20px;
 }
-.second_block{
+
+.second_block {
   display: flex;
   justify-content: center;
 }
-.second_block, .four_block , .sixth_block{
-  background-color: #F5F5F5;
+
+.second_block,
+.four_block,
+.sixth_block {
+  background-color: #f5f5f5;
 }
 
-.local2_menu{
+.local2_menu {
   width: 30%;
-  padding: 5% ;
+  padding: 5%;
   text-align: left;
 }
-.local2_menu h4{
+
+.local2_menu h4 {
   font-size: 20px;
 }
-.local2_menu p{
+
+.local2_menu p {
   padding-top: 20px;
   font-size: 16px;
   width: 70%;
 }
-.second_block-picture{
+
+.second_block-picture {
   width: 100%;
 }
 
-.form-second_block-button button{
+.form-second_block-button button {
   margin-left: 0px;
   padding-left: 0px;
-  margin-top: 20px;;
+  margin-top: 20px;
   border: 0px;
   padding: 0px;
-  cursor:  pointer;
+  cursor: pointer;
   height: auto;
-
   font-size: 15px;
   color: #fff;
-  background: #50C3AF;
+  background: #50c3af;
   border-radius: 20px;
   margin-bottom: 15px;
   padding: 2.5% 12%;
 }
-.form-second_block-button button:hover{
 
+.form-second_block-button button:hover {
   background: #0db697;
-
 }
-.third_block{
+
+.third_block {
   margin-left: 15%;
   width: 70%;
 }
 
-
-.local3_menu img{
+.local3_menu img {
   float: left;
   padding-top: 5%;
   margin-top: 0px;
-
 }
-.local3_menu h4{
+
+.local3_menu h4 {
   float: left;
   padding: 10px;
   margin: 10px;
@@ -210,27 +225,29 @@ ul.ul_menu li:last-child{
   font-size: 24px;
 }
 
-.local3_menu p{
+.local3_menu p {
   font-size: 17px;
   color: #656565;
 }
-.local3_menu hr{
+
+.local3_menu hr {
   width: 70%;
   padding: 0px;
   margin: 0px;
 }
-.local3_menu{
-text-align: left;
+
+.local3_menu {
+  text-align: left;
 }
-.form-third_block-button button{
+
+.form-third_block-button button {
   margin-left: 0px;
   padding-left: 0px;
-  margin-top: 20px;;
+  margin-top: 20px;
   border: 0px;
   padding: 0px;
-  cursor:  pointer;
+  cursor: pointer;
   height: auto;
-
   font-size: 15px;
   color: #fff;
   background: #a7a7a7;
@@ -238,16 +255,17 @@ text-align: left;
   margin-bottom: 5%;
   padding: 1.5% 7%;
 }
-.form-third_block-button button:hover{
+
+.form-third_block-button button:hover {
   background: #8d8d8d;
 }
-.four_block{
+
+.four_block {
   display: flex;
   justify-content: center;
 }
 
-.local4_menu{
-
+.local4_menu {
   width: 20%;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -255,33 +273,38 @@ text-align: left;
   padding-left: 45px;
   padding-right: 45px;
 }
-.local4_menu h4{
+
+.local4_menu h4 {
   font-size: 20px;
   padding-top: 20px;
 }
-.local4_menu p{
+
+.local4_menu p {
   padding-top: 20px;
   font-size: 16px;
   width: 70%;
 }
-.Check_this_out{
+
+.Check_this_out {
   margin-bottom: 10%;
-  color: #82CFC1;
+  color: #82cfc1;
 }
-.local4_menu a:hover{
-  color:#0db697;
+
+.local4_menu a:hover {
+  color: #0db697;
   font-size: 22px;
 }
-.fourth_block-picture{
+
+.fourth_block-picture {
   width: 100%;
 }
 
-.fifth_block{
+.fifth_block {
   display: flex;
   justify-content: center;
 }
-.local5_menu{
 
+.local5_menu {
   width: 30%;
   padding-top: 3%;
   padding-bottom: 5%;
@@ -290,17 +313,18 @@ text-align: left;
   padding-right: 5%;
 }
 
-.local5_menu p{
+.local5_menu p {
   padding-top: 20px;
   font-size: 18px;
 }
-.local5_menu img{
+
+.local5_menu img {
   float: left;
   padding-top: 5%;
   margin-top: 0px;
-
 }
-.local5_menu h4{
+
+.local5_menu h4 {
   float: left;
   padding: 10px;
   margin: 10px;
@@ -308,22 +332,23 @@ text-align: left;
   font-size: 20px;
 }
 
-.pancil_block-picture{
+.pancil_block-picture {
   margin-top: 5px;
 }
-.sixth_block{
+
+.sixth_block {
   display: flex;
   justify-content: center;
 }
-.sixth_block img{
+
+.sixth_block img {
   float: left;
   width: 25%;
   height: 15%;
-  padding: 5% ;
+  padding: 5%;
 }
 
-.local6_menu{
-
+.local6_menu {
   width: 40%;
   height: 20%;
   padding-top: 5%;
@@ -332,18 +357,19 @@ text-align: left;
   padding-bottom: 5%;
   text-align: left;
 }
-.sixth_block-picture{
+
+.sixth_block-picture {
   width: 100%;
 }
 
-.form-sixth_block-button button{
+.form-sixth_block-button button {
   margin-left: 0px;
   padding-left: 0px;
   margin-top: 20px;
   padding-top: 20px;
   border: 0px;
   padding: 0px;
-  cursor:  pointer;
+  cursor: pointer;
   height: auto;
   font-size: 16px;
   color: #fff;
@@ -352,12 +378,12 @@ text-align: left;
   margin-bottom: 15px;
   padding: 2.5% 12%;
 }
-.form-sixth_block-button button:hover{
 
+.form-sixth_block-button button:hover {
   background: #0db697;
-
 }
-.local6_menu h4{
+
+.local6_menu h4 {
   float: center;
   padding: 10px;
   margin: 10px;
@@ -365,12 +391,12 @@ text-align: left;
   font-size: 22px;
 }
 
-.footer{
-  background-color: #50C3AF;
+.footer {
+  background-color: #50c3af;
   justify-content: center;
 }
 
-.footer_logo{
+.footer_logo {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -378,400 +404,409 @@ text-align: left;
   margin-top: 5%;
 }
 
-.footer_logo img{
+.footer_logo img {
   width: 12.5%;
   height: 10%;
   padding: 0% 3%;
   padding-bottom: 5%;
 }
-.footer_logo img:last-child{
+
+.footer_logo img:last-child {
   padding-top: 0px;
 }
 
-.top_footer{
+.top_footer {
   display: flex;
   justify-content: center;
   padding-top: 5%;
   color: white;
 }
-.top_footer h5{
+
+.top_footer h5 {
   font-size: 30px;
   margin: 0;
 }
-.top_footer img{
+
+.top_footer img {
   width: 4%;
   height: 4%;
   margin-top: -1.2%;
 }
 
-
-.bottom_footer{
-  background-color: #F5F5F5;
+.bottom_footer {
+  background-color: #f5f5f5;
   padding-top: 2%;
   padding-bottom: 2%;
   display: flex;
   justify-content: space-around;
 }
-.bottom_footer h6{
-  margin: 0;
 
+.bottom_footer h6 {
+  margin: 0;
   font-size: 16px;
   padding-right: 10px;
 }
-.bottom_footer p{
+
+.bottom_footer p {
   display: block;
-
-}
-.left_bootom_footer{
-  display: flex;
-
 }
 
-.footer_icons{
+.left_bootom_footer {
   display: flex;
 }
 
-.footer_icons img{
+.footer_icons {
+  display: flex;
+}
+
+.footer_icons img {
   width: 75%;
   height: 75%;
   margin-right: 20px;
-
 }
-.footer_icons img:hover{
+
+.footer_icons img:hover {
   width: 80%;
   height: 80%;
   margin-right: 20px;
   background-color: #0db697;
-
 }
-@media (min-width:2001px) {
-  .header h1{
+
+@media (min-width: 2001px) {
+  .header h1 {
     font-size: 100px;
   }
 
-  ul.ul_menu li{
+  ul.ul_menu li {
     font-size: 28px;
   }
 
-  .form-main-button button{
-    font-size: 30px;
-
-  }
-
-  .local_menu h4{
+  .form-main-button button {
     font-size: 30px;
   }
 
-  .local_menu p{
+  .local_menu h4 {
+    font-size: 30px;
+  }
+
+  .local_menu p {
     font-size: 22px;
     padding-left: 15%;
     margin-left: 0px;
   }
 
-  .local2_menu h4{
+  .local2_menu h4 {
     font-size: 32px;
   }
-  .local2_menu p{
+
+  .local2_menu p {
     padding-top: 20px;
     font-size: 24px;
     width: 90%;
   }
 
-  .form-second_block-button button{
-      font-size: 22px;
-    }
+  .form-second_block-button button {
+    font-size: 22px;
+  }
 
-  .local3_menu h4{
+  .local3_menu h4 {
     float: left;
     padding: 10px;
     margin: 10px;
     padding-top: 5%;
-      font-size: 32px;
+    font-size: 32px;
   }
 
-  .local3_menu p{
+  .local3_menu p {
     font-size: 24px;
-
   }
 
-  .form-third_block-button button{
+  .form-third_block-button button {
     font-size: 22px;
   }
-  .local3_menu img{
+
+  .local3_menu img {
     padding-top: 5.5%;
   }
 
-  .local4_menu h4{
+  .local4_menu h4 {
     font-size: 32px;
   }
-  .local4_menu p{
+
+  .local4_menu p {
     font-size: 22px;
   }
-  .local4_menu a{
+
+  .local4_menu a {
     font-size: 28px;
   }
 
-  .local5_menu p{
+  .local5_menu p {
     font-size: 24px;
   }
-  .local5_menu h4{
+
+  .local5_menu h4 {
     font-size: 32px;
     margin-top: 0px;
   }
 
-  .form-sixth_block-button button{
+  .form-sixth_block-button button {
     font-size: 28px;
   }
-  .local6_menu p{
+
+  .local6_menu p {
     font-size: 26px;
   }
-  .local6_menu h4{
+
+  .local6_menu h4 {
     font-size: 34px;
   }
 
-  .top_footer h5{
+  .top_footer h5 {
     font-size: 36px;
   }
 
-  .bottom_footer h6{
+  .bottom_footer h6 {
     font-size: 22px;
-
   }
-  .bottom_footer p{
+
+  .bottom_footer p {
     display: block;
     font-size: 18px;
   }
-
 }
 
-@media (min-width:1441px) and (max-width:2000px) {
-  .header h1{
+@media (min-width: 1441px) and (max-width: 2000px) {
+  .header h1 {
     font-size: 90px;
   }
 
-  ul.ul_menu li{
+  ul.ul_menu li {
     font-size: 26px;
   }
 
-  .form-main-button button{
-    font-size: 28px;
-
-  }
-
-  .local_menu h4{
+  .form-main-button button {
     font-size: 28px;
   }
 
-  .local_menu p{
+  .local_menu h4 {
+    font-size: 28px;
+  }
+
+  .local_menu p {
     font-size: 20px;
     padding-left: 15%;
     margin-left: 0px;
   }
 
-  .local2_menu h4{
+  .local2_menu h4 {
     font-size: 28px;
   }
-  .local2_menu p{
+
+  .local2_menu p {
     padding-top: 20px;
     font-size: 22px;
     width: 80%;
   }
 
-  .form-second_block-button button{
-      font-size: 20px;
-    }
-
-  .local3_menu h4{
-    padding-top: 5%;
-      font-size: 28px;
-  }
-
-  .local3_menu p{
-    font-size: 22px;
-
-  }
-
-  .form-third_block-button button{
+  .form-second_block-button button {
     font-size: 20px;
   }
-  .local3_menu img{
+
+  .local3_menu h4 {
+    padding-top: 5%;
+    font-size: 28px;
+  }
+
+  .local3_menu p {
+    font-size: 22px;
+  }
+
+  .form-third_block-button button {
+    font-size: 20px;
+  }
+
+  .local3_menu img {
     padding-top: 5.5%;
   }
 
-  .local4_menu h4{
-    font-size: 26px;
-  }
-  .local4_menu p{
-    font-size: 20px;
-  }
-  .local4_menu a{
+  .local4_menu h4 {
     font-size: 26px;
   }
 
-  .local5_menu p{
+  .local4_menu p {
+    font-size: 20px;
+  }
+
+  .local4_menu a {
+    font-size: 26px;
+  }
+
+  .local5_menu p {
     font-size: 22px;
   }
-  .local5_menu h4{
+
+  .local5_menu h4 {
     font-size: 28px;
     margin-top: 0px;
   }
 
-  .form-sixth_block-button button{
-    font-size: 26px;
-  }
-  .local6_menu p{
-    font-size: 24px;
-  }
-  .local6_menu h4{
+  .form-sixth_block-button button {
     font-size: 26px;
   }
 
-  .top_footer h5{
+  .local6_menu p {
+    font-size: 24px;
+  }
+
+  .local6_menu h4 {
+    font-size: 26px;
+  }
+
+  .top_footer h5 {
     font-size: 22px;
   }
 
-  .bottom_footer h6{
+  .bottom_footer h6 {
     font-size: 20px;
-
   }
-  .bottom_footer p{
+
+  .bottom_footer p {
     display: block;
     font-size: 16px;
   }
-
 }
 
-@media (min-width:1024px) and (max-width:1250px) {
-
-  .header-picture{
+@media (min-width: 1024px) and (max-width: 1250px) {
+  .header-picture {
     margin-top: 4%;
   }
 
-  ul.ul_menu li{
+  ul.ul_menu li {
     font-size: 18px;
   }
 
-  .header h1{
+  .header h1 {
     font-size: 68px;
     margin-top: 0px;
   }
 
-  .form-main-button button{
+  .form-main-button button {
     margin-top: 7%;
     font-size: 22px;
     margin-bottom: 8%;
-    padding: 2% 10% ;
+    padding: 2% 10%;
   }
 
-  .local_menu h4{
+  .local_menu h4 {
     font-size: 20px;
   }
 
-  .local_menu p{
+  .local_menu p {
     font-size: 15px;
     margin-bottom: 20px;
     margin-left: 0px;
   }
 
-  .local2_menu h4{
+  .local2_menu h4 {
     font-size: 20px;
   }
-  .local2_menu p{
+
+  .local2_menu p {
     font-size: 15px;
   }
 
-  .form-second_block-button button{
+  .form-second_block-button button {
     font-size: 14px;
   }
 
-  .local3_menu img{
+  .local3_menu img {
     padding-top: 5%;
     margin-top: 0px;
     width: 7%;
     height: 7%;
-
   }
-  .local3_menu h4{
+
+  .local3_menu h4 {
     padding-top: 4.4%;
     font-size: 20px;
   }
 
-  .local3_menu p{
+  .local3_menu p {
     font-size: 16px;
   }
 
-  .form-third_block-button button{
+  .form-third_block-button button {
     font-size: 14px;
   }
 
-  .local4_menu{
+  .local4_menu {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  .fifth_block{
+  .fifth_block {
     display: flex;
     justify-content: center;
   }
 
-  .local5_menu p{
+  .local5_menu p {
     padding-top: 15px;
     font-size: 16px;
   }
 
-  .form-sixth_block-button button{
+  .form-sixth_block-button button {
     font-size: 15px;
-    }
+  }
 
-  .local6_menu h4{
+  .local6_menu h4 {
     font-size: 20px;
   }
 
-  .top_footer h5{
+  .top_footer h5 {
     font-size: 22px;
   }
 
-  .bottom_footer h6{
+  .bottom_footer h6 {
     font-size: 15px;
   }
-
 }
 
-@media (min-width:768px) and (max-width:1023px) {
-
-  .header-picture{
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-picture {
     margin-top: 4%;
   }
-  ul{
+
+  ul {
     padding-top: 4%;
   }
 
-  ul.ul_menu li{
+  ul.ul_menu li {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 17px;
   }
 
-  .header h1{
+  .header h1 {
     font-size: 56px;
     padding-top: 40px;
     margin-top: 0px;
   }
 
-  .header_text p{
+  .header_text p {
     font-size: 22px;
   }
 
-  .form-main-button button{
+  .form-main-button button {
     margin-top: 6%;
     font-size: 20px;
   }
 
-  .local_menu h4{
+  .local_menu h4 {
     font-size: 18px;
   }
 
-  .local_menu p{
+  .local_menu p {
     font-size: 15px;
     margin-bottom: 10px;
     padding-bottom: 15px;
@@ -780,65 +815,70 @@ text-align: left;
     margin-left: 10px;
   }
 
-  .local2_menu h4{
+  .local2_menu h4 {
     font-size: 18px;
   }
-  .local2_menu p{
+
+  .local2_menu p {
     font-size: 15px;
     width: 100%;
   }
 
-  .local3_menu img{
+  .local3_menu img {
     padding-top: 5%;
     width: 9%;
     height: 9%;
   }
-  .local3_menu h4{
+
+  .local3_menu h4 {
     margin-left: 0px;
     font-size: 18px;
   }
 
-  .local3_menu p{
+  .local3_menu p {
     font-size: 15px;
   }
 
-  .local4_menu{
+  .local4_menu {
     padding-left: 25px;
     padding-right: 25px;
   }
-  .local4_menu h4{
+
+  .local4_menu h4 {
     font-size: 18px;
     padding-top: 15px;
   }
-  .local4_menu p{
+
+  .local4_menu p {
     padding-top: 15px;
     font-size: 15px;
     width: 100%;
   }
 
-  .local5_menu p{
+  .local5_menu p {
     padding-top: 15px;
     font-size: 15px;
   }
-  .local5_menu img{
+
+  .local5_menu img {
     width: 15%;
     height: 15%;
     margin-top: 3px;
   }
-  .local5_menu h4{
+
+  .local5_menu h4 {
     font-size: 18px;
     padding-left: 0px;
   }
 
-  .sixth_block img{
+  .sixth_block img {
     float: left;
     width: 25%;
     height: 15%;
-    padding: 5% ;
+    padding: 5%;
   }
 
-  .local6_menu{
-
+  .local6_menu {
     width: 40%;
     height: 20%;
     padding-top: 5%;
@@ -847,11 +887,12 @@ text-align: left;
     padding-bottom: 5%;
     text-align: left;
   }
-  .sixth_block-picture{
+
+  .sixth_block-picture {
     width: 100%;
   }
 
-  .local6_menu h4{
+  .local6_menu h4 {
     float: center;
     padding: 10px;
     margin: 10px;
@@ -863,42 +904,41 @@ text-align: left;
     font-size: 18px;
   }
 
-  .footer_logo{
+  .footer_logo {
     margin-top: 5%;
   }
 
-  .footer_logo img{
+  .footer_logo img {
     width: 12.5%;
     height: 10%;
     padding: 0% 3%;
     padding-bottom: 5%;
   }
 
-  .top_footer h5{
+  .top_footer h5 {
     font-size: 20px;
   }
 }
 
-@media (min-width:425px) and (max-width:767px) {
-
-  .header-picture{
+@media (min-width: 425px) and (max-width: 767px) {
+  .header-picture {
     margin-top: 3%;
     width: 15%;
   }
-  ul{
+
+  ul {
     padding-top: 3%;
   }
 
-  ul.ul_menu li{
+  ul.ul_menu li {
     margin-left: 5px;
     padding-left: 5px;
     margin-right: 5px;
     padding-right: 5px;
     font-size: 15px;
-
   }
 
-  .header h1{
+  .header h1 {
     display: flex;
     justify-content: center;
     font-size: 36px;
@@ -906,52 +946,54 @@ text-align: left;
     margin-top: 10px;
   }
 
-  .header_text{
+  .header_text {
     display: flex;
     justify-content: center;
     width: 100%;
     padding-top: 1%;
-
   }
-  .header_text p{
+
+  .header_text p {
     font-size: 14px;
     color: white;
     margin-top: -8px;
     padding-left: 10px;
     margin-left: 10px;
   }
-  .header_text hr{
+
+  .header_text hr {
     width: 8%;
     float: right;
     margin: 0px;
-
   }
 
-  .form-main-button button{
+  .form-main-button button {
     margin-top: 6%;
     font-size: 17px;
     margin-bottom: 8%;
   }
 
-  .first_block{
+  .first_block {
     display: flex;
     justify-content: space-around;
   }
-  .local_menu{
+
+  .local_menu {
     width: 25%;
     padding: 5% 2% 5% 2%;
     text-align: center;
   }
-  .local_menu img{
+
+  .local_menu img {
     width: 40%;
     height: 20%;
   }
 
-  .local_menu h4{
+  .local_menu h4 {
     font-size: 14px;
   }
 
-  .local_menu p{
+  .local_menu p {
     font-size: 12px;
     margin-bottom: 5px;
     padding-bottom: 5px;
@@ -959,39 +1001,42 @@ text-align: left;
     padding-left: 0px;
     margin-left: 0px;
   }
-  .second_block{
+
+  .second_block {
     display: flex;
     justify-content: space-around;
   }
 
-  .local2_menu{
+  .local2_menu {
     width: 40%;
-    padding: 5% ;
+    padding: 5%;
     text-align: left;
   }
-  .local2_menu h4{
+
+  .local2_menu h4 {
     font-size: 14px;
   }
-  .local2_menu p{
+
+  .local2_menu p {
     padding-top: 10px;
     font-size: 12px;
     width: 100%;
   }
 
-  .third_block{
+  .third_block {
     margin-left: 5%;
     width: 90%;
   }
 
-  .local3_menu img{
+  .local3_menu img {
     float: left;
     padding-top: 5%;
     margin-top: 0px;
     width: 10%;
     height: 10%;
-
   }
-  .local3_menu h4{
+
+  .local3_menu h4 {
     float: left;
     padding: 10px;
     margin: 10px;
@@ -1001,49 +1046,52 @@ text-align: left;
     font-size: 14px;
   }
 
-  .local3_menu p{
+  .local3_menu p {
     font-size: 12px;
   }
 
-  .form-third_block-button button{
-    margin-top: 10px;;
+  .form-third_block-button button {
+    margin-top: 10px;
     font-size: 13px;
     border-radius: 20px;
     margin-bottom: 5%;
     padding: 1.3% 7%;
   }
 
-  .four_block{
+  .four_block {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 
-  .local4_menu{
-
+  .local4_menu {
     width: 25%;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 5px;
     padding-right: 5px;
   }
-  .local4_menu h4{
+
+  .local4_menu h4 {
     font-size: 14px;
     padding-top: 0px;
   }
-  .local4_menu p{
+
+  .local4_menu p {
     padding-top: 5px;
     font-size: 12px;
     width: 100%;
   }
-  .Check_this_out{
+
+  .Check_this_out {
     font-size: 14px;
   }
 
-  .fifth_block{
+  .fifth_block {
     display: flex;
     justify-content: space-around;
   }
-  .local5_menu{
+
+  .local5_menu {
     width: 40%;
     padding-top: 3%;
     padding-bottom: 5%;
@@ -1052,38 +1100,39 @@ text-align: left;
     padding-right: 2%;
   }
 
-  .local5_menu p{
+  .local5_menu p {
     padding-top: 0px;
     font-size: 12px;
   }
-  .local5_menu img{
-  display: none;
 
+  .local5_menu img {
+    display: none;
   }
-  .local5_menu h4{
 
+  .local5_menu h4 {
     padding: 10px;
     margin: 10px;
     padding-top: 5%;
     font-size: 14px;
   }
 
-  .pancil_block-picture{
+  .pancil_block-picture {
     margin-top: 5px;
   }
-  .sixth_block{
+
+  .sixth_block {
     display: flex;
     justify-content: space-around;
   }
-  .sixth_block img{
+
+  .sixth_block img {
     float: left;
     width: 25%;
     height: 15%;
     padding: 5% 0%;
   }
 
-  .local6_menu{
-
+  .local6_menu {
     width: 50%;
     height: 20%;
     padding-top: 3%;
@@ -1093,17 +1142,19 @@ text-align: left;
     text-align: left;
   }
 
-  .sixth_block-picture{
+  .sixth_block-picture {
     width: 100%;
   }
-  .local6_menu p{
+
+  .local6_menu p {
     font-size: 12px;
   }
-  .form-sixth_block-button button{
+
+  .form-sixth_block-button button {
     font-size: 15px;
   }
 
-  .local6_menu h4{
+  .local6_menu h4 {
     float: center;
     padding: 10px 0px;
     margin: 10px 0px;
@@ -1111,11 +1162,11 @@ text-align: left;
     font-size: 14px;
   }
 
-  .footer{
+  .footer {
     justify-content: space-around;
   }
 
-  .footer_logo{
+  .footer_logo {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1123,63 +1174,65 @@ text-align: left;
     margin-top: 5%;
   }
 
-  .footer_logo img{
+  .footer_logo img {
     width: 12.5%;
     height: 10%;
     padding: 0% 3%;
     padding-bottom: 5%;
   }
 
-  .top_footer{
+  .top_footer {
     display: flex;
     justify-content: center;
     padding-top: 5%;
     color: white;
   }
-  .top_footer h5{
+
+  .top_footer h5 {
     font-size: 18px;
     margin: 0;
   }
-  .top_footer img{
-display: none;
+
+  .top_footer img {
+    display: none;
   }
 
-  .bottom_footer{
-    background-color: #F5F5F5;
+  .bottom_footer {
+    background-color: #f5f5f5;
     padding-top: 2%;
     padding-bottom: 2%;
     display: flex;
     justify-content: space-around;
   }
-  .bottom_footer h6{
+  .bottom_footer h6 {
     margin: 0;
     font-size: 14px;
     padding-right: 10px;
   }
-  .bottom_footer p{
+
+  .bottom_footer p {
     display: block;
     font-size: 12px;
   }
 
-  .footer_icons img{
+  .footer_icons img {
     width: 70%;
     height: 70%;
     margin-right: 20px;
-
   }
-
 }
 
-@media (max-width:424px) {
-  .header-picture{
+@media (max-width: 424px) {
+  .header-picture {
     margin-top: 3%;
     width: 15%;
   }
-  ul{
+
+  ul {
     padding-top: 3%;
   }
 
-  ul.ul_menu li{
+  ul.ul_menu li {
     margin-left: 5px;
     padding-left: 5px;
     margin-right: 5px;
@@ -1187,7 +1240,7 @@ display: none;
     font-size: 14px;
   }
 
-  .header h1{
+  .header h1 {
     display: flex;
     justify-content: center;
     font-size: 32px;
@@ -1195,55 +1248,60 @@ display: none;
     margin-top: 10px;
   }
 
-  .header_text{
+  .header_text {
     display: flex;
     justify-content: center;
     width: 100%;
     padding-top: 1%;
-
   }
-  .header_text p{
+
+  .header_text p {
     font-size: 14px;
     color: white;
     margin-top: -8px;
     padding-left: 5px;
     margin-left: 5px;
   }
-  .header_text hr{
+
+  .header_text hr {
     width: 8%;
     float: right;
     margin: 0px;
   }
-  .header_text hr:last-child{
+
+  .header_text hr:last-child {
     width: 8%;
     float: right;
     margin-left: 10px;
   }
-  .form-main-button button{
+
+  .form-main-button button {
     margin-top: 6%;
     font-size: 17px;
     margin-bottom: 8%;
   }
 
-  .first_block{
+  .first_block {
     display: flex;
     justify-content: space-around;
   }
-  .local_menu{
+
+  .local_menu {
     width: 25%;
     padding: 5% 2% 5% 2%;
     text-align: center;
   }
-  .local_menu img{
+
+  .local_menu img {
     width: 40%;
     height: 20%;
   }
 
-  .local_menu h4{
+  .local_menu h4 {
     font-size: 14px;
   }
 
-  .local_menu p{
+  .local_menu p {
     font-size: 12px;
     margin-bottom: 5px;
     padding-bottom: 5px;
@@ -1251,39 +1309,42 @@ display: none;
     padding-left: 0px;
     margin-left: 0px;
   }
-  .second_block{
+
+  .second_block {
     display: flex;
     justify-content: space-around;
   }
 
-  .local2_menu{
+  .local2_menu {
     width: 40%;
-    padding: 5% ;
+    padding: 5%;
     text-align: left;
   }
-  .local2_menu h4{
+
+  .local2_menu h4 {
     font-size: 14px;
   }
-  .local2_menu p{
+
+  .local2_menu p {
     padding-top: 10px;
     font-size: 12px;
     width: 100%;
   }
 
-  .third_block{
+  .third_block {
     margin-left: 5%;
     width: 90%;
   }
 
-  .local3_menu img{
+  .local3_menu img {
     float: left;
     padding-top: 5%;
     margin-top: 0px;
     width: 10%;
     height: 10%;
-
   }
-  .local3_menu h4{
+
+  .local3_menu h4 {
     float: left;
     padding: 10px;
     margin: 10px;
@@ -1293,49 +1354,52 @@ display: none;
     font-size: 14px;
   }
 
-  .local3_menu p{
+  .local3_menu p {
     font-size: 12px;
   }
 
-  .form-third_block-button button{
-    margin-top: 10px;;
+  .form-third_block-button button {
+    margin-top: 10px;
     font-size: 13px;
     border-radius: 20px;
     margin-bottom: 5%;
     padding: 1.3% 7%;
   }
 
-  .four_block{
+  .four_block {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 
-  .local4_menu{
-
+  .local4_menu {
     width: 25%;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 5px;
     padding-right: 5px;
   }
-  .local4_menu h4{
+
+  .local4_menu h4 {
     font-size: 14px;
     padding-top: 0px;
   }
-  .local4_menu p{
+
+  .local4_menu p {
     padding-top: 5px;
     font-size: 12px;
     width: 100%;
   }
-  .Check_this_out{
+
+  .Check_this_out {
     font-size: 12px;
   }
 
-  .fifth_block{
+  .fifth_block {
     display: flex;
     justify-content: space-around;
   }
-  .local5_menu{
+
+  .local5_menu {
     width: 40%;
     padding-top: 3%;
     padding-bottom: 5%;
@@ -1344,38 +1408,39 @@ display: none;
     padding-right: 2%;
   }
 
-  .local5_menu p{
+  .local5_menu p {
     padding-top: 0px;
     font-size: 12px;
   }
-  .local5_menu img{
-  display: none;
 
+  .local5_menu img {
+    display: none;
   }
-  .local5_menu h4{
 
+  .local5_menu h4 {
     padding: 10px 0px;
     margin: 10px 0px;
     padding-top: 5%;
     font-size: 14px;
   }
 
-  .pancil_block-picture{
+  .pancil_block-picture {
     margin-top: 5px;
   }
-  .sixth_block{
+
+  .sixth_block {
     display: flex;
     justify-content: space-around;
   }
-  .sixth_block img{
+
+  .sixth_block img {
     float: left;
     width: 25%;
     height: 15%;
     padding: 5% 0%;
   }
 
-  .local6_menu{
-
+  .local6_menu {
     width: 50%;
     height: 20%;
     padding-top: 3%;
@@ -1385,17 +1450,19 @@ display: none;
     text-align: left;
   }
 
-  .sixth_block-picture{
+  .sixth_block-picture {
     width: 100%;
   }
-  .local6_menu p{
+
+  .local6_menu p {
     font-size: 12px;
   }
-  .form-sixth_block-button button{
+
+  .form-sixth_block-button button {
     font-size: 15px;
   }
 
-  .local6_menu h4{
+  .local6_menu h4 {
     float: center;
     padding: 10px 0px;
     margin: 10px 0px;
@@ -1403,11 +1470,11 @@ display: none;
     font-size: 14px;
   }
 
-  .footer{
+  .footer {
     justify-content: space-around;
   }
 
-  .footer_logo{
+  .footer_logo {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1415,52 +1482,54 @@ display: none;
     margin-top: 5%;
   }
 
-  .footer_logo img{
+  .footer_logo img {
     width: 12.5%;
     height: 10%;
     padding: 0% 3%;
     padding-bottom: 5%;
   }
 
-  .top_footer{
+  .top_footer {
     display: flex;
     justify-content: center;
     padding-top: 5%;
     color: white;
   }
-  .top_footer h5{
+
+  .top_footer h5 {
     font-size: 15px;
     margin: 0;
   }
-  .top_footer img{
-display: none;
+
+  .top_footer img {
+    display: none;
   }
 
-  .bottom_footer{
-    background-color: #F5F5F5;
+  .bottom_footer {
+    background-color: #f5f5f5;
     padding-top: 2%;
     padding-bottom: 2%;
     display: flex;
     justify-content: space-around;
   }
-  .bottom_footer h6{
+
+  .bottom_footer h6 {
     margin: 0;
     font-size: 12px;
     padding-right: 10px;
   }
-  .bottom_footer p{
-    display: block;
 
+  .bottom_footer p {
+    display: block;
   }
-.left_bootom_footer{
-  font-size: 10px;
-}
-  .footer_icons img{
+
+  .left_bootom_footer {
+    font-size: 10px;
+  }
+
+  .footer_icons img {
     width: 50%;
     height: 50%;
     margin-right: 20px;
-
   }
-
-
 }
