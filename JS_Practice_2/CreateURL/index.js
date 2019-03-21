@@ -8,5 +8,5 @@ function myTag(strings, country, region) {
   return `${str0}${country}${str1}${region}${str2}`;
 }
 
-var output = myTag`/api/countries/${ country }/regions/${ region }/`;
+var output = myTag`/api/countries/${country}/regions/${region}/`;
 alert(output);

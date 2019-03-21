@@ -1,8 +1,10 @@
-function hello(name){
-  if(name != ''){
-    console.log('Hello ' + name[0].toUpperCase() + name.substring(1).toLowerCase() +'!');
+function hello(name) {
+  if (name != "") {
+    console.log(
+      "Hello " + name[0].toUpperCase() + name.substring(1).toLowerCase() + "!"
+    );
   } else {
-    console.log('Hello World!');
+    console.log("Hello World!");
   }
 }
 

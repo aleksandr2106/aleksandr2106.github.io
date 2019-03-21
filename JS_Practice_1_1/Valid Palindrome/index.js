@@ -1,8 +1,11 @@
 function checkOnPolindrom(text) {
-  mas_text = text.toLowerCase().split('');
-  mas_reverse_text = text.toLowerCase().split('').reverse();
-  for( let i = 0; i < mas_text.length; i++){
-    if(mas_text[i] == mas_reverse_text[i]){
+  mas_text = text.toLowerCase().split("");
+  mas_reverse_text = text
+    .toLowerCase()
+    .split("")
+    .reverse();
+  for (let i = 0; i < mas_text.length; i++) {
+    if (mas_text[i] == mas_reverse_text[i]) {
       continue;
     } else {
       flag = 0;
@@ -10,11 +13,10 @@ function checkOnPolindrom(text) {
     }
   }
   if (flag == 1) {
-    console.log('This text is a polindrom!!!');
+    console.log("This text is a polindrom!!!");
   } else if (flag == 0) {
-    console.log('This text is not a polindrom!!!');
+    console.log("This text is not a polindrom!!!");
   }
-
 }
 
 let mas_text;

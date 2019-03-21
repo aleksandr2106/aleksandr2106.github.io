@@ -1,25 +1,13 @@
 import React, { Component } from 'react';
-import FullList from '../FullList';
-import './TogglMain.scss';
-import './reset.css';
 import Clock from 'react-live-clock';
 import { Link } from 'react-router-dom';
-var store = require('store');
-store.set('16.03', [
-  {
-    title: 'olololololo',
-    timeToComplete: '1:00',
-    time_spend: '2:00',
-  },
-  {
-    title: 'olololololodsgsd',
-    timeToComplete: '2:00',
-    time_spend: '3:00',
-  },
-]);
-store.set('15.03', { title: 'work hard' });
-store.set('14.03', { title: 'fixed bug' });
-store.set('13.03', { title: 'klsfjskl' });
+import { connect } from 'react-redux';
+import * as todoActions from '../../redux/actions/todo';
+import FullList from '../FullList';
+import Sidebar from '../Sidebar';
+import './TogglMain.scss';
+import './reset.css';
+
 class TogglMain extends Component {
   state = {
     taskTitle: '',
@@ -30,23 +18,17 @@ class TogglMain extends Component {
   };
 
   handleAddToTodos = () => {
-    const { todos, taskTitle, timeToComplete } = this.state;
+    const { taskTitle, timeToComplete } = this.state;
+    const { dispatch } = this.props;
 
     if (!taskTitle || !timeToComplete) {
       alert('Enter all the fields!');
       return;
     }
 
+    dispatch(todoActions.addTodo(taskTitle, timeToComplete));
+
     this.setState({
-      todos: [
-        ...todos,
-        {
-          id: Math.floor(Math.random() * 100000),
-          title: taskTitle,
-          timeToComplete: timeToComplete,
-          done: 0,
-        },
-      ],
       taskTitle: '',
       timeToComplete: '',
     });
@@ -68,19 +50,10 @@ class TogglMain extends Component {
     this.setState({ todos: newTodos });
   };
 
-  completeTodos = id => {
-    const { todos } = this.state;
-
-    for (var key in todos) {
-      if (todos[key]['id'] === id) {
-        todos[key]['done'] = 1;
-        console.log(todos);
-      }
-    }
-    this.setState({
-      todos: [...todos],
-    });
+  toggleResolved = id => {
+    this.props.dispatch(todoActions.toggleResolved(id));
   };
+
   takeDate(date) {
     let dd = date.getDate();
     if (dd < 10) dd = '0' + dd;
@@ -94,68 +67,12 @@ class TogglMain extends Component {
   }
 
   render() {
-    const { todos, taskTitle, timeToComplete } = this.state;
+    const { taskTitle, timeToComplete } = this.state;
+    const { todos } = this.props;
+
     return (
       <div className="body">
-        <div className="menu">
-          <div className="logo">
-            <div className="circle_logo_icon">
-              <i className="fas fa-power-off" />
-            </div>
-            <p>toggl</p>
-          </div>
-          <div className="main_list_menu">
-            <Link to={`/`} className="menu_single_elements">
-              <i className="far fa-clock" />
-              <p>Timer</p>
-            </Link>
-
-            <Link to={`/dashboard`} className="menu_single_elements">
-              <i className="fas fa-chart-bar" />
-              <p>Dashboard</p>
-            </Link>
-
-            <Link to={`/reports`} className="menu_single_elements">
-              <i className="fas fa-file-alt" />
-              <p>Reports</p>
-            </Link>
-            <div className="menu_single_elements">
-              <i className="fas fa-chart-line" />
-              <p>Insights</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="far fa-star" />
-              <p>Saved Reports</p>
-            </div>
-          </div>
-          <div className="manage_menu">
-            <h6>Manage</h6>
-            <div className="menu_single_elements">
-              <i className="far fa-folder" />
-              <p>Projects</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="fas fa-user" />
-              <p>Clients</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="fas fa-users" />
-              <p>Team</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="fas fa-briefcase" />
-              <p>Workspaces</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="fas fa-tag" />
-              <p>Tags</p>
-            </div>
-            <Link to={`/help`} className="menu_single_elements">
-              <i className="far fa-question-circle" />
-              <p>Help</p>
-            </Link>
-          </div>
-        </div>
+        <Sidebar />
         <div className="top_part_of_functionals">
           <p>What are you working on?</p>
           <div className="top_functionals">
@@ -195,7 +112,7 @@ class TogglMain extends Component {
         <FullList
           todos={todos}
           removeFromTodos={this.removeFromTodos}
-          completeTodos={this.completeTodos}
+          toggleResolved={this.toggleResolved}
           listClassName={this.state.listClassName}
         />
       </div>
@@ -203,4 +120,8 @@ class TogglMain extends Component {
   }
 }
 
-export default TogglMain;
+const mapStateToProps = state => ({
+  todos: state.todos,
+});
+
+export default connect(mapStateToProps)(TogglMain);

@@ -1,4 +1,4 @@
-function CorrectTime(t, c){
+function CorrectTime(t, c) {
   return c.test(time);
 }
 

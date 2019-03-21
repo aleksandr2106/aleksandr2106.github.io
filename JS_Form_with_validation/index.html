@@ -1,90 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <title>Home</title>
   </head>
   <body>
     <h2>Enter your personal data</h2>
     <form>
-  <table>
-    <tr>
-      <td>First name</td>
-      <td>
-        <input name="firstName" type="text">
-      </td>
-    </tr>
-    <tr>
-      <td>Last name</td>
-      <td>
-        <input name="lastName" type="text">
-      </td>
-    </tr>
-    <tr>
-      <td>Gender</td>
-      <td>
-        <div name='Gender' class="gender">
-           <label for="male">Male</label>
-           <input type="radio" id="male" name="Gender">
-           <label for="female">Female</label>
-           <input type="radio" id="female" name="Gender">
-        </div>
-      </td>
-    </tr>
+      <table>
+        <tr>
+          <td>First name</td>
+          <td>
+            <input name="firstName" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>Last name</td>
+          <td>
+            <input name="lastName" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <div name="Gender" class="gender">
+              <label for="male">Male</label>
+              <input type="radio" id="male" name="Gender" />
+              <label for="female">Female</label>
+              <input type="radio" id="female" name="Gender" />
+            </div>
+          </td>
+        </tr>
 
-    <tr>
-      <td>Birthday</td>
-      <td>
-        <input type="date" id="start" name="birthday" value="">
-      </td>
-    </tr>
+        <tr>
+          <td>Birthday</td>
+          <td>
+            <input type="date" id="start" name="birthday" value="" />
+          </td>
+        </tr>
 
-    <tr>
-      <td>Your password</td>
-      <td>
-        <input name="password" type="password">
-      </td>
-    </tr>
-    <tr>
-      <td>Repeat password </td>
-      <td>
-        <input name="password2" type="password">
-      </td>
-    </tr>
-    <tr>
-      <td>Address</td>
-      <td>
-        <input name="address" type="text">
-      </td>
-    </tr>
-    <tr>
-      <td>Email</td>
-      <td>
-        <input name="email" type="email">
-      </td>
-    </tr>
-    <tr>
-      <td>Country</td>
-      <td>
-        <select name="country">
-          <option></option>
-          <option value="1">Ukraine</option>
-          <option value="2">USA</option>
-          <option value="3">Germany</option>
-          <option value="4">Holland</option>
-          <option value="5">Poland</option>
-        </select>
-      </td>
-    </tr>
-  </table>
+        <tr>
+          <td>Your password</td>
+          <td>
+            <input name="password" type="password" />
+          </td>
+        </tr>
+        <tr>
+          <td>Repeat password</td>
+          <td>
+            <input name="password2" type="password" />
+          </td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>
+            <input name="address" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <input name="email" type="email" />
+          </td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>
+            <select name="country">
+              <option></option>
+              <option value="1">Ukraine</option>
+              <option value="2">USA</option>
+              <option value="3">Germany</option>
+              <option value="4">Holland</option>
+              <option value="5">Poland</option>
+            </select>
+          </td>
+        </tr>
+      </table>
 
-  <p>Notes</p>
-  <label>
-    <textarea name="message" style="display:block;width:400px;height:80px"></textarea>
-  </label>
+      <p>Notes</p>
+      <label>
+        <textarea
+          name="message"
+          style="display:block;width:400px;height:80px"
+        ></textarea>
+      </label>
 
-  <input type="button" onclick="validate(this.form)" value="Проверить">
-</form>
+      <input type="button" onclick="validate(this.form)" value="Проверить" />
+    </form>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
