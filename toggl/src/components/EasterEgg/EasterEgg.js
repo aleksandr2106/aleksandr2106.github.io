@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './EasterEgg.scss';
 import { Link } from 'react-router-dom';
 import Clock from 'react-live-clock';
+import Sidebar from '../Sidebar';
 const Pip = ({ isOn }) => <div className={`pip ${isOn && 'pip--on'}`} />;
 
 const BinaryDigit = ({ base2NumberAsArray }) => (
@@ -25,11 +26,10 @@ class EasterEgg extends Component {
     super(props);
     this.state = {
       digits: [[], [], []],
+      userAnswer: '',
     };
   }
-  state = {
-    userAnswer: '',
-  };
+
   componentDidMount() {
     setInterval(
       function() {
@@ -47,74 +47,23 @@ class EasterEgg extends Component {
     );
   }
 
-  checkUserAnswer() {
+  checkUserAnswer = () => {
     this.state.userAnswer === 'binary clock'
       ? alert('Congratulations, you have joined the list of favorites')
       : alert('Try again!');
-  }
+  };
+
+  handleKeyPress = event => {
+    if (event.key == 'Enter') {
+      this.checkUserAnswer();
+    }
+  };
 
   render() {
+    console.log(this.state.userAnswer);
     return (
       <div className="body">
-        <div className="menu">
-          <div className="logo">
-            <div className="circle_logo_icon">
-              <i className="fas fa-power-off" />
-            </div>
-            <p>toggl</p>
-          </div>
-          <div className="main_list_menu">
-            <Link to={`/`} className="menu_single_elements">
-              <i className="far fa-clock" />
-              <p>Timer</p>
-            </Link>
-
-            <Link to={`/dashboard`} className="menu_single_elements">
-              <i className="fas fa-chart-bar" />
-              <p>Dashboard</p>
-            </Link>
-
-            <Link to={`/reports`} className="menu_single_elements">
-              <i className="fas fa-file-alt" />
-              <p>Reports</p>
-            </Link>
-            <div className="menu_single_elements">
-              <i className="fas fa-chart-line" />
-              <p>Insights</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="far fa-star" />
-              <p>Saved Reports</p>
-            </div>
-          </div>
-          <div className="manage_menu">
-            <h6>Manage</h6>
-            <div className="menu_single_elements">
-              <i className="far fa-folder" />
-              <p>Projects</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="fas fa-user" />
-              <p>Clients</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="fas fa-users" />
-              <p>Team</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="fas fa-briefcase" />
-              <p>Workspaces</p>
-            </div>
-            <div className="menu_single_elements">
-              <i className="fas fa-tag" />
-              <p>Tags</p>
-            </div>
-            <Link to={`/help`} className="menu_single_elements">
-              <i className="far fa-question-circle" />
-              <p>Help</p>
-            </Link>
-          </div>
-        </div>
+        <Sidebar />
         <div className="top_part_of_functionals">
           <p>This is our Easter Egg!!</p>
           <div className="top_functionals">
@@ -122,7 +71,7 @@ class EasterEgg extends Component {
               className="clock"
               format={'HH:mm:ss'}
               ticking={true}
-              timezone={'UA/Pacific'}
+              timezone={'Europe/Kiev'}
             />
           </div>
         </div>
@@ -145,14 +94,29 @@ class EasterEgg extends Component {
             Write the answer in small letters, separated by a space, without
             punctuation. (2 words)
           </p>
-          <input
-            type="text"
-            onChange={e => this.setState({ userAnswer: e.target.value })}
-            value={this.state.userAnswer}
-            placeholder="Enter your answer!"
-            required
-          />
-          <button onClick={this.checkUserAnswer}>Check</button>
+          <div className="checkEggs">
+            <i
+              class={
+                this.state.userAnswer === 'binary clock'
+                  ? 'fas fa-check successful_check'
+                  : 'fas fa-check'
+              }
+            />
+            <input
+              type="text"
+              onChange={e => this.setState({ userAnswer: e.target.value })}
+              onKeyPress={this.handleKeyPress}
+              value={this.state.userAnswer}
+              placeholder="Enter your answer!"
+              required
+            />
+            <button onClick={this.checkUserAnswer}>Check</button>
+          </div>
+          {this.state.userAnswer === 'binary clock' ? (
+            <p>Congratulations, you have joined the list of favorites</p>
+          ) : (
+            <p>Try again!</p>
+          )}
         </div>
       </div>
     );

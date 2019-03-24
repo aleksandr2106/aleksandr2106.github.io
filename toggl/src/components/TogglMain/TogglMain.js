@@ -14,7 +14,6 @@ class TogglMain extends Component {
     timeToComplete: '',
     timeSpend: '',
     todos: [],
-    listClassName: 'list',
   };
 
   handleAddToTodos = () => {
@@ -42,16 +41,26 @@ class TogglMain extends Component {
     });
   };
 
-  removeFromTodos = id => {
-    const { todos } = this.state;
+  handleKeyPress = event => {
+    if (event.key == 'Enter') {
+      this.handleAddToTodos();
+    }
+  };
 
-    const newTodos = todos.filter(p => p.id !== id);
-
-    this.setState({ todos: newTodos });
+  toggleClear = () => {
+    this.props.dispatch(todoActions.toggleClear());
   };
 
   toggleResolved = id => {
     this.props.dispatch(todoActions.toggleResolved(id));
+  };
+
+  toggleRemoved = id => {
+    this.props.dispatch(todoActions.toggleRemoved(id));
+  };
+
+  toggleTimeSpent = (id, timeSpent) => {
+    this.props.dispatch(todoActions.toggleTimeSpent(id, timeSpent));
   };
 
   takeDate(date) {
@@ -87,12 +96,13 @@ class TogglMain extends Component {
         <div className="main_statistic">
           <span>{this.takeDate(new Date())}</span>
           <div className="enter_form">
-            <button className="clear_list" onClick={this.clearTodos}>
+            <button className="clear_list" onClick={this.toggleClear}>
               Clear List
             </button>
             <input
               type="text"
               onChange={e => this.setState({ taskTitle: e.target.value })}
+              onKeyPress={this.handleKeyPress}
               value={taskTitle}
               placeholder="What needs to be done?"
               required
@@ -100,6 +110,7 @@ class TogglMain extends Component {
             <input
               type="text"
               onChange={e => this.setState({ timeToComplete: e.target.value })}
+              onKeyPress={this.handleKeyPress}
               value={timeToComplete}
               placeholder="Time to complete, example( 1:30 )"
               required
@@ -111,9 +122,10 @@ class TogglMain extends Component {
         </div>
         <FullList
           todos={todos}
-          removeFromTodos={this.removeFromTodos}
+          removeFromTodos={this.toggleRemoved}
           toggleResolved={this.toggleResolved}
           listClassName={this.state.listClassName}
+          toggleTimeSpent={this.toggleTimeSpent}
         />
       </div>
     );

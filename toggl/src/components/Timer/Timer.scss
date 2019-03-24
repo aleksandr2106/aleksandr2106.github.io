@@ -14,19 +14,33 @@ $orange: #ff7400;
   display: grid;
   grid-template-columns: 5fr 1fr 1fr;
 }
+.timer button {
+  padding: 5;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+}
 
-.timer a:nth-child(2) i {
+button:active,
+button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.timer button:nth-child(2) i {
   color: #299000;
 }
 
-.timer a:nth-child(2) i:hover {
+.timer button:nth-child(2) i:hover {
   color: $red_in_site;
 }
 
-.timer a:last-child i {
+.timer button:last-child i {
   color: $red_in_site;
 }
 
-.timer a:last-child i:hover {
+.timer button:last-child i:hover {
   color: #299000;
 }

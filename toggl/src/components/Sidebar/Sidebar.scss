@@ -10,17 +10,44 @@ $green: #59ec0f;
 $light_grey: #d6d6d6;
 $orange: #ff7400;
 
-.select_dashboard {
-  margin: 20px 0px 0px 13vw;
-}
+.menu {
+  background-color: $background-color_menu;
+  height: 100vh;
+  width: 12vw;
+  float: left;
+  position: fixed;
 
-.select_dashboard span {
-  font-size: 22px;
-  text-align: center;
-  padding: 5px 10px;
-}
+  .logo {
+    padding: 20px 10px;
+    display: flex;
 
-.select_dashboard span:hover {
-  border-bottom: 4px solid $orange;
-  transition: border-bottom 0.2s linear;
+    .circle_logo_icon {
+      background-color: $red_in_site;
+      border-radius: 30px;
+      margin-left: 10px;
+
+      i {
+        padding: 6px;
+        font-size: 13px;
+        color: #fff;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      color: #fff;
+      padding-left: 10px;
+    }
+  }
+
+  .main_list_menu {
+    padding: 0px 10px;
+  }
+
+  .menu_single_elements {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 10px 0px;
+    text-decoration: none;
+  }
 }

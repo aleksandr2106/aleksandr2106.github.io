@@ -56,3 +56,30 @@ $orange: #ff7400;
   display: flex;
   margin: 0 6px;
 }
+
+.checkEggs {
+  margin-top: 50px;
+  text-align: center;
+  input {
+    margin-left: 40px;
+    height: 40px;
+    min-width: 500px;
+  }
+  button {
+    color: $green;
+    background-color: $background-color_menu;
+    border: 2px solid $background-color_menu;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 9px 40px;
+    font-size: 16px;
+  }
+  i {
+    color: $red_in_site;
+    font-size: 32px;
+  }
+  .successful_check {
+    color: $green;
+    font-size: 32px;
+  }
+}

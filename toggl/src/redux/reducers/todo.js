@@ -1,4 +1,10 @@
-import { ADD_TODO, TOGGLE_RESOLVED } from '../actions/todo';
+import {
+  ADD_TODO,
+  TOGGLE_RESOLVED,
+  TOGGLE_REMOVED,
+  TOGGLE_CLEAR,
+  TOGGLE_TIME_SPENT,
+} from '../actions/todo';
 
 const initialState = [];
 
@@ -20,7 +26,21 @@ function reducer(state = initialState, action) {
       return state.map(todo =>
         todo.id === action.id ? { ...todo, done: !todo.done } : todo
       );
+      break;
 
+    case TOGGLE_REMOVED:
+      return state.filter(todo => todo.id !== action.id);
+      break;
+
+    case TOGGLE_CLEAR:
+      return (state = initialState);
+      break;
+
+    case TOGGLE_TIME_SPENT:
+      return state.map(todo =>
+        todo.id === action.id ? { ...todo, timeSpent: action.timeSpent } : todo
+      );
+      break;
     default:
       return state;
   }

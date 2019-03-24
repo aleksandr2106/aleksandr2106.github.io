@@ -8,6 +8,7 @@ class FullList extends Component {
       removeFromTodos,
       toggleResolved,
       listClassName,
+      toggleTimeSpent,
     } = this.props;
     return (
       <div className="days_block">
@@ -17,6 +18,7 @@ class FullList extends Component {
             remove={removeFromTodos}
             toggleResolved={toggleResolved}
             listClassName={listClassName}
+            toggleTimeSpent={toggleTimeSpent}
             {...todo}
           />
         ))}

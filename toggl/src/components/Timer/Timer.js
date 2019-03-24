@@ -25,9 +25,12 @@ class Timer extends Component {
     clearInterval(this.timer);
     this.timer = setInterval(onTimeChange, 1000);
   };
-  stopTimer() {
+
+  stopTimer = () => {
+    const { id, timeSpent, toggleTimeSpent } = this.props;
     clearInterval(this.timer);
-  }
+    toggleTimeSpent(id, timeSpent);
+  };
   render() {
     return (
       <div className="timer">
@@ -36,9 +39,9 @@ class Timer extends Component {
         <button onClick={this.startTimer}>
           <i class="fas fa-play-circle" />
         </button>
-        <a onClick={this.stopTimer}>
+        <button onClick={this.stopTimer}>
           <i class="fas fa-stop-circle" />
-        </a>
+        </button>
       </div>
     );
   }

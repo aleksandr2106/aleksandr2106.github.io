@@ -27,6 +27,7 @@ class Todo extends Component {
       done,
       toggleResolved,
       listClassName,
+      toggleTimeSpent,
     } = this.props;
 
     const { timeSpent } = this.state;
@@ -40,7 +41,12 @@ class Todo extends Component {
           <p class="text_todo">{title}</p>
           <p class="time_to_complete">Time to complete {estimate} h.</p>
           <p className="time_spend">
-            <Timer onTimeChange={this.updateTimeSpent} timeSpent={timeSpent} />
+            <Timer
+              id={id}
+              onTimeChange={this.updateTimeSpent}
+              timeSpent={timeSpent}
+              toggleTimeSpent={toggleTimeSpent}
+            />
           </p>
 
           <a onClick={() => remove(id)}>
