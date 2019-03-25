@@ -3,6 +3,7 @@ import './Dashboard.scss';
 import Clock from 'react-live-clock';
 import { Link } from 'react-router-dom';
 import Sidebar from '../Sidebar';
+import Spinner from '../Spinner';
 let time = new Date().toLocaleString();
 class Dashboard extends Component {
   takeDate(date) {
@@ -34,6 +35,7 @@ class Dashboard extends Component {
         <div className="select_dashboard">
           <span>{this.takeDate(new Date())}</span>
         </div>
+        <Spinner />
       </div>
     );
   }

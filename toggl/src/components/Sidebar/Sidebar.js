@@ -27,37 +27,37 @@ class Dashboard extends Component {
             <i className="fas fa-file-alt" />
             <p>Reports</p>
           </Link>
-          <div className="menu_single_elements">
+          <Link to={`/insights`} className="menu_single_elements">
             <i className="fas fa-chart-line" />
             <p>Insights</p>
-          </div>
-          <div className="menu_single_elements">
+          </Link>
+          <Link to={`/saved-reports`} className="menu_single_elements">
             <i className="far fa-star" />
             <p>Saved Reports</p>
-          </div>
+          </Link>
         </div>
         <div className="manage_menu">
           <h6>Manage</h6>
-          <div className="menu_single_elements">
+          <Link to={`/projects`} className="menu_single_elements">
             <i className="far fa-folder" />
             <p>Projects</p>
-          </div>
-          <div className="menu_single_elements">
+          </Link>
+          <Link to={`/clients`} className="menu_single_elements">
             <i className="fas fa-user" />
             <p>Clients</p>
-          </div>
-          <div className="menu_single_elements">
+          </Link>
+          <Link to={`/team`} className="menu_single_elements">
             <i className="fas fa-users" />
             <p>Team</p>
-          </div>
-          <div className="menu_single_elements">
+          </Link>
+          <Link to={`/workspaces`} className="menu_single_elements">
             <i className="fas fa-briefcase" />
             <p>Workspaces</p>
-          </div>
-          <div className="menu_single_elements">
+          </Link>
+          <Link to={`/tags`} className="menu_single_elements">
             <i className="fas fa-tag" />
             <p>Tags</p>
-          </div>
+          </Link>
           <Link to={`/help`} className="menu_single_elements">
             <i className="far fa-question-circle" />
             <p>Help</p>

@@ -1,0 +1,26 @@
+$font-article: Montserrat, sans-serif;
+$font-basic: Muli, sans-serif;
+$font-lato: Lato, sans-serif;
+$font-poppins: Poppins, sans-serif;
+$background-color_menu: #323232;
+$red_in_site: #e20505;
+$h6_color: #9c9c9c;
+$menu_single_elements_hover_color: #494949;
+$green: #59ec0f;
+$light_grey: #d6d6d6;
+$orange: #ff7400;
+
+.select_dashboard {
+  margin: 20px 0px 0px 13vw;
+}
+
+.select_dashboard span {
+  font-size: 22px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.select_dashboard span:hover {
+  border-bottom: 4px solid $orange;
+  transition: border-bottom 0.2s linear;
+}
