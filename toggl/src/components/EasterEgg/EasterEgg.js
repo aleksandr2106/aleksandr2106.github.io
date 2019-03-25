@@ -110,7 +110,6 @@ class EasterEgg extends Component {
               placeholder="Enter your answer!"
               required
             />
-            <button onClick={this.checkUserAnswer}>Check</button>
           </div>
           {this.state.userAnswer === 'binary clock' ? (
             <p>Congratulations, you have joined the list of favorites</p>
