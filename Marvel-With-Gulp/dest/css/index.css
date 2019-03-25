@@ -126,7 +126,7 @@ body {
 }
 
 .top_header_background {
-  background: url(../img/top_header_background.png);
+  background: url(../../src/img/top_header_background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -393,7 +393,7 @@ ul.ul_menu li:last-child {
 }
 
 .first_content {
-  background: url(../img/first_content_background.png);
+  background: url(../../src/img/first_content_background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -729,7 +729,7 @@ ul.ul_menu li:last-child {
 }
 
 .eleven_content {
-  background: url(../img/eleven_backgorund.png);
+  background: url(../../src/img/eleven_backgorund.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 166px;
@@ -1319,7 +1319,7 @@ textarea {
 }
 
 .ninth_content {
-  background: url(../img/nine_backgorund.png);
+  background: url(../../src/img/nine_backgorund.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1747,7 +1747,7 @@ textarea {
 }
 
 .third_content {
-  background: url(../img/third_background_who_we_are.png);
+  background: url(../../src/img/third_background_who_we_are.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1895,7 +1895,7 @@ textarea {
 }
 
 .seventh_content {
-  background: url(../img/seventh_background.png);
+  background: url(../../src/img/seventh_background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1931,7 +1931,7 @@ textarea {
 }
 
 .price_block:nth-child(1) .top_content_price_block {
-  background: url(../img/services-first.png);
+  background: url(../../src/img/services-first.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1952,13 +1952,13 @@ textarea {
 }
 
 .price_block:nth-child(2) .top_content_price_block {
-  background: url(../img/services-second.png);
+  background: url(../../src/img/services-second.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .price_block:nth-child(3) .top_content_price_block {
-  background: url(../img/services-third.png);
+  background: url(../../src/img/services-third.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2132,7 +2132,7 @@ textarea {
 }
 
 .second_content {
-  background: url(../img/second_content_background.png);
+  background: url(../../src/img/second_content_background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2304,7 +2304,7 @@ textarea {
 }
 
 .sixth_background {
-  background: url(../img/sixth_background.png);
+  background: url(../../src/img/sixth_background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2713,7 +2713,7 @@ textarea {
 }
 
 .footer_map_bacground {
-  background: url(../img/footer-map-backgound.png);
+  background: url(../../src/img/footer-map-backgound.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
