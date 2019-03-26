@@ -1,0 +1,29 @@
+.app {
+  margin: 0 auto;
+  max-width: 1140px;
+  text-align: center;
+}
+
+.full_list {
+  text-align: center;
+}
+
+.person_info {
+  margin: 20px 0px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.person_info:hover {
+  background-color: #f7f4f4;
+}
+
+.person_info p:last-child {
+  margin-top: 10px;
+}
+
+.person_info p:first-child {
+  font-size: 20px;
+}

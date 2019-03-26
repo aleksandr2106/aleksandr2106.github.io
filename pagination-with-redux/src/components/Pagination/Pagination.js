@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Pagination.scss";
 
 class Pagination extends Component {
   renderButtons() {

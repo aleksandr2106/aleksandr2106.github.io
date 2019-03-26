@@ -1,16 +1,11 @@
-export const ADD_TODO = "ADD_TODO";
+export const ADD_PERSON = "ADD_PERSON";
 
-let idCounter = 0;
-
-export function addTodo(title, estimate) {
-  idCounter += 1;
-
+export function addPerson(person) {
   return {
-    type: ADD_TODO,
-    id: idCounter,
-    done: false,
-    timeSpent: 0,
-    title,
-    estimate
+    type: ADD_PERSON,
+    id: person["id"],
+    name: person["name"],
+    surname: person["surname"],
+    desc: person["desc"]
   };
 }

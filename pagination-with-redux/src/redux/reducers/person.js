@@ -1,18 +1,17 @@
-import { ADD_TODO } from "../actions/person";
+import { ADD_PERSON } from "../actions/person";
 
 const initialState = [];
 
 function reducer(state = initialState, action) {
   switch (action.type) {
-    case ADD_TODO:
+    case ADD_PERSON:
       return [
         ...state,
         {
           id: action.id,
-          title: action.title,
-          estimate: action.estimate,
-          done: action.done,
-          timeSpent: action.timeSpent
+          name: action.name,
+          surname: action.surname,
+          desc: action.desc
         }
       ];
 
