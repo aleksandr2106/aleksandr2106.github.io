@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Pagination extends Component {
   renderButtons() {
@@ -10,8 +10,8 @@ class Pagination extends Component {
       <button
         className={
           i + 1 === this.props.activePage
-            ? 'active-page list-button'
-            : 'list-button'
+            ? "active-page list-button"
+            : "list-button"
         }
         key={i}
         onClick={() => onChange(i + 1)}
