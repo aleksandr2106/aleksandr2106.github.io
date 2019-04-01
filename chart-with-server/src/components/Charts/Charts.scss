@@ -1,0 +1,25 @@
+$redInSite: #e10000;
+
+.error {
+  text-align: center;
+  margin-top: 50px;
+  p {
+    color: $redInSite;
+    font-size: 48px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: 1px solid $redInSite;
+    border-radius: 40px;
+    font-size: 24px;
+    background-color: #fff;
+    color: #15ba28;
+  }
+}
+
+.charts {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
