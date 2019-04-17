@@ -1,0 +1,25 @@
+$font-article: Montserrat, sans-serif;
+$font-basic: Muli, sans-serif;
+$font-lato: Lato, sans-serif;
+$font-poppins: Poppins, sans-serif;
+$grey_in_page: #44525e;
+$orange_in_page: #ff7013;
+$max-width: 1200px;
+/*  General Style   */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+body {
+  margin: 0px;
+  background-color: #fff;
+}
+
+.content {
+  max-width: $max-width;
+  margin: 0 auto;
+}

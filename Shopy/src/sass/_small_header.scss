@@ -1,0 +1,46 @@
+.smallHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+  .contactInfo {
+    display: flex;
+    div {
+      margin-left: 15px;
+      font-family: $font-lato;
+      font-size: 14px;
+      font-weight: 700;
+      i {
+        color: $orange_in_page;
+      }
+      i:hover {
+        color: $grey_in_page;
+      }
+      a {
+        margin-left: 7px;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+    div:first-child {
+      margin-left: 0px;
+    }
+  }
+  .socialNetworks {
+    i {
+      margin-left: 15px;
+      color: $grey_in_page;
+    }
+    i:hover {
+      color: $orange_in_page;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .smallHeader {
+    padding: 15px 10px;
+  }
+  .socialNetworks {
+    display: none;
+  }
+}
